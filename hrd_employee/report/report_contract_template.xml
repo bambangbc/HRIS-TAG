@@ -1,0 +1,1592 @@
+<openerp>
+	<data>
+		<template id="report_addendum">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<!-- <t t-call="report.external_layout"> -->
+						<div class="page">
+							<div class="row" style="font-size:12px">
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td align="right"><span t-field="o.employee_id.name"/></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td align="center"><strong>ADDENDUM KE II (Dua) SURAT PERJANJIAN KERJA</strong></td>
+									</tr>
+									<tr>
+										<td align="center"><span style="text-decoration: underline;"><strong>Antara PT. Tunas Artha Gardatama dengan <span t-field="o.employee_id.employee_name"/></strong></span></td>
+									</tr>
+									<tr>
+										<td align="center"><span>No : <span t-field="o.name"/></span></td>
+									</tr>
+								</table>
+                                                                <p/>
+								Pada Hari ini, <span t-field="o.hari"/>, <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/>, Yang bertanda tangan di bawah Ini :
+                                                                <p/>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td style="width:7%" align="center">1.</td>  
+										<td width="93%" style="text-align: justify;"><strong>PT. Tunas Artha Gardatama</strong>, suatu perseroan terbatas yang didirikan berdasarkan hukum Negara Republik Indonesia, berkedudukan di Jakarta, berkantor di Gedung RDW Center Jl. Lenteng Agung Raya No. 7 Jagakarsa Jakarta Selatan 12610, (selanjutnya disebut sebagai "<strong>Perusahaan</strong>") dalam hal ini diwakili oleh <strong><span t-field="o.nama_pihak.employee_name"/></strong> dalam kedudukannya selaku <span t-field="o.nama_pihak.job_id.name"/>; dan</td>
+									</tr>
+									<tr>
+										<td style="width:7%" align="center">2. </td>
+										<td width="93%" style="text-align: justify;"><strong><span t-field="o.employee_id.employee_name"/></strong>, Tanggal Lahir <strong><span t-field="o.employee_id.place_of_birth"/>, <span t-field="o.employee_id.birthday" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong> warga negara Republik Indonesia, bertempat tinggal di, <span t-field="o.employee_id.alamat2"/> <span t-field="o.employee_id.kec_id2"/> <span t-field="o.employee_id.place_of_birth"/> <span t-field="o.employee_id.kab_id2"/> pemegang Kartu Tanda Penduduk. No <span t-field="o.employee_id.ktp"/> (selanjutnya disebut sebagai "<strong>Karyawan</strong>") dalam hal ini <strong><span t-field="o.employee_id.employee_name"/></strong> dalam kedudukannya selaku <strong><span t-field="o.employee_id.job_id.name"/></strong></td>
+									</tr>
+								</table>
+								<p/>
+								<p>"Perusahaan" dan "Karyawan" secara bersama-sama selanjutnya disebut "Para Pihak". Bahwa Para Pihak terlebih dulu menerangkan sebagai berikut :</p>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td style="width:7%" align="center">-</td>
+										<td width="93%" style="text-align: justify;">Bahwa Para Pihak telah menandatangani Surat Perjanjian Kerja No :  <strong><span t-field="o.kontrak_sebelum.name"/></strong></td>
+									</tr>
+									<tr>
+										<td style="width:7%" align="center">-</td>	
+										<td width="93%" style="text-align: justify;">Karyawan wajib menyimpan semua keterangan yang menyangkut rahasia perusahaan yang di dapat oleh karena jabatanya maupun di dalam pergaulanya di lingkungan perusahaan (PT. TAG dan dimana karyawan di tempatkan)</td>
+									</tr>
+									<tr>
+										<td style="width:7%" align="center">-</td>
+										<td width="93%" style="text-align: justify;">Bahwa Para Pihak telah sepakat untuk membuat Addendum II (Dua) <span lang="zxx">Surat Perjanjian Kerja (Selanjutnya di sebut Addendum </span><span lang="zxx">II (Dua)</span><span lang="zxx">) dengan syarat-syarat dan ketentuan-ketentuan sebagai berikut </span></td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td style="width:7%" align="center">A.</td>
+										<td width="93%" style="text-align: justify;">Mengubah Pasal 2 (dua) ayat 1 (satu) Perjanjian menjadi sebagai berikut :</td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td width="width:100%" style="text-align: center;"><strong>PASAL 2</strong></td>
+									</tr>
+									<tr>
+										<td width="width:100%" style="text-align: center;"><strong>MASA KESEPAKATAN</strong></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td style="width:7%"/>
+										<td style="width:4%">1.</td>
+										<td width="93%" style="text-align: justify;">Perjanjian ini diperpanjang dan berlaku untuk jangka waktu 1 (satu) tahun, terhitung sejak tanggal</td>
+									</tr>
+									<tr>
+										<td style="width:7%"/>
+										<td style="width:4%"/>
+										<td width="93%" style="text-align: justify;"><strong><span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong> sampai dengan tanggal <strong><span t-field="o.date_end" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong>.</td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td style="width:7%" align="center">B.</td>
+										<td width="93%" style="text-align: justify;">Syarat-syarat dan ketentuan-ketentuan lain dalam Perjanjian sepanjang tidak diubah dengan Addendum Ke II (Dua) ini, tetap berlaku dan mengikat Para Pihak.</td>
+									</tr>
+									<tr>
+										<td style="width:7%" align="center">C.</td>
+										<td width="93%" style="text-align: justify;">Addendum Ke II (Dua) ini merupakan satu kesatuan dan bagian yang tidak terpisahkan dari Perjanjian.
+</td>
+									</tr>
+									<tr>
+										<td style="width:7%" align="center">D.</td>
+										<td width="93%" style="text-align: justify;">Adanya pengurangan Karyawan atas permintaan dari Klien dan adanya penutupan Cabang oleh Klien dimana Karyawan ditempatkan, maka Perjanjian Kerja ini akan berakhir dengan sendirinya, tanpa adanya tuntutan berupa apapun ke pihak perusahaan (PT.TAG) atau Perusahaan tempat dimana Karyawan ditempatkan.</td>
+									</tr>
+									<tr>
+										<td style="width:7%" align="center">E.</td>
+										<td width="93%" style="text-align: justify;">Karyawan, tidak dibenarkan mengikuti Demo atau masuk dalam suatu Organisasi atau Serikat Pekerja dalam bentuk apapun. Apabila dikemudian hari diketahui Anggota turut serta dalam hal tersebut diatas, maka Anggota bersedia mengundurkan diri dari perusahaan (PT.TAG), tanpa adanya tuntutan berupa apapun ke pihak perusahaan (PT.TAG) atau Perusahaan tempat dimana Karyawan ditempatkan.</td>
+									</tr>
+								</table>
+								<p/>
+								<p style="text-align: justify;">Demikian maka Addendum Ke II (Dua) ini ditandatangani pada hari  <span t-field="o.hari"/> dan tanggal  <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/> yang disebutkan pada bagian awal Addendum II (Dua) ini, dibuat dalam rangkap II (dua) asli masing-masing bermaterai cukup dan mempunyai kekuatan hukum yang sama dan mengikat terhadap Para Pihak.</p>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td style="width:40%"><storng>"Pihak Perusahaan"</storng></td>
+										<td style="width:30%"/>
+										<td style="width:30%"><storng>"Pihak Karyawan</storng></td>
+									</tr>
+								</table>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+<p><span style="color: #ffffff;">a</span></p>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td style="width:40%"><span style="text-decoration: underline;"><strong><span t-field="o.nama_pihak.employee_name"/></strong></span></td>
+										<td style="width:30%"/>
+										<td style="width:30%"><strong><span t-field="o.employee_id.employee_name"/></strong></td>
+									</tr>
+									<tr>
+										<td style="width:40%"><strong><span t-field="o.nama_pihak.job_id.name"/></strong></td>
+										<td style="width:30%"/>
+										<td style="width:30%"/>
+									</tr>
+								</table>
+							</div>
+						</div>
+				</t>
+			</t>
+		</template>
+
+		<template id="report_training">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<!-- <t t-call="report.external_layout"> -->
+						<div class="page">
+							<div class="row" style="font-size:14px">
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td align="right"><span t-field="o.employee_id.name"/></td>
+									</tr>
+								</table>
+								<br>Nomor : <span t-field="o.name"/></br>
+								<p>Perihal	: <span style="text-decoration: underline;"><strong>HubunganKerja</strong></span></p>
+								KepadaYth :
+								<br><strong>Sdr. <span t-field="o.employee_id.employee_name"/></strong></br>
+								<p><span t-field="o.employee_id.alamat2"/> <span t-field="o.employee_id.kec_id2"/> <span t-field="o.employee_id.kab_id2"/></p>
+								<p>Dengan Hormat,</p>
+								<p style="text-align: justify;">Menunjuk Surat Lamaran Saudara dan dari hasil interview yang telah kami laksanakan, Saudara dinyatakan telah memenuhi kualifikasi dan syarat-syarat kerja yang telah ditetapkan oleh perusahaan.</p> 
+								<p style="text-align: justify;">Untuk itu kami beritahukan bahwa Saudara dinyatakan dapat diterima sebagai karyawan pada Perusahaan PT. TUNAS ARTHA GARDATAMA  dengan ketentuan dan syarat sebagai berikut :</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="4%">1.</td>
+										<td width="96%" style="text-align: justify;">Saudara ditempatkan pada Bagian <strong><span t-field="o.bagian"/></strong> dengan Jabatan <strong><span t-field="o.employee_id.job_id.name"/></strong> dan dalam pekerjaan sehari – hari Saudara akan bertanggung jawab langsung kepada atasan Saudara yang  telah ditunjuk oleh Perusahaan. </td>
+									</tr>
+									<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="4%">2.</td>
+										<td width="96%" style="text-align: justify;">Dalam menjalankan pekerjaan sehari – hari Saudara wajib berpegang teguh kepada <strong>SOP (Standard Operating Procedure)</strong> yang telah ditetapkan oleh perusahaan, teliti dan    hati - hati, tidak dibenarkan melakukan kecerobohan yang akan dapat berakibat kerugian bagi pihak perusahaan.
+										<br>Mengenai detail pekerjaan dapat Saudara baca di dalam Uraian Pekerjaan Saudara masing - masing.</br> </td>
+									</tr>
+									<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="4%">3.</td>
+										<td width="96%" style="text-align: justify;">Hari Kerja, Jam Kerja ,Waktu Kerja 
+										<br>Hari kerja Saudara adalah 5 (Lima) Hari Kerja dalam seminggu atau 8 (Delapan) jam effective per hari, 40 (Empat Puluh) jam seminggu, dengan jadwal kerja sesuai dengan kebutuhan masing-masing bagian atau waktu/periode yang dianggap perlu oleh perusahaan.</br>
+										<p/>
+										Hari Kerja Karyawan Operasional adalah 365 (Tiga Ratus Enam Puluh Lima) hari, dengan pengertian bahwa di dalam penerapan pengaturan jadwal diatur secara shift dan di dalam pengaturan sudah diperhitungkan Cuti, Off dan Libur Resmi. Dengan demikian jumlah Off menjadi bertambah sejumlah hari libur nasional yang ada didalam tahun kalender yang berjalan.</td>
+									</tr>
+									<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="4%">4.</td>
+										<td width="96%" style="text-align: justify;">Tanggal Masuk Kerja Saudara terhitung sejak Saudara dinyatakan masuk Program Pelatihan Kerja (PPK) selama kurun waktu 3 (Tiga) bulan yaitu sejak tanggal <strong><span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong> sampai dengan <strong><span t-field="o.date_end" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong> dan bila Saudara dinyatakan belum mampu menjalankan tugas pekerjaan dengan baik dan benar, maka saudara dinyatakan gugur,dan kepada Saudara akan dibayarkan hak atas upah sampai dengan hari kerja terakhir (proporsional) pada bulan berjalan. </td>
+									</tr>
+                                                                        <tr>
+										<td width="4%" style="color: #ffffff;">..</td>
+										<td width="96%" style="color: #ffffff;">..</td>
+									</tr>
+                                                                        <tr>
+										<td width="4%" style="color: #ffffff;">..</td>
+										<td width="96%" style="color: #ffffff;">..</td>
+									</tr>
+									<tr>
+										<td width="4%">5.</td>
+										<td width="96%" style="text-align: justify;">Apabila Saudara berhasil dengan baik dalam menjalani Program Pelatihan Kerja (PPK)  maka Saudara akan diangkat sebagai Karyawan dengan Status <strong>“KONTRAK “</strong>selama periode 12 (Dua Belas) bulan, dimana tanggal Masa Kontrak berlaku surut hingga saat Saudara mulai mengikuti Program Pelatihan Kerja (PPK)</td>
+									</tr>
+                                </table>
+                                <table width="100%" style="font-size:10px">
+                                    <tr>
+										<td width="4%"/>
+										<td width="80%" align="right">paraf</td>
+										<td width="10%" align="right"><img src="/hrd_employee/static/src/img/PARAF.png" class="img img-responsive" style="width:25px;height:50px;"/></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="6%">6.</td>
+										<td width="96%" style="text-align: justify;">Program Pelatihan Kerja (PPK) akan berakhir, apabila Saudara dinyatakan: </td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Gugur/tidaklulus/tidakcakap dalam menjalankan tugas pekerjaan yang diberikan oleh perusahaan dan atau Atasan Saudara.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Melakukan kesalahan prosedur kerja yang telah ditetapkan dalam SOP.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Lalai terhadap tugas dan tanggung jawab pekerjaan.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Tidak masuk kerja tanpa ada kabar/berita/alasan yang jelas dan absen datang terlambat masuk kerja selama 5 (lima) hari baik secara berturut-turut maupun tidak berturut-turut karena hal tersebut sangat mengganggu kegiatan operasional perusahaan.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Melakukan pelanggaran Tata Tertib Kerja Perusahaan.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Melakukan kesalahan besar maupun kecil yang berakibat kerugian bagi perusahaan.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Melaksanakan pekerjaan secara serampangan yang dapat mengakibatkan kerugian bagi Perusahaan</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Tidak jujur dalam pengisian laporan pengisian formulir lembur, karcis tol, parkir, dsb.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Mengundurkan Diri, harus diajukan 1 bulan di muka, apabila tidak sesuai ketentuan maka segala bentuk penyelesaian administrasi akan dilaksanakan dalam waktu 1 (satu) bulan kemudian.</td> 
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">7.</td>
+										<td width="96%" style="text-align: justify;"><p>Program Pelatihan Kerja (PPK) akan berakhir jika Perjanjian Kerja sama Induk yang mendasari adanya Perjanjian Kerja – Program Pelatihan Kerja (PPK) ini berakhir/ diputuskan oleh Pihak Klien Perusahaan dengan pemberitahuan terlebih dahulu oleh Perusahaan kepada pihak Karyawan minimal 30 (tiga puluh) hari kalender dengan kewajiban pembayaran sampai dengan hari kerja terakhir (proporsional) dalam bulan berjalan.</p>
+										Semua penyelesaian persyaratan administrasi kerja harus diselesaikan dan diambil oleh karyawan itu sendiri <strong>tidak dapat diwakilkan/ digantikan oleh orang lain.</strong></td>
+									</tr>
+									<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="6%">8.</td>
+										<td width="96%" style="text-align: justify;">Apabila Saudara selama Program Pelatihan Kerja (PPK), mengikuti Demo atau masuk dalam suatu Organisasi atau Serikat Pekerja dalam bentuk apapun. Apabila dikemudian hari diketahui Saudara turut serta dalam hal tersebut di atas, maka Saudara bersedia mengundurkan diri dari Perusahaan (PT. TAG) tanpa adanya tuntutan berupa apapun ke Pihak Perusahaan (PT. TAG) atau Perusahaan tempat dimana Saudara ditempatkan.</td>
+									</tr>
+									<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="6%">9.</td>
+										<td width="96%" style="text-align: justify;">Atas pekerjaan Saudara, Perusahaan memberikan imbalan berupa uang atas pekerjaan yang telah dilakukan, yang besarnya ditetapkan tersendiri, yang akan dibayarkan bersamaan dengan karyawan lainnya pada tanggal ditentukan oleh perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="6%">10.</td>
+										<td width="96%" style="text-align: justify;">Apabila Saudara selama Program Pelatihan Kerja (PPK) mengundurkan diri atau tidak masuk kerja tanpa ada kabar/berita/alasan yang jelas selama <strong>5 (lima)</strong> hari baik secara berturut-turut maupun tidak berturut-turut Saudara dikenakan Pinalty ke Perusahaan sebesar Rp. 2.000.000,- (Dua Juta Rupiah). </td>
+									</tr>
+									<tr>
+										<td width="6%">11.</td>
+										<td width="96%" style="text-align: justify;">Untuk fasilitas pengobatan diberikan sesuai plafon masing-masing Karyawan sesuai tingkatannya. </td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;"><strong>.</strong></td>
+										<td width="84%" style="text-align: justify;">Fasilitas Rawat Jalan, setiap Karyawan mendapat penggantian sebesar 80% dari Rp 40.000,- (empat puluh ribu rupiah) dengan pengertian sehari maksimal 1 (satu) kali kunjungan dokter.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;"><strong>.</strong></td>
+										<td width="84%" style="text-align: justify;">Fasilitas Rawat Inap, besar penggantian disesuaikan dengan plafon yang berlaku bagi karyawan yang bersangkutan, namun apabila sampai terjadi excess klaim (kelebihan biaya rawat inap) maka atas kelebihan tagihan biaya rawat inap akan menjadi tanggung jawab Karyawan itu sendiri, bukan Perusahaan.</td> 
+									</tr>
+								</table>
+								<table width="100%" style="font-size:10px">
+									<tr>
+										<td width="6%"/>
+										<td width="84%" align="right">paraf</td>
+										<td width="10%" align="right"><img src="/hrd_employee/static/src/img/PARAF.png" class="img img-responsive" style="width:20px;height:40px;"/></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="color: #ffffff;">1.</td>
+										<td width="84%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;"><strong>.</strong></td>
+										<td width="84%" style="text-align: justify;">Khusus divisi Guard  mengikuti fasilitas kesehatan yang diberikan oleh project/ klien masing-masing</td> 
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">12.</td>
+										<td width="96%" style="text-align: justify;">Pakaian Kerja. 
+										<br>Setiap karyawan wajib memakai pakaian kerja sesuai ketentuan Perusahaan, sebagai berikut :</br></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="30%" style="text-align: left;">Staff Operasional</td>
+										<td width="2%">:</td>
+										<td width="54%" style="text_align: justify">Seragam Operasional (Kemeja/Kaos Hitam Bordir PT.TAG), celana panjang bahan Hitam (Formal), dan memakai sepatu kerja hitam, bukan sepatu kets.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="30%" style="text-align: left;">Kasir</td>
+										<td width="2%">:</td>
+										<td width="54%" style="text_align: justify">Wearpack PT. TAG dan sandal jepit (bukan sendal formal).</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="30%" style="text-align: left;">Satpam</td>
+										<td width="2%">:</td>
+										<td width="54%" style="text_align: justify">PDH (Putih Biru) dan PDL (Hitam hitam) dan sepatu kerja.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="30%" style="text-align: left;">Staff/Back office</td>
+										<td width="2%">:</td>
+										<td width="54%" style="text_align: justify">Pakaian kerja sesuai dengan Keputusan Direksi yang berlaku, dan sepatu kerja bukan sandal atau selop.</td> 
+									</tr>
+								</table>
+								<p/>
+								<p style="text-align: justify">Saudara wajib menggunakan Kartu Identitas Karyawan yang telah diberikan kepada Saudara sesuai ketentuan perusahaan, yang harus dijaga jangan sampai rusak / hilang.</p> 
+                                <p style="text-align: justify">Penerimaan karyawan ini didasarkan atas praduga bahwa informasi yang diberikan oleh Pihak Karyawan adalah benar adanya.</p>
+                                <p style="text-align: justify">Jika dikemudian hari ternyata terdapat pemalsuan, manipulasi atau ketidak sesuaian baik disengaja atau tidak, maka Pihak Perusahaan berhak memutuskan hubungan kerja dengan Pihak Karyawan tanpa kompensasi dalam bentuk apapun, berupa apapun dan berapapun.</p> 
+                                <p style="text-align: justify">Demikian pemberitahuan ini, dengan Saudara menandatangani Surat ini maka Saudara dianggap telah menyetujui, mengerti, memahami dengan baik dan mengetahui semua ketentuan dan syarat yang telah ditetapkan oleh perusahaan dan mematuhi segala instruksi yang diberikan oleh Atasan dan atau Pimpinan Perusahaan dalam melaksanakan tugas pekerjaan dengan penuh kesadaran dan tanggung jawab yang tinggi tanpa adanya suatu paksaan dari pihak mana pun dan akan mematuhi segala tata tertib dan peraturan perusahaan.</p>
+                                <table width="100%" style="font-size:13px">
+									<tr>
+										<td style="width:40%">Jakarta, <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></td>
+										<td style="width:30%"/>
+										<td style="width:30%"/>
+									</tr>
+									<tr>
+										<td style="width:40%">PT. Tunas Artha Gardatama</td>
+										<td style="width:30%"/>
+										<td style="width:30%">Yang bersangkutan,</td>
+									</tr>
+								</table>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+                                                                <p><span style="color: #ffffff;">a</span></p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td style="width:40%"><strong><span style="text-decoration: underline;"><span t-field="o.nama_pihak.employee_name"/></span></strong></td>
+										<td style="width:30%"/>
+										<td style="width:0%"><strong><span t-field="o.employee_id.employee_name"/></strong></td>
+									</tr>
+									<tr>
+										<td style="width:40%"><strong><span t-field="o.nama_pihak.job_id.name"/></strong></td>
+										<td style="width:20%"/>
+										<td style="width:40%"/>
+									</tr>
+								</table>  
+							</div>
+						</div>
+				</t>
+			</t>
+		</template>
+
+		<template id="report_frelance">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<!-- <t t-call="report.external_layout"> -->
+						<div class="page">
+							<div class="row" style="font-size:13px">
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td align="right"><span t-field="o.employee_id.name"/></td>
+									</tr>
+								</table>
+								<p align="center"><strong>SURAT KESEPAKATAN KERJA HARIAN</strong></p> 
+								<p>Pada Hari <span t-field="o.hari"/>, tanggal <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd&quot;}"/> Bulan <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;MMMM&quot;}"/> Tahun <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;y&quot;}"/>:</p> 
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">I.</td>
+										<td width="96%" style="text-align: justify;"><strong><span t-field="o.nama_pihak.employee_name"/></strong>, Yang dalam jabatanya selaku <strong><span t-field="o.nama_pihak.job_id.name"/> PT. TUNAS ARTHA GARDATAMA,</strong> yang berkedudukan di Gedung RDW CENTER Jl. Lenteng Agung Raya No. 7 Jagakarsa Jakarta Selatan 12610, selanjutnya nama tersebut diatas oleh karna jabatanya itu bertindak untuk dan atas nama perseroan, yang selanjutnya disebut <strong>"Perusahaan".</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">II.</td>
+										<td width="32%">Nama</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.employee_name"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">No. KTP</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.ktp"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Alamat Sekarang</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.alamat1"/> <span t-field="o.employee_id.kec_id"/> <span t-field="o.employee_id.kab_id"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Telpon/HP</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.mobile_phone"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Tempat/Tanggal Lahir</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.place_of_birth"/>, <span t-field="o.employee_id.birthday" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Jenis Kelamin</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.kelamin"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Agama</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.agama"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Status</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.marital"/></td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" style="text-align: justify;">Dalam Kesepakatan Kerja ini bertindak untuk dan atas nama dirinya sendiri, yang selanjutnya disebut <strong>"Karyawan Harian"</strong>.</td>
+									</tr>
+									<tr>
+										<td width="100%" style="text-align: justify;">Bahwa pada tanggal tersebut diatas antara pihak perusahaan dan pihak karyawan secara bersama-sama disebut "Para Pihak" dengan ini menerangkan terlebih dahulu :</td>
+									</tr>
+									<tr>
+								        <td width="100%" style="text-align: justify;">bahwa para pihak telah sepakat untuk mengadakan suatu ikatan Hubungan Kerja dalam bentuk Kesepakatan Kerja harian dengan ketentuan dan syarat-syarat sebagai berikut :</td>
+								    </tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">1.</td>
+										<td width="96%" style="text-align: justify;">Perusahaan memperkerjakan karyawan pada bagian <span t-field="o.bagian"/> dengan jabatan/ posisi sebagai <strong><span t-field="o.employee_id.job_id.name"/></strong></td>
+									</tr>
+									<tr>
+										<td width="6%">2.</td>
+										<td width="96%" style="text-align: justify;">Sebagai bentuk imbalan atas pekerjaan tersebut perusahaan memberikan imbalan atas jasa/pekerjaan kepada karyawan berupa Upah "Gross"/bulanan, yang akan dibayarkan bersamaan dengan karyawan lainya pada tanggal yang telah ditentukan oleh perusahaan</td>
+									</tr>
+									<tr>
+										<td width="6%">3.</td>
+										<td width="96%" style="text-align: justify;">Karyawan menerima dan sanggup melaksanakan kewajiba-kewajiban dan tugas-tugas yang di bebankan kepadanya oleh perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%">4.</td>
+										<td width="96%" style="text-align: justify;">Karyawan bersedia dan wajib untuk mentaati dan melaksanakan semua ketentuan, tata tertib dan peraturan perusahaan yang berlaku.</td>
+									</tr>
+									<tr>
+										<td width="6%">5.</td>
+										<td width="96%" style="text-align: justify;">Karyawan bersedia dan sanggup diputuskan hubungan kerja kapan saja secara sepihak tanpa alasan apapun.</td>
+									</tr>
+								</table>
+								<p/>
+								<p style="text-align: justify;">Demikian Kesepakatan Kerja Harian ini dibuat dalam rangkap 2 (dua), bermaterai cukup dan ditandatangani atas kemauan kedua belah pihak dalam keadaan sehat jasmani dan rohani dan tanpa ada paksaan dari pihak manapun, dan masing-masing mempunyai kekuatan hukum yang sama.</p>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td style="width:40%">Jakarta, <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></td>
+										<td style="width:30%"/>
+										<td style="width:30%"/>
+									</tr>
+									<tr>
+										<td style="width:40%">PT. Tunas Artha Gardatama</td>
+										<td style="width:30%"/>
+										<td style="width:30%">Yang bersangkutan,</td>
+									</tr>
+								</table>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td style="width:40%"><strong><span style="text-decoration: underline;"><span t-field="o.nama_pihak.employee_name"/></span></strong></td>
+										<td style="width:30%"/>
+										<td style="width:30%"><strong><span t-field="o.employee_id.employee_name"/></strong></td>
+									</tr>
+									<tr>
+										<td style="width:40%"><strong><span t-field="o.nama_pihak.job_id.name"/></strong></td>
+										<td style="width:20%"/>
+										<td style="width:40%"/>
+									</tr>
+								</table>
+								<p style="color: #ffffff;">.</p>
+								<p style="color: #ffffff;">.</p>
+								<p style="color: #ffffff;">.</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td style="text-align: center;" width="100%"><strong>PERJANJIAN KERJA HARIAN</strong></td>
+									</tr>
+									<tr>
+										<td style="text-align: center;" width="100%">No. :<span t-field="o.name"/></td>
+									</tr>
+								</table>
+								<p style="color: #ffffff;">.</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="30%"><strong><span t-field="o.nama_pihak.employee_name"/></strong></td>
+										<td width="2%">:</td>
+										<td style="text-align: justify;" width="68%">Jabatan <strong><span t-field="o.nama_pihak.job_id.name"/></strong>, oleh karena pekerjaannya bertindak untuk dan atas nama <strong>PT. Tunas Artha Gardatama</strong> yang berkedudukan di Jl. Lenteng Agung Raya No. 7 Jagakarsa Jakarta Selatan yang untuk selanjutnya disebut sebagai <strong>PIHAK PERTAMA</strong>.</td>
+									</tr>
+									<tr>
+										<td width="30%" style="color: #ffffff;">1.</td>
+										<td width="2%" style="color: #ffffff;">1</td>
+										<td width="68%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="30%"><strong><span t-field="o.employee_id.employee_name"/></strong></td>
+										<td width="2%">:</td>
+										<td style="text-align: justify;" width="68%">Swasta, beralamat di <span t-field="o.employee_id.alamat2"/> <span t-field="o.employee_id.kec_id2"/> <span t-field="o.employee_id.kab_id2"/>, Nomor KTP : <span t-field="o.employee_id.ktp"/> yang untuk selanjutnya disebut sebagai <strong>PIHAK KEDUA</strong>.</td>
+									</tr>
+								</table>
+								<p/>
+								<p style="text-align: justify;">Antara Pihak Pertama dan Pihak Kedua dalam Perjanjian ini selanjutnya disebut sebagai <strong>PARA PIHAK</strong>.</p>
+								<p style="text-align: justify;">Sesuai dengan kesepakatan antara <strong>PARA PIHAK</strong> , terhitung sejak tanggal <strong><span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong> sampai dengan <strong><span t-field="o.date_end" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong> Saudara bergabung dengan Perusahaan <strong>PT. Tunas Artha Gardatama</strong> dengan status Hubungan Kerja sebagai <strong>“Tenaga Harian”</strong> dengan kondisi sebagai berikut :</p> 
+								<p style="color: #ffffff;">.</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td align="center" width="100%">Pasal I : </td>
+									</tr>
+									<tr>
+										<td align="center" width="100%">Kewajiban dan Hak Pihak Kedua</td>
+									</tr>
+								</table>
+								<p style="color: #ffffff;">.</p>
+								<p align="justify"><strong>Pihak Kedua</strong> sanggup untuk melaksanakan pekerjaannya sesuai dengan ketetapan dari <strong>Pihak Pertama</strong> dan akan melaksanakan dan menyelesaikan tugas pekerjaannya dengan penuh rasa tanggung jawab serta sanggup mengikuti instruksi atasannya dan mematuhi date line yang telah ditentukan.</p> 
+								<p align="justify"><strong>Pihak Kedua</strong> sanggup untuk mengikuti segala peraturan dan tata tertib kerja Perusahaan di tempat Pihak Pertama baik yang tertulis maupun yang tidak tertulis.</p> 
+								<p align="justify">Sebagai bentuk imbalan atas pekerjaan tersebut Perusahaan memberikan imbalan atas jasa/pekerjaan kepada Karyawan berupa Upah “Gross”/bulan, yang akan dibayarkan bersamaan dengan Karyawan lainnya pada tanggal yang telah ditentukan oleh Perusahaan</p> 
+								<p align="justify"><strong>Apabila Pihak Kedua bekerja kurang dari jam kerja perusahaan maka kepadanya diterapkan pemotongan atas imbalan yang diperoleh.</strong></p>
+								<p style="color: #ffffff;">.</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td align="center" width="100%">Pasal 2 : </td>
+									</tr>
+									<tr>
+										<td align="center" width="100%">Kewajiban dan Hak Pihak Pertama</td>
+									</tr>
+								</table>
+								<p style="color: #ffffff;">.</p>
+								<p align="justify"><strong>Pihak Pertama</strong> akan melaksanakan kewajibannya yaitu membayar imbalan jasa atas pekerjaan yang telah dilakukan oleh <strong>Pihak Kedua</strong> yang akan  dibayarkan berdasarkan absensi kehadiran dan akan dihitung secara tersendiri.</p>
+								<p align="justify"><strong>Pihak Pertama</strong> mempekerjakan Pihak Kedua dengan batasan waktu sampai diperoleh pengganti untuk menggantikan posisi <strong>Pihak Kedua</strong></p>
+								<table width="100%" style="font-size:10px">
+									<tr>
+										<td width="6%"/>
+										<td width="84%" align="right">paraf</td>
+										<td width="10%" align="right"><img src="/hrd_employee/static/src/img/PARAF.png" class="img img-responsive" style="width:20px;height:40px;"/></td>
+									</tr>
+								</table>
+								<p style="color: #ffffff;">.</p>
+								<p align="justify"><strong>Pihak Pertama</strong> berhak melakukan teguran keras kepada <strong>Pihak Kedua</strong> apabila ternyata <strong>Pihak Kedua</strong> tidak melaksanakan kewajibannya sesuai kesepakatan dan kesanggupannya sendiri ke Perusahaan dan berhak memutuskan hubungan kerja sewaktu-waktu tanpa pemberitahuan terlebih dahulu dan tanpa resiko apa pun kecuali imbalan sampai dengan hari terakhir <strong>Pihak Kedua</strong> bekerja.</p>
+								<p align="justify">Demikian Surat Perjanjian ini dibuat  di atas meterai cukup sebagai bentuk ikatan sederhana namun mengikat kedua belah pihak dan apabila ada permasalahan yang timbul dikemudian hari maka akan diselesaikan melalui proses musyawarah namun bila tidak tercapai mufakat maka keduanya sepakat untuk menempuh jalur hukum yang berlaku.</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td style="width:40%">Jakarta, <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></td>
+										<td style="width:30%"/>
+										<td style="width:30%"/>
+									</tr>
+									<tr>
+										<td style="width:40%">Pihak Pertama</td>
+										<td style="width:30%"/>
+										<td style="width:30%">Pihak Kedua</td>
+									</tr>
+								</table>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+                                                                <p><span style="color: #ffffff;">a</span></p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td style="width:40%"><strong><span style="text-decoration: underline;"><span t-field="o.nama_pihak.employee_name"/></span></strong></td>
+										<td style="width:30%"/>
+										<td style="width:30%"><strong><span t-field="o.employee_id.employee_name"/></strong></td>
+									</tr>
+									<tr>
+										<td style="width:40%"><strong><span t-field="o.nama_pihak.job_id.name"/></strong></td>
+										<td style="width:20%"/>
+										<td style="width:40%"/>
+									</tr>
+								</table>
+							</div>
+						</div>
+				</t>
+			</t>
+		</template>
+
+		<template id="report_pkwt">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<!-- <t t-call="report.external_layout"> -->
+						<div class="page">
+							<div class="row" style="font-size:14px">
+								<p style="text-align: right;"><span t-field="o.employee_id.name"/></p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="center"><strong>SURAT PERJANJIAN KERJA UNTUK WANTU TERTENTU</strong></td>
+									</tr>
+									<tr>
+										<td width="100%" align="center"><strong>NO : <span t-field="o.name"/></strong></td>
+									</tr>
+								</table>
+                                                                <p/>
+								Pada hari ini, <span t-field="o.hari"/> Tanggal <span t-field="o.tanggal_rpt"/> Bulan <span t-field="o.bulan_rpt"/> Tahun <span t-field="o.tahun_rpt"/>: <span t-field="o.datess"/>
+                                                                <p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">1.</td>
+										<td width="94%" align="justify"><strong><span t-field="o.nama_pihak.employee_name"/></strong>, yang dalam jabatannya selaku <span t-field="o.nama_pihak.job_id.name"/> PT.TUNAS ARTHA GARDATAMA, yang berkedudukan di Gedung RDW CENTER Jl. Lenteng Agung Raya No. 7 Jagakarsa Jakarta Selatan 12610, untuk selanjutnya nama tersebut di atas oleh karena jabatannya itu bertindak untuk dan atas nama perseroan, yang selanjutnya disebut <strong>“Perusahaan”</strong></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">2.</td>
+										<td width="32%"><strong>Nama Karyawan</strong></td>
+										<td width="2%">:</td>
+										<td width="60%" align="justify"><strong><span t-field="o.employee_id.employee_name"/></strong></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">No. KTP</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.ktp"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Alamat Sekarang</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.alamat1"/> <span t-field="o.employee_id.kec_id"/> <span t-field="o.employee_id.kab_id"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Telpon/HP</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.mobile_phone"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Tempat/Tanggal Lahir</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.place_of_birth"/>, <span t-field="o.employee_id.birthday" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Jenis Kelamin</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.kelamin"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Agama</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.agama"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Status</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.marital"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Jabatan</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.job_id.name"/></td>
+									</tr>
+								</table>
+								<p/>
+								<p align="justify">Dalam Kesepakatan Kerja ini bertindak untuk dan atas nama dirinya sendiri, yang selanjutnya disebut <strong>“Karyawan ”.</strong></p>
+								<p align="justify">Bahwa pada tanggal tersebut di atas antara pihak Perusahaan dan Pihak Karyawan secara bersama - sama disebut juga “Para Pihak” dengan ini menerangkan terlebih dahulu:</p>
+								<p align="justify">Bahwa Para Pihak telah sepakat untuk mengadakan suatu ikatan Hubungan Kerja dalam bentuk Perjanjian Kerja Untuk Jangka Waktu Tertentu <strong>“KONTRAK KERJA”</strong> dengan ketentuan dan syarat - syarat sebagai berikut :</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="center"><strong>PASAL 1</strong></td>
+									</tr>
+									<tr>
+										<td width="100%" align="center"><strong>Lingkup Pekerjaan</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">1.</td>
+										<td width="94%" align="justify">Perusahaan PT. Tunas Artha Gardatama mempekerjakan Karyawan atas nama tersebut dia atas pada bagian <span t-field="o.bagian"/> dengan Jabatan/posisi sebagai <strong><span t-field="o.employee_id.job_id.name"/></strong> untuk Jangka Waktu Tertentu.</td>
+									</tr>
+									<tr>
+										<td width="6%">2.</td>
+										<td width="94%" align="justify">Karyawan menerima dan sanggup melaksanakan kewajiban-kewajiban dan tugas-tugas yang dibebankan kepadanya oleh Perusahaan, sehubungan dengan jabatannya yang disebut dalam ayat 1 pasal ini dengan sebaik-baiknya dan penuh rasa tanggung jawab.</td>
+									</tr>
+									<tr>
+										<td width="6%">3.</td>
+										<td width="94%" align="justify">Karyawan dalam menjalankan tugas pekerjaannya bertanggung jawab langsung kepada atasan yang ditunjuk oleh Perusahaan dan atau Pimpinan Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%">4.</td>
+										<td width="94%" align="justify">Karyawan bersedia dan wajib untuk mentaati perintah dan atau penugasan yang layak dari atasannya yang ditunjuk oleh Perusahaan dan atau Pimpinan Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%">5.</td>
+										<td width="94%" align="justify">Karyawan bersedia dan sanggup diputuskan Hubungan Kerjanya sebelum habis masa berlakunya perjanjian kontrak ini secara sepihak tanpa adanya syarat berupa apa pun,berapa pun dan dalam bentuk apa pun apabila ternyata Karyawan telah melakukan tindakan pengingkaran, lalai dan atau melanggar ketentuan - ketentuan dalam Perjanjian atau pun Peraturan yang berlaku di Perusahaan yang dapat mengakibatkan pemutusan Hubungan Kerja</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="94%" style="color: #ffffff;">...</td>
+									</tr>
+									</table>
+									<table width="100%" style="font-size:10px">
+									<tr>
+										<td width="6%"/>
+										<td width="84%" align="right">paraf</td>
+										<td width="10%" align="right"><img src="/hrd_employee/static/src/img/PARAF.png" class="img img-responsive" style="width:30px;height:60px;"/></td>
+									</tr>
+									</table>
+								<p/>
+<p><span style="color: #ffffff;">a</span></p>
+<p><span style="color: #ffffff;">a</span></p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="center"><strong>PASAL 2</strong></td>
+									</tr>
+									<tr>
+										<td width="100%" align="center"><strong>Jangka Waktu Kontrak Kerja dan Waktu Dimulainya Masa Kerja</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">1.</td>
+										<td width="94%" align="justify">Kontrak Kerja ini berlaku untuk jangka waktu tertentu selama 1 (satu) tahun terhitung sejak tanggal <strong><span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong> dan akan berakhir pada tanggal <strong><span t-field="o.date_end" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong></td>
+									</tr>
+									<tr>
+										<td width="6%">2.</td>
+										<td width="94%" align="justify">Dengan berakhirnya jangka waktu perjanjian tersebut dalam ayat 1 pasal ini apabila salah satu pihak tidak menginginkan adanya perpanjangan, maka hubungan kerja antara Para Pihak menjadi putus tanpa syarat apapun dan berakhir dengan sendirinya oleh karena itu perjanjian ini menjadi tidak berlaku lagi.</td>
+									</tr>
+									<tr>
+										<td width="6%">3.</td>
+										<td width="94%" align="justify">Apabila salah satu pihak menghendaki berakhirnya perjanjian ini sebelum waktunya yang disebabkan oleh hal-hal atau alasan-alasan selain yang tercantum dalam ayat (1) dan (2) dari Pasal ini, maka pihak yang menghendaki tersebut harus memberitahukan pihak lainnya secara tertulis dengan alasan yang jelas <em>(putusnya Perjanjian Induk Pihak Pertama dengan klien)</em> dalam waktu paling lambat 30 <em>(tiga puluh)</em> hari kalender sebelum tanggal pengakhiran perjanjian ini yang dikendaki oleh pihak tersebut, dengan kewajiban pembayaran sampai dengan hari kerja terakhir (proporsional) dalam bulan berjalan.</td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="center"><strong>PASAL 3</strong></td>
+									</tr>
+									<tr>
+										<td width="100%" align="center"><strong>Penempatan Dan Mutasi</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">1.</td>
+										<td width="94%" align="justify">Perusahaan menempatkan Karyawan sebagai Karyawan Kontrak untuk jangka Waktu Tertentu <em>(KKWT)</em> yang status tempat penerimaannya di Jakarta atau Tempat lain yang ditentukan oleh Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%">2.</td>
+										<td width="94%" align="justify">Karyawan bersedia ditempatkan/dimutasikan/ditugaskan dibagian/divisi lain dan atau ditempatkan di mana saja dikemudian hari sesuai dengan kepentingan Perusahaan.</td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="center"><strong>PASAL 4</strong></td>
+									</tr>
+									<tr>
+										<td width="100%" align="center">Hak-hak Karyawan</td>
+									</tr>
+									<tr>
+										<td width="100%" align="center"><strong>Pengupahan dan fasilitas lainnya</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">1.</td>
+										<td width="94%" align="justify">Selama masa berlakunya Kontrak Kerja ini Perusahaan memberikan imbalan atas jasa/pekerjaan kepada Karyawan berupa Upah <strong>“Gross”</strong>/bulan, yang akan dibayarkan bersamaan dengan Karyawan lainnya pada tanggal yang telah ditentukan oleh Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%">2.</td>
+										<td width="94%" align="justify">Fasilitas lainnya diatur tersendiri dan diberikan sesuai dengan ketentuan yang berlaku dalam Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%">3.</td>
+										<td width="94%" align="justify">Untuk fasilitas pengobatan diberikan sesuai plan masing-masing Karyawan sesuai tingkatannya :</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%">-</td>
+										<td width="88%" align="justify">Fasilitas Rawat Jalan, setiap Karyawan mendapat penggantian sebesar 80% dari Rp 40.000,- <em>(empat puluh ribu rupiah)</em> dengan pengertian sehari maksimal 1 (satu) kali kunjungan dokter.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">-</td>
+										<td width="88%" align="justify">Fasilitas Rawat Inap, besar penggantian disesuaikan dengan platform yang berlaku bagi karyawan yang bersangkutan, namun apabila sampai terjadi excess klaim (kelebihan biaya rawat inap) maka atas kelebihan tagihan biaya rawat inap akan menjadi tanggung jawab Karyawan itu sendiri, bukan Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">-</td>
+										<td width="88%" align="justify">Khusus divisi Guard mengikuti fasilitas kesehatan yang diberikan oleh project atau klien masing-masing</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="88%" style="color: #ffffff;">...</td>
+									</tr>
+									</table>
+									<table width="100%" style="font-size:10px">
+									<tr>
+										<td width="6%"/>
+										<td width="84%" align="right">paraf</td>
+										<td width="10%" align="right"><img src="/hrd_employee/static/src/img/PARAF.png" class="img img-responsive" style="width:30px;height:60px;"/></td>
+									</tr>
+									</table>
+								<p/>
+<p><span style="color: #ffffff;">a</span></p>
+<p><span style="color: #ffffff;">a</span></p>
+<p><span style="color: #ffffff;">a</span></p>
+<p><span style="color: #ffffff;">a</span></p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="center"><strong>PASAL 5</strong></td>
+									</tr>
+									<tr>
+										<td width="100%" align="center"><strong>Pajak Penghasilan</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<p align="justify">Sesuai dengan Surat Keputusan Direktur Jendral Pajak No. Kep.41/PJ23/1988, Karyawan wajib membayar Pajak Penghasilan atas penghasilan yang diterimanya dari Perusahaan yang cara pembayaran maupun perhitungannya diatur dalam ketentuan perhitungan PPh Pasal 21.</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="center"><strong>PASAL 6</strong></td>
+									</tr>
+									<tr>
+										<td width="100%" align="center"><strong>Kewajiban Dasar Karyawan</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">1.</td>
+										<td width="94%" align="justify">Karyawan wajib melaksanakan dan tunduk pada semua ketentuan/peraturan/tata tertib yang berlaku bagi seluruh Karyawan di lingkungan Perusahaan, baik yang tertulis maupun yang tidak tertulis.</td>
+									</tr>
+									<tr>
+										<td width="6%">2.</td>
+										<td width="94%" align="justify">Karyawan wajib mencurahkan segala keahlian, pengetahuan dan ketrampilan kerjanya hingga mencapai prestasi kerja yang ditetapkan Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%">3.</td>
+										<td width="94%" align="justify">Karyawan wajib mentaati semua pengarahan maupun perintah atasannya serta menjalin hubungan kerjasama yang baik dengan sesama rekan kerja.</td>
+									</tr>
+									<tr>
+										<td width="6%">4.</td>
+										<td width="94%" align="justify">Karyawan wajib menyimpan semua keterangan yang menyangkut rahasia Perusahaan yang didapat oleh karena jabatannya maupun di dalam pergaulannya di lingkungan Perusahaan (PT. TAG dan dimana karyawan di tempatkan)</td>
+									</tr>
+									<tr>
+										<td width="6%">5.</td>
+										<td width="94%" align="justify">Karyawan  senantiasa berusaha untuk mendorong efisiensi waktu sampai ke tingkat maksimal dan menghindarkan setiap kegiatan yang dapat menghambat kemajuan Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%">6.</td>
+										<td width="94%" align="justify">Karyawan  wajib memelihara kebersihan didalam lingkungan kerjanya masing-masing dan kerapihan dirinya.</td>
+									</tr>
+									<tr>
+										<td width="6%">7.</td>
+										<td width="94%" align="justify">Karyawan  wajib menyimpan, memelihara, serta merawat dengan baik semua alat-alat kerja, baik yang disediakan untuk pekerjaan Karyawan, maupun milik Perusahaan lainnya yang tersedia di tempat dan ruangan kerja Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%">8.</td>
+										<td width="94%" align="justify">Karyawan wajib menjaga nama baik Perusahaan dan membela kepentingan Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%">9.</td>
+										<td width="94%" align="justify">Karyawan wajib bersikap tenang dan tertib pada waktu berada di lingkungan Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%">10.</td>
+										<td width="94%" align="justify">Karyawan wajib dengan segera melaporkan secara tertulis kepada Perusahaan mengenai setiap perubahan alamat/tempat tinggal, susunan keluarga (perkawinan,perceraian, kelahiran dan kematian) serta latihan dan pendidikan tambahan yang diikuti.</td>
+									</tr>
+									<tr>
+										<td width="6%">11.</td>
+										<td width="94%" align="justify">Karyawan, pada saat diperlukan, wajib menjunjung tinggi dan mendahulukan kepentingan Perusahaan di atas kepentingan pribadi.</td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="center"><strong>PASAL 7</strong></td>
+									</tr>
+									<tr>
+										<td width="100%" align="center"><strong>Peraturan dan Tata Tertib</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">1.</td>
+										<td width="94%" align="justify">Perusahaan  menyetujui bahwa disiplin dan tata tertib harus ditegakkan dan ditingkatkan terus-menerus</td>
+									</tr>
+									<tr>
+										<td width="6%">2.</td>
+										<td width="94%" align="justify">Tata Tertib Kerja
+										<br>Setiap Karyawan harus memperhatikan dan mentaati hal-hal sebagai berikut :</br></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%">a.</td>
+										<td width="88%" align="justify">Semua peraturan, ketetapan dan instruksi yang telah diumumkan oleh Pemerintah dan Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">b.</td>
+										<td width="88%" align="justify">Semua instruksi, petunjuk mengenai pelaksanaan pekerjaan yang diberikan oleh Perusahaan atau atasan langsung.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">c.</td>
+										<td width="88%" align="justify">Tidak dibenarkan untuk mengalihkan kepada Pihak Ketiga dan tidak dibenarkan untuk melaksanakan tugas atau pekerjaan yang bukan menjadi tanggung jawabnya atau mempergunakan dan memperbaiki alat-alat Perusahaan tanpa izin dari Kepala Bagiannya.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">d.</td>
+										<td width="88%" align="justify">Harus segera melaporkan kepada Kepala Bagiannya apabila mengetahui hilang atau rusaknya barang milik Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="88%" align="right" style="color: #ffffff;">a</td>
+									</tr>
+									</table>
+									<table width="100%" style="font-size:10px">
+									<tr>
+										<td width="6%"/>
+										<td width="84%" align="right">paraf</td>
+										<td width="10%" align="right"><img src="/hrd_employee/static/src/img/PARAF.png" class="img img-responsive" style="width:25px;height:50px;"/></td>
+									</tr>
+									</table>
+									<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="88%" style="color: #ffffff;">..</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">e.</td>
+										<td width="88%" align="justify">Karyawan  yang dengan sengaja,ceroboh atau lalai sehingga mengakibatkan rusak atau hilangnya barang milik Perusahaan yang dikuasakan atau dipercayakan kepadanya, diharuskan menggantinya sesuai dengan harga barang tersebut.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">f.</td>
+										<td width="88%" align="justify">Dilarang membawa pergi alat-alat kerja atau setiap barang lainnya milik Perusahaan dari atau keluar tempat kerja tanpa izin tertulis dari yang berwenang.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">g.</td>
+										<td width="88%" align="justify">Dilarang berjualan/berdagang dalam bentuk apapun di dalam lingkungan Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">h.</td>
+										<td width="88%" align="justify">Selama jam-jam kerja tidak diperbolehkan meninggalkan tempat kerja atau menerima tamu pribadi tanpa izin atasannya.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">i.</td>
+										<td width="88%" align="justify">Selama jam kerja tidak boleh melakukan pekerjaan yang tidak ada hubungannya dengan pekerjaannya atau kepentingan Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">j.</td>
+										<td width="88%" align="justify">Selama bekerja pada Perusahaan, tidak diperbolehkan mempunyai ikatan hubungan kerja dalam bentuk apapun dengan Pihak Ketiga kecuali telah mendapat persetujuan tertulis terlebih dahulu dari Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">k.</td>
+										<td width="88%" align="justify">Selama bekerja pada Perusahaan, Karyawan tidak diperbolehkan melakukan usaha apapun baik secara langsung maupun tidak langsung kecuali telah mendapat persetujuan tertulis terlebih dahulu dari Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">l.</td>
+										<td width="88%" align="justify">Karyawan  yang tidak dapat masuk kerja karena sakit atau suatu keperluan mendesak, harus segera memberitahukan kepada atasannya langsung melalui telepon.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">m.</td>
+										<td width="88%" align="justify">Setiap Karyawan  wajib memakai kartu Identitas Karyawan  yang diberikan Perusahaan pada waktu masuk kerja dan selama jam-jam kerja dan harus dijaga jangan sampai rusak/hilang.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">n.</td>
+										<td width="88%" align="justify">Setiap Karyawan wajib memakai pakaian kerja sesuai ketentuan Perusahaan, sebagai berikut :</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="15%" style="color: #ffffff;">..</td>
+										<td width="30%">Staff Operasional</td>
+										<td width="2%">:</td>
+										<td width="53%">Seragam operasional (Kemeja/Kaos berkerah warna Hitam Bordir PT.TAG), celana Panjang bahan warna Hitam, dan sepatu kerja hitam bukan sepatu kets</td>
+									</tr>
+									<tr>
+										<td width="15%" style="color: #ffffff;">..</td>
+										<td width="30%">Kasir</td>
+										<td width="2%">:</td>
+										<td width="53%">Wearpack PT. TAG dan sendal jepit.</td>
+									</tr>
+									<tr>
+										<td width="15%" style="color: #ffffff;">..</td>
+										<td width="30%">Satpam</td>
+										<td width="2%">:</td>
+										<td width="53%">PDH (Putih Biru) dan PDL (Hitam hitam) dan sepatu kerja.
+</td>
+									</tr>
+									<tr>
+										<td width="15%" style="color: #ffffff;">..</td>
+										<td width="30%">staff/Back Office</td>
+										<td width="2%">:</td>
+										<td width="53%">Pakaian kerja sesuai dengan Keputusan Direksi Yang berlaku, dan sepatu kerja bukan sendal atau selop.</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%">o.</td>
+										<td width="88%" align="justify">Tanpa izin tertulis dari Perusahaan, tidak diperkenankan melakukan pemotretan dalam lingkungan Perusahaan.</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">3.</td>
+										<td width="94%" align="justify">Mangkir
+										<br>Karyawan  yang mangkir dianggap melakukan pelanggaran tata tertib dan dapat dipotong hak atas gajinya.</br> 
+										<br>Definisi mangkir :</br></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%" align="center">-</td>
+										<td width="88%" align="justify">tidak masuk bekerja (absen) tanpa pemberitahuan terlebih dahulu (per telepon) dan alasan yang jelas  atau tanpa Surat sakit dari dokter atau puskesmas setempat</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%" align="center">-</td>
+										<td width="88%" align="justify">meninggalkan tempat kerja pada jam-jam kerja tanpa izin tertulis dari atasan langsung dan diketahui oleh Personalia</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%" align="center">-</td>
+										<td width="88%" align="justify">melaksanakan cuti tanpa izin tertulis dari atasan langsung dan diketahui oleh Personalia.</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">4.</td>
+										<td width="94%" align="justify">Pelanggaran Peraturan dan Tata Tertib, Peringatan dan Sanksi</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%" align="center">I.</td>
+										<td width="88%" align="justify">Karyawan yang melakukan pelanggaran peraturan dan tata tertib akan diberi peringatan secara lisan atau tertulis dalam Bentuk Surat Peringatan apabila Karyawan didapati :</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">a.</td>
+										<td width="82%" align="justify">Sering datang terlambat  dengan alasan yang kurang dapat dipercaya.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">b.</td>
+										<td width="82%" align="justify">Menolak untuk mentaati perintah atau untuk melaksanakan pekerjaan yang sesuai dengan tugas dan tanggung jawabnya.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">c.</td>
+										<td width="82%" align="justify">Dengan sengaja membuat dirinya dalam keadaan sedemikian rupa sehingga tidak dapat menjalankan pekerjaan yang diberikan kepadanya.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">d.</td>
+										<td width="82%" align="justify">Meng-absenkan kartu absensi Karyawan lainnya atau kartunya diisikan oleh Karyawan lain sepengetahuannya sendiri.</td>
+									</tr>
+									</table>
+									<table width="100%" style="font-size:10px">
+									<tr>
+										<td width="6%"/>
+										<td width="84%" align="right">paraf</td>
+										<td width="10%" align="right"><img src="/hrd_employee/static/src/img/PARAF.png" class="img img-responsive" style="width:25px;height:50px;"/></td>
+									</tr>
+									</table>
+									<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">e.</td>
+										<td width="82%" align="justify">Sering meninggalkan pekerjaannya untuk kepentingan pribadi.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">f.</td>
+										<td width="82%" align="justify">Sering datang terlambat  dengan alasan yang kurang dapat dipercaya.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">g.</td>
+										<td width="82%" align="justify">Melakukan pelanggaran-pelanggaran lainnya yang tidak tercantum dalam perjanjian ini tetapi termuat dalam Tata Tertib perusahaan baik tertulis/tidak.</td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%" align="center">II.</td>
+										<td width="88%" align="justify">Surat Peringatan diberikan dengan maksud memberikan koreksi atau  mengarahkan tingkah laku Karyawan agar memiliki ethos kerja yang baik.</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%" align="center">III.</td>
+										<td width="88%" align="justify">Dengan adanya peringatan lisan atau tertulis tersebut akan mempengaruhi penilaian terhadap disiplin Karyawan.</td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="center"><strong>PASAL 8</strong></td>
+									</tr>
+									<tr>
+										<td width="100%" align="center"><strong>Hari Kerja, Jam Kerja dan Lembur</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<p align="justify">Para Pihak telah sepakat hari kerja, waktu kerja, mulai, selesai dan waktu istirahat diatur oleh Pihak Perusahaan sesuai jadwal dan jam kerja yang telah ditetapkan menurut ketentuan yang berlaku di dalam Perusahaan dan sewaktu - waktu Pihak Perusahaan berhak merubah waktu kerja Pihak Karyawan dengan tetap mengacu kepada ketentuan yang berlaku dan atau Peraturan Perusahaan, sebagai berikut :</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">1.</td>
+										<td width="94%" align="justify">Waktu Kerja terdiri dari 8 (delapan) jam kerja atau 40 (empat puluh) jam dalam satu minggu yang dibagi menurut waktu/periode kerja yang ditetapkan Perusahaan, disesuaikan dengan kebutuhan perusahaan. 
+										<br>Hari Kerja Perusahaan adalah 365 (tiga ratus enam puluh lima) hari dengan pengertian bahwa di dalam penerapan pengaturan jadwal shift kerja, diperhitungkan : Cuti, Off dan Hari Libur Resmi/Nasional. Dengan demikian jumlah Off menjadi bertambah sejumlah hari libur nasional yang ada di dalam tahun kalender yang berjalan.</br></td>
+									</tr>
+									<tr>
+										<td width="6%">2.</td>
+										<td width="94%" align="justify">Karyawan bersedia dan sanggup untuk menjalani pergantian shift kerja sesuai dengan peraturan/ketentuan Perusahaan yang berlaku.</td>
+									</tr>
+									<tr>
+										<td width="6%">3.</td>
+										<td width="94%" align="justify">Apabila diperlukan untuk kepentingan Perusahaan, Jadwal Jam Kerja dapat bergantung pada kegiatan dan keperluan kerja dan Karyawan harus siap siaga bertugas selama hari-hari istirahat, hari-hari besar keagamaan yang dianutnya, hari libur resmi lainnya.</td>
+									</tr>
+									<tr>
+										<td width="6%">4.</td>
+										<td width="94%" align="justify">Dasar perhitungan upah lembur akan dilakukan sesuai dengan Surat Keputusan Menteri Tenaga Kerja  No.KEP- 72/MEN/1984.</td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="center"><strong>PASAL 9</strong></td>
+									</tr>
+									<tr>
+										<td width="100%" align="center"><strong>Pemutusan Hubungan Kerja</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">1.</td>
+										<td width="94%" align="justify">perjanjian kerja ini berakhir dengan sendirinya apabila :</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%">a)</td>
+										<td width="94%" align="justify">Jangka waktu perjanjian berakhir</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">b)</td>
+										<td width="94%" align="justify">Karyawan  meninggal dunia</td>
+									</tr>
+                                                                        <tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="94%" align="justify"><span style="color: #ffffff;">aaa</span></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">c)</td>
+										<td width="94%" align="justify">Perusahaan (PT. Tunas Artha Gardatama) tidak lagi terikat kontrak kerja dengan klien</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">d)</td>
+										<td width="94%" align="justify">Adanya pengurangan karyawan atas dari permintaan dari klien dan adanya penutupan cabang oleh klien dimana karyawan ditempatkan, maka perjanjian ini akan berakhir dengan sendirinya, tanpa adanya tuntuan berupa apapun ke pihak perusahaan (PT. TAG) atau perusahaan tempat dimana karyawan ditempatkan</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">2.</td>
+										<td width="94%" align="justify">Penghentian Perjanjian Kerja</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%">(1)</td>
+										<td width="88%" align="justify">Sebelum berakhirnya Perjanjian Kerja, Perusahaan dapat menghentikan Perjanjian Kerja ini dengan pemberitahuan tertulis kepada Karyawan minimal 1(satu) minggu sebelumnya bila Perusahaan menilai Karyawan benar-benar tidak mampu bekerja sesuai tugas yang diberikan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="88%" align="justify" style="color: #ffffff;">..</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:10px">
+									<tr>
+										<td width="6%"/>
+										<td width="86%" align="right">paraf</td>
+										<td width="10%" align="right"><img src="/hrd_employee/static/src/img/PARAF.png" class="img img-responsive" style="width:25px;height:50px;"/></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="88%" align="justify" style="color: #ffffff;">..</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="88%" align="justify" style="color: #ffffff;">..</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">(2)</td>
+										<td width="88%" align="justify">Perusahaan juga dapat dengan seketika mengakhiri Perjanjian Kerja dengan pemberitahuan 1 (satu) hari sebelumnya bila Karyawan  melakukan pelanggaran berat termasuk tetapi tidak terbatas pada :</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">a.</td>
+										<td width="94%" align="justify">Tidak memperhatikan tata tertib/peraturan yang berlaku mengenai ketentuan permohonan cuti/ijin tidak masuk kerja secara tertulis yang harus disahkan oleh Atasannya sebelum pelaksanaan cuti/ijin yang dimaksud.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">b.</td>
+										<td width="94%" align="justify">Masih melakukan pelanggaran disiplin kerja dan tata tertib yang berlaku, yang sama bentuknya dan berulang walau sebelumnya telah diberikan surat peringatan ketiga (terakhir).</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">c.</td>
+										<td width="94%" align="justify">Penipuan, pencurian dan segala bentuk penggelapan atau manipulasi barang/uang milik pengusaha atau teman sekerja atau milik teman pengusaha.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">d.</td>
+										<td width="94%" align="justify">Memberikan keterangan palsu atau yang dipalsukan atau sengaja menutup-nutupi kesalahan yang dilakukan oleh rekan kerjanya sehingga merugikan perusahaan dan kepentingan Negara.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">e.</td>
+										<td width="94%" align="justify">Mabok, minum minuman keras yang memabokkan, madat, memakai obat bius atau menyalahgunakan obat-obat terlarang atau obat-obat perangsang lainnya di tempat kerja yang dilarang oleh peraturan perundang-undangan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">f.</td>
+										<td width="94%" align="justify">Melakukan perbuatan asusila atau melakukan perjudian di tempat kerja.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">g.</td>
+										<td width="94%" align="justify">Menyerang, mengintimidasi atau menipu pengusaha atau teman sekerja dan memperdagangkan barang terlarang baik dalam lingkungan perusahaan maupun diluar lingkungan perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">h.</td>
+										<td width="94%" align="justify">Menganiaya, mengancam secara physik atau mental, menghina secara kasar pengusaha atau keluarga pengusaha atau teman sekerja.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">i.</td>
+										<td width="94%" align="justify">Membujuk Pengusaha atau teman sekerja untuk melakukan sesuatu perbuatan yang bertentangan dengan hukum atau kesusilaan serta peraturan perundang-undangan yang berlaku.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">j.</td>
+										<td width="94%" align="justify">Membongkar atau membocorkan rahasia perusahaan atau mencemarkan nama baik Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">k.</td>
+										<td width="94%" align="justify">Menolak perintah yang layak dari Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">l.</td>
+										<td width="94%" align="justify">Menjalankan kewajiban secara serampangan dan tidak bertanggung jawab sehingga berakibat kerugian bagi perusahaan</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">m.</td>
+										<td width="94%" align="justify">Mengajak teman sekerja untuk bersekongkol (memprovokasi) untuk melakukan perbuatan - perbuatan yang bersifat melanggar hukum dalam bentuk apa pun yang bertujuan  merugikan Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">n.</td>
+										<td width="94%" align="justify">mengajak teman sekerja untuk bersekongkol (memprovokasi) untuk melakukan perbuatan - perbuatan yang bersifat melanggar hukum dalam bentuk apa pun yang bertujuan  merugikan Perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%"/>
+										<td width="6%">o.</td>
+										<td width="94%" align="justify">hal-hal lain yang diatur dalam Tata Tertib Kerja baik yang tertulis mau pun yang tidak tertulis tetapi diatur dalam lingkungan Perusahaan.</td>
+									</tr>
+								</table>
+								<table width="100%">
+									<tr>
+										<td width="6%"/>
+										<td width="94%" align="justify">Terhadap hal-hal yang telah disebutkan di atas apabila dilanggar maka perjanjian ini menjadi batal demi hukum dimana Pihak Karyawan dianggap lalai sehingga tidak diperlukan lagi surat teguran dan atau surat lain yang serupa dengan itu atau adanya putusan hakim tertulis lebih dahulu. </td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">3.</td>
+										<td width="94%" align="justify">Pengunduran Diri :</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%">a)</td>
+										<td width="88%" align="justify">Karyawan berhak mengundurkan diri dari Perusahaan sebelum berakhirnya Perjanjian Kerja ini dengan memberitahukan maksudnya tersebut 1 (satu) bulan sebelum tanggal efektif pengunduran dirinya.  Apabila ketentuan tersebut diatas tidak dipenuhi, maka konsekwensi kelengkapan dokumen persyaratan masuk kerja dan surat keterangan kerja bagi karyawan yang dianggap layak menerimanya akan diberikan setelah jangka waktu 1 (satu) bulan dari tanggal efektif pengunduran diri Karyawan dan harus diambil sendiri oleh yang bersangkutan, tidak dapat diwakilkan orang lain kecuali ada Surat Kuasa tertulis di atas meterai yang cukup dan ditandatangani oleh Karyawan yang bersangkutan . Hal ini dimaksudkan untuk tertib administrasi.</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:10px">
+									<tr>
+										<td width="6%"/>
+										<td width="86%" align="right">paraf</td>
+										<td width="10%" align="right"><img src="/hrd_employee/static/src/img/PARAF.png" class="img img-responsive" style="width:25px;height:50px;"/></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="6%">b)</td>
+										<td width="88%" align="justify">Bilamana di kemudian hari diketahui bahwa karyawan bermasalah dengan pihak kreditur atau pihak-pihak lain yang terkait dengan masalah keuangan yang mana dapat menggangu stabilitas kerja Karyawan maupun perusahaan maka Karyawan tersebut bersedia mengundurkan diri dari perusahaan secara sukarela.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">c)</td>
+										<td width="88%" align="justify">Karyawan, tidak dibenarkan mengikuti Demo atau masuk dalam suatu Organisasi atau Serikat Pekerja dalam bentuk apapun. Apabila dikemudian hari diketahui Anggota turut serta dalam hal tersebut diatas, maka Anggota bersedia mengundurkan diri dari perusahaan (PT.TAG), tanpa adanya tuntutan berupa apapun ke pihak perusahaan (PT.TAG) atau Perusahaan tempat dimana Anggota Satuan Pengamanan ditempatkan</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">d)</td>
+										<td width="88%" align="justify">Karyawan yang selama 3 (tiga) hari kerja berturut-turut atau lebih tanpa keterangan tertulis dengan bukti yang sah, maka karyawan dimaksud dianggap telah memutuskan hubungan kerja atas kemauan sendiri, dan berlaku ketetapan pada ayat (a) angka 3.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">e)</td>
+										<td width="88%" align="justify">Karyawan yang mengakhiri kesepakatan kerja ini sebelum waktunya berakhir tidak berhak menerima gaji untuk sisa kontrak yang belum dikerjakan. </td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">f)</td>
+										<td width="88%" align="justify">Apabila Saudara selama  Masa Kontrak Kerja  tidak masuk kerja tanpa ada kabar/berita/alasan yang jelas selama 3 (tiga ) hari baik secara berturut-turut maupun tidak berturut-turut Saudara dianggap mengundurkan diri dan dikenakan ganti rugi ke Perusahaan sebesar Rp. 2.000.000,- ( Dua Juta Rupiah).</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">g)</td>
+										<td width="88%" align="justify">Bagi Karyawan yang mengundurkan diri sebelum masa kontrak berakhir, maka saudara dikenakan pinalty sebesar Rp. 2.000.000,-(Dua Juta Rupiah).</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">h)</td>
+										<td width="88%" align="justify">Dengan berakhirnya/diberhentikannya Perjanjian Kerja atau pengunduran diri karyawan wajib menyerahkan kembali kepada Perusahaan semua bahan, materi, dokumen, peralatan dan perlengakapan bekerja yang selama Perjanjian Kerja ini diberikan/dipinjamkan kepada karyawan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">i)</td>
+										<td width="88%" align="justify">Segala hasil kerja karyawan selama Perjanjian ini dengan sendirinya menjadi hak dan milik Perusahaan tanpa dapat diganggu gugat lagi.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">j)</td>
+										<td width="88%" align="justify">Menyelesaikan segala bentuk kewajiban lain yang berkaitan dengan keuangan.</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="6%">k)</td>
+										<td width="88%" align="justify">Jika dipandang perlu oleh Pihak Perusahaan, Pihak Karyawan  bersedia pada waktu meninggalkan ruangan dan atau halaman Perusahaan, diperiksa barang - barang serta badannya oleh orang yang ditunjuk untuk mewakili Perusahaan. tertib administrasi.</td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="center"><strong>PASAL 10</strong></td>
+									</tr>
+									<tr>
+										<td width="100%" align="center"><strong>Aturan Tambahan</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="justify">Hak dan kewajiban lain yang tidak tercantum dalam Surat Perjanjian Kerja Untuk Waktu Tertentu ini, diatur oleh Peraturan Perusahaan dan Peraturan-Peraturan Direksi secara tersendiri yang merupakan bagian yang tak terpisahkan dari perjanjian ini.</td>
+									</tr>
+									<tr>
+										<td width="100" style="color: #ffffff;">..</td>
+									</tr>
+									<tr>
+										<td width="100%" align="justify">Penerimaan karyawan ini <strong>didasarkan atas praduga</strong> bahwa informasi yang diberikan oleh Pihak Karyawan benar adanya.</td>
+									</tr>
+									<tr>
+										<td width="100%" align="justify">Jika dikemudian hari ternyata terdapat pemalsuan, manipulasi atau ketidak sesuaian baik disengaja atau tidak maka Pihak Perusahaan berhak memutuskan hubungan kerja dengan Pihak Karyawan  tanpa kompensasi dalam bentuk apa pun, berupa apa pun dan berapa pun.</td>
+									</tr>
+									<tr>
+										<td width="100%" align="justify">Untuk keperluan tersebut para pihak dengan ini melapaskan ketentuan-ketentuan yang tercantum dalam pasal 1266 dan pasal 1267 Kitab Undang-Undang Hukum Perdata Indonesia, dalam hal ini bila terjadi demikian, Pihak Perusahaan tidak berkewajiban memberi ganti rugi apa pun juga kepada Pihak Karyawan.</td>
+									</tr>
+									<tr>
+										<td width="100%" style="color: #ffffff;">..</td>
+									</tr>
+									<tr>
+										<td width="100%" style="color: #ffffff;">..</td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:10px">
+									<tr>
+										<td width="6%"/>
+										<td width="84%" align="right">paraf</td>
+										<td width="10%" align="right"><img src="/hrd_employee/static/src/img/PARAF.png" class="img img-responsive" style="width:20px;height:40px;"/></td>
+									</tr>
+								</table>
+								<p/>
+								<p style="color: #ffffff;">.</p>
+								<p style="color: #ffffff;">.</p>
+								<p style="color: #ffffff;">.</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="center"><strong>PASAL 11</strong></td>
+									</tr>
+									<tr>
+										<td width="100%" align="center"><strong>Aturan Pengambilan Ijazah</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<p align="justify">Pengambilan ijazah bagi karyawan yang sudah mengundurkan diri / Habis Kontrak Kerja, batas maksimal pengambilan Ijazah adalah 2 (dua) bulan dari tanggal pengunduran diri/ Habis Kontrak Kerja. Apabila Karyawan dalam pengambilan Ijazah melebihi dari tanggal yang ditentukan maka akan dikenakan biaya sebesar Rp. 200.000,-(Dua Ratus Ribu Rupiah) Per bulan.</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="center"><strong>PASAL 12</strong></td>
+									</tr>
+									<tr>
+										<td width="100%" align="center"><strong>Perselisihan</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<p align="justify">Pihak Karyawan  dengan ini menerangkan telah mengetahui dan mengerti dengan benar isi Perjanjian Kerja ini dan Peraturan serta Tata Tertib yang berlaku di Perusahaan.
+								<br>Untuk segala urusan mengenai Perjanjian Kerja ini dengan segala akibatnya oleh para pihak sepakat akan diselesaikan secara musyawarah dan mufakat.</br></p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" align="center"><strong>PASAL 13</strong></td>
+									</tr>
+									<tr>
+										<td width="100%" align="center"><strong>Penutup</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<p align="justify">Demikianlah Surat Perjanjian Kerja Untuk Waktu Tertentu ini dibuat dalam rangkap 2 (dua), bermeterai cukup dan ditanda-tangani atas kesepakatan kedua belah pihak dalam keadaan sehat jasmani dan rohani dan tanpa ada paksaan dari pihak manapun, dan masing-masing mempunyai kekuatan hukum yang sama.</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td style="width:40%"><strong>Pihak Karyawan</strong></td>
+										<td style="width:30%"/>
+										<td style="width:30%"><strong>Pihak Perusahaan</strong></td>
+									</tr>
+								</table>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td style="width:40%"><strong><span t-field="o.employee_id.employee_name"/></strong></td>
+										<td style="width:30%"/>
+										<td style="width:30%"><strong><span style="text-decoration: underline;" t-field="o.nama_pihak.employee_name"/></strong></td>
+									</tr>
+									<tr>
+										<td style="width:40%"/>
+										<td style="width:20%"/>
+										<td style="width:40%"><strong><span t-field="o.nama_pihak.job_id.name"/></strong></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+				</t>
+			</t>
+		</template>
+
+	</data>
+</openerp>

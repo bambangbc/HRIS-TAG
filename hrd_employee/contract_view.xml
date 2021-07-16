@@ -1,0 +1,112 @@
+<openerp>
+	<data>
+
+        <!--contract Type-->
+        <record id="hr_contract_type_view_form3" model="ir.ui.view">
+            <field name="name">hr.contract.type.view.form2</field>
+            <field name="model">hr.contract.type</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_type_view_form"/>
+            <field name="arch" type="xml">     
+                <form string="Contract Type" position="replace">  
+                    <group>   
+                        <field name="name"/>
+                        <field name='code'/>      
+                        <field name="bank"/>
+                        <field name="nbank"/> 
+                    </group>
+                </form>                       
+            </field>
+        </record>
+
+		<record id="hr_contract_view_form4" model="ir.ui.view">
+            <field name="name">hr.contract.view.form</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <field name="employee_id" position="after">
+                    <field name='tidakaktif_id'/>
+                    <field name='nama'/>
+                    <field name="bagian"/>
+                </field>
+                <field name="date_start" position="replace">
+                    <field name="date_start" on_change="onchange_date_from(date_start,contract_type)"/>-
+                </field>
+                <page string="Work Permit" position="after">
+                    <page string="Report Contract" name="information" position="after">
+                        <group>
+                            <field name="contract_type"/>
+                            <field name="kontrak_sebelum"/>
+                            <field name="nama_pihak"/>
+                            <field name="hari"/>
+                            <field name="tanggal_rpt" attrs="{'invisible': [('contract_type', '!=', 'pkwt')]}"/>
+                            <field name="bulan_rpt" attrs="{'invisible': [('contract_type', '!=', 'pkwt')]}"/>
+                            <field name="tahun_rpt" attrs="{'invisible': [('contract_type', '!=', 'pkwt')]}"/>
+                            <field name="datess" attrs="{'invisible': [('contract_type', '!=', 'pkwt')]}"/>
+                        </group>
+                    </page>    
+                </page>    
+            </field>
+        </record>
+
+        <record id="hr_contract_view_tree" model="ir.ui.view">
+            <field name="name">hr.contract.view.tree</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_tree"/>
+            <field name="arch" type="xml">
+                <tree string="Contracts" position="replace">
+                    <tree string="Contracts" colors="red:kont_bol == 0">
+                        <field name="name"/>
+                        <field name="employee_id"/>
+                        <field name="nama"/>
+                        <field name="type_id"/>
+                        <field name="job_id"/>
+                        <field name="working_hours"/>
+                        <field name="date_start"/>
+                        <field name="date_end"/>
+                        <field name="wage" invisible="1"/>
+                        <field name="kont_bol" invisible="1"/>
+                    </tree>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.sequence.type" id="hr_contract_code_sequence">
+            <field name="name">Code sequence hr contract</field>
+            <field name="code">hr.contract.sequence</field>
+        </record>
+
+        <record forcecreate="1" id="seq_contract_code" model="ir.sequence">
+            <field name="name">Code sequence hr contract</field>
+            <field name="code">hr.contract.sequence</field>
+            <field name="prefix"></field>
+            <field name="padding">4</field>
+        </record>
+
+        <record id="view_contract_filter2" model="ir.ui.view">
+            <field name="name">Contract</field>
+            <field name="model">hr.contract</field>
+            <field name="type">search</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_search"/>
+            <field name="arch" type="xml">
+                <field name="employee_id" position="after">
+                    <field name="nama"/>
+                </field>
+            </field>
+        </record>
+
+        <record forcecreate="1" id="contract_update" model="ir.cron">
+            <field name="name">Update Habis Kontrak</field>
+            <field eval="1" name="active" />
+            <field name="user_id" ref="base.user_root" />
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="False" name="doall" />
+            <field eval="'hr.contract'" name="model" />
+            <field eval="'auto_contract'" name="function" />
+            <field eval="'()'" name="args" />
+            <field name="nextcall">"2016-08-03 06:00:00"</field>
+        </record>
+
+    </data>
+</openerp>

@@ -1,0 +1,205 @@
+<openerp>
+	<data>
+
+        <record model="ir.ui.view" id="laporan_rekap_absen_perorangan_form">
+            <field name="name">laporan rekap absen Perorangan</field>
+            <field name="model">laporan.rekap.absen.perorangan</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Laporan Rekap Absen Perorangan" create="false">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="date_from"/>
+                                <field name="department_id"/>
+                                <field name="lokasi_id"/>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="date_to"/>
+                                <field name="job_id"/>
+                                <field name="flat"/>
+                                 <field name="create_date"/>
+                                <field name='user_id' invisible="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Detail absensi">
+                                <field name='detail_ids'>
+                                    <tree>
+                                        <field name="date"/>
+                                        <field name="shift_id"/>
+                                        <field name="jam_masuk"/>
+                                        <field name="jam_pulang"/>
+                                        <field name="terlambat" widget="float_time"/>
+                                        <field name="pc" widget="float_time"/>
+                                        <field name="spl" widget="float_time"/>
+                                        <field name="lembur" widget="float_time"/>
+                                        <field name="PL" widget="float_time"/>
+                                        <field name="ket"/>
+                                    </tree>
+                                </field>
+                                <group>
+                                    <group>
+                                        <field name="terlambat"/>
+                                        <field name="pc"/>
+                                        <field name="alpa"/>
+                                        <field name="tk"/>
+                                    </group>
+                                    <group>
+                                        <field name="cuti"/>
+                                        <field name="sakit"/>
+                                        <field name="real_lembur"/>
+                                        <field name='lembur'/>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+		<record model="ir.ui.view" id="laporan_rekap_absen_perorangan_tree">
+            <field name="name">laporan rekap absen Perorangan</field>
+            <field name="model">laporan.rekap.absen.perorangan</field>
+            <field name="type">tree</field>
+            <field name="priority">20</field>
+            <field name="arch" type="xml">
+                <tree string="Laporan Rekap Absen Perorangan" create="false">
+                	<field name="name"/>
+                    <field name="user_id" invisible="1"/>
+                    <field name="flat"/>
+                    <field name="department_id"/>
+                    <field name="lokasi_id"/>
+                    <field name="job_id"/>
+                	<field name="date_from"/>
+                	<field name="date_to"/>
+                	<field name="terlambat"/>
+                	<field name="pc"/>
+                	<field name="alpa"/>
+                    <field name="tk"/>
+                	<field name="cuti"/>
+                	<field name="sakit"/>
+                </tree>
+            </field>
+        </record>
+
+         <record model="ir.ui.view" id="laporan_rekap_absen_perdivisi_form">
+            <field name="name">laporan rekap absen Perdivisi</field>
+            <field name="model">laporan.rekap.absen.perdivisi</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Laporan Rekap Absen Perorangan" create="false">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="date_from"/>
+                                <field name="department_id"/>
+                                <field name="lokasi_id"/>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="date_to"/>
+                                <field name= "job_id"/>
+                                <field name="flat"/>
+                                <field name="create_date"/>
+                                <field name="user_id" invisible="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Detail absensi">
+                                <field name='detail_ids'>
+                                    <tree>
+                                        <field name="date"/>
+                                        <field name="shift_id"/>
+                                        <field name="jam_masuk"/>
+                                        <field name="jam_pulang"/>
+                                        <field name="terlambat" widget="float_time"/>
+                                        <field name="pc" widget="float_time"/>
+                                        <field name="spl" widget="float_time"/>
+                                        <field name="lembur" widget="float_time"/>
+                                        <field name="PL" widget="float_time"/>
+                                        <field name="ket"/>
+                                    </tree>
+                                </field>
+                                <group>
+                                    <group>
+                                        <field name="terlambat"/>
+                                        <field name="pc"/>
+                                        <field name="alpa"/>
+                                        <field name="tk"/>
+                                    </group>
+                                    <group>
+                                        <field name="cuti"/>
+                                        <field name="sakit"/>
+                                        <field name="real_lembur"/>
+                                        <field name='lembur'/>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+	    <record model="ir.ui.view" id="laporan_rekap_absen_perdivisi_tree">
+            <field name="name">laporan rekap absen Perdivisi</field>
+            <field name="model">laporan.rekap.absen.perdivisi</field>
+            <field name="type">tree</field>
+            <field name="priority">20</field>
+            <field name="arch" type="xml">
+                <tree string="Laporan Rekap Absen Perdivisi" create="false">
+                	<field name="name"/>
+                    <field name="user_id" invisible="1"/>
+                    <field name="flat"/>
+                    <field name="department_id"/>
+                    <field name="lokasi_id"/>
+                    <field name="job_id"/>
+                	<field name="date_from"/>
+                	<field name="date_to"/>
+                	<field name="terlambat"/>
+                	<field name="pc"/>
+                	<field name="alpa"/>
+                    <field name="tk"/>
+                	<field name="cuti"/>
+                	<field name="sakit"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="rekap_absen_perorangan" model="ir.actions.act_window">
+            <field name="name">Rekap Absen Perorangan</field>
+            <field name="res_model">laporan.rekap.absen.perorangan</field>
+            <field name="view_type">form</field>
+            <field name="domain">[('user_id','=',uid)]</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            action="rekap_absen_perorangan"
+            id="menu_rekap_absen_perorangan"
+            parent="hr_attendance.menu_hr_attendance"
+            name="View Rekap Absen Perorangan"
+            sequence="40"
+        />
+
+        <record id="rekap_absen_divisi" model="ir.actions.act_window">
+            <field name="name">Rekap Absen Perdivisi</field>
+            <field name="res_model">laporan.rekap.absen.perdivisi</field>
+            <field name="view_type">form</field>
+            <field name="domain">[('user_id','=',uid)]</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            action="rekap_absen_divisi"
+            id="menu_rekap_absen_divisi"
+            parent="hr_attendance.menu_hr_attendance"
+            name="View Rekap Absen Perdivisi"
+            sequence="50"
+        />
+
+	</data>
+</openerp>

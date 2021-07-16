@@ -1,0 +1,513 @@
+<openerp>
+    <data>
+
+        <record id="view_department_form21" model="ir.ui.view">
+            <field name="name">hr.department.view.form</field>
+            <field name="model">hr.department</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="hr.view_department_form"/>
+            <field name="arch" type="xml">
+                <field name="parent_id" position="after">
+                    <field name="code"/>
+                </field>
+            </field>
+        </record>
+
+        <record forcecreate="1" id="seq_employee_nik" model="ir.sequence.type">
+            <field name="name">HR Employee NIK</field>
+            <field name="code">hr.employee.nik</field>
+        </record>
+
+        <record forcecreate="1" id="seq_employee_nik1" model="ir.sequence">
+            <field name="name">HR Employee NIK</field>
+            <field name="code">hr.employee.nik</field>
+            <field name="prefix"></field>
+            <field name="padding">6</field>
+        </record>
+
+        <record id="no_mesin_form_view" model="ir.ui.view">
+            <field name="name">no.mesin.view.form</field>
+            <field name="model">no.mesin</field>
+            <field name="arch" type="xml">
+                <form string="No Mesin1">
+                    <sheet>
+                        <group>
+                            <field name="employee_id" readonly="1"/>
+                            <field name="date"/>
+                            <field name="no_mesin"/>
+                            <field name="fingerprint_code"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="no_mesin_tree1_view" model="ir.ui.view">
+            <field name="name">no.mesin.view.tree</field>
+            <field name="model">no.mesin</field>
+            <field name="arch" type="xml">
+                <tree string="No Mesin">
+                    <field name="date"/>
+                    <field name="fingerprint_code"/>
+                    <field name="no_mesin"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="no_mesin_view_search" model="ir.ui.view">
+            <field name="name">no.mesin.view.search</field>
+            <field name="model">no.mesin</field>
+            <field name="arch" type="xml">
+                <search string="Search No Mesin">
+                   <field name="employee_id"/>
+               </search>
+            </field>
+        </record>
+
+        <record id="act_hr_employee_2_hr_mesin" model="ir.actions.act_window">
+            <field name="res_model">no.mesin</field>
+            <field name="view_type">form</field>
+            <field name="name">Update Mesin</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_employee_id': [active_id], 'default_employee_id': active_id}</field>
+        </record>
+
+        <record model="ir.ui.view" id="tab_form_view">
+            <field name="name">employe</field>
+            <field name="model">hr.employee</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='button_box']" position="inside">
+                    <button  name="%(action_view_change_nik)d"
+                        class="oe_stat_button" 
+                        icon="fa-file-o" 
+                        type="action"
+                        string="Update NIK"
+                        groups="base.group_hr_manager">
+                    </button>
+                    <button name="%(act_hr_employee_2_hr_mesin)d"
+                        class="oe_stat_button" 
+                        icon="fa-file-o" 
+                        type="action"
+                        string="Update No Mesin">
+                    </button>
+                </xpath>
+                <label for="work_email" class="oe_edit_only" position="replace"/>
+                <field name="name" position="replace">
+                    <label for="name" class="oe_edit_only" groups="base.group_hr_user"/>
+                    <field name="name"/>
+                    <label for="employee_name" class="oe_edit_only"/>
+                    <field name="employee_name"/>
+                </field>
+                <field name="work_email" position="replace"/>
+                <field name="work_phone" position="replace"/>
+                <!-- <label for="category_ids" class="oe_edit_only" groups="base.group_hr_user" position='replace'/>
+                <field name="category_ids" widget="many2many_tags" placeholder="e.g. Part Time" groups="base.group_hr_user" position='replace'/> -->
+                <field name='address_home_id' position='replace'/>
+                <page string="Public Information" position="replace"> 
+                    <page string="Job &amp; Public Information" groups="base.group_user">				
+                                <group>
+                                    <group string="Contact Information">
+                                       <field name="address_id2" on_change="onchange_alamat(address_id2)" domain="[('category_id','=','LOKASI')]" />
+                                        <field name="work_email" widget="email"/>                                 
+                                        <!-- <field name="work_location2"/> -->
+                                        <field name="coach_id"/>
+                                    </group>
+                                    <group string="Position">
+                                        <!--field name="clas_id"/-->
+                                        <field name="department_id" on_change="onchange_department_id(department_id)"/>
+                                        <!-- <field name="divisi_id"/> -->
+                                        <field name="job_id" options='{"no_open": True}' domain="[('state','!=','old')]" context="{'form_view_ref': 'hr.view_hr_job_employee_form'}"/>
+                                        <!-- <field name="extitle_id"/> -->
+                                        <field name="gol_id"/>
+                                        <!-- <field name="wfield_id"/> -->
+                                        <field name="pansion_id"/>
+                                    </group>
+                                    <group>
+                                        <field name="company_id" groups="base.group_multi_company" on_change="onchange_company(company_id)"/>
+                                        <field name="user_id" on_change="onchange_user(user_id)" string="Related User"/>
+                                    </group>
+                                </group>
+                                <field name="notes" placeholder="Other Information ..." colspan="4"/>
+                            </page>
+                       </page>     
+                   <page string="Personal Information" position="replace">                    
+                         <page string="Personal Information" groups="base.group_hr_user,base.group_user">
+							<group>
+                                    <group string="Informasi Pribadi">
+                                        <group >
+                                            <field name="kelamin"/>
+                                            <field name="blood"/>
+                                            <field name='agama'/>
+                                            <field name="birthday"/>
+                                            <field name="usia"/>
+                                            <field name='marital'/>
+                                            <field name='sjk_tanggal' attrs="{'invisible':[('marital','=','single')]}"/> 
+                                            <field name="mobile_phone"/>
+                                            <!--field name="kota_id"/--> 
+                                            <!--field name="bahasa2_id"/-->
+                                            <field name='country_id'/>
+                                            <field name="bank_account_id"/>
+                                            <field name='address_home_id'/>
+                                            <field name="nik" placeholder="Nomor Induk Karyawan Tidak Aktif"/>
+                                            <!-- <field name="hari_kerja"/> -->
+
+                                        </group>
+                                    </group>							 
+									<group>
+                                    <group string="Pendidikan">
+                                        <field name="type_id"/>
+                                        <field name="bid_id"/>
+                                        <field name="jurusan_id"/>
+                                        <field name="pt_id"/>
+                                        <field name="gelar_id"/>
+                                     </group>
+                                     <newline/>
+                                     <group string="Pajak">
+                                        <!-- <field name="ptkp_id"/> -->
+                                        <field name="npwp"/>
+                                        <field name="jml_anak"/>
+                                     </group>
+                                     <newline/>
+                                     <group string="Asuransi">
+                                        <field name='npp'/>
+                                        <field name='npkj'/>
+                                     </group>
+                                     </group>
+								</group>   
+                                <group>
+								
+                                    <group>
+										<group colspan="4">
+											<group string="Alamat Domisili">
+                                                <field name='country_id1' on_change="onchange_country1(country_id1)"/>
+                                                <field name="prov_id"/>
+                                                <field name="kab_id"/>
+                                                <field name="kec_id"/>
+												<field name='alamat1' placeholder="Alamat Domisili"/>
+												<field name="kodepos" placeholder="ZIP"/>
+												<field name='telp1'/>
+											</group>
+											<newline/>
+											<group string="Alamat Sesuai KTP">
+                                                <field name="country_id2" on_change="onchange_country2(country_id2)"/>
+                                                <field name="prov_id2"/>
+                                                <field name="kab_id2"/>
+                                                <field name="kec_id2"/>
+												<field name='alamat2' placeholder="Alamat Sesuai KTP"/>
+												<field name="kodepos1" placeholder="Zip"/>                         
+												<field name='telp2'/>
+												
+												<!--field name="address_home_id" context="{'show_address': 1}" options='{"always_reload": True, "highlight_first_line": True}' placeholder="From Employee"/-->
+											</group>      
+										</group>
+									</group>	
+                                    <group>
+                                        <group string="Kartu Identitas">
+                                            <field name="jenis_id"/>
+                                            <field name='ktp'/>
+                                            <!--field name='tgl_keluar_ktp' attrs="{'invisible':[('jenis_id','!=','KTP')]}"/-->
+                                            <field name='tgl_berlaku' attrs="{'invisible':[('jenis_id','!=','KTP')]}"/>
+                                            <!--field name='sim'/-->
+                                            <field name='tgl_keluar_sim' attrs="{'invisible':[('jenis_id','!=','SIM')]}"/>  
+                                            <field name='tgl_keluar_sima' attrs="{'invisible':[('jenis_id','!=','SIM_A')]}"/> 
+                                            <field name='tgl_keluar_simc' attrs="{'invisible':[('jenis_id','!=','SIM_C')]}"/>        
+                                            <!--field name="no_pass" attrs="{'invisible':[('jenis_id','!=','Passport')]}"/-->
+                                            <field name="no_rek" attrs="{'invisible':[('jenis_id','!=','Rek.Bank')]}"/> 
+                                            <field name="no_sim" attrs="{'invisible':['|',('jenis_id','!=','SIM')]}"/>    
+                                            <field name="no_sim" attrs="{'invisible':['|',('jenis_id','!=','SIM_A')]}"/>
+                                            <field name="no_sim" attrs="{'invisible':['|',('jenis_id','!=','SIM_C')]}"/> 
+                                            <field name="issued_id" attrs="{'invisible': [('jenis_id','!=','KTP')]}"/> 
+                                            <field name="issued_id2" attrs="{'invisible': [('jenis_id','!=','Passport')]}"/>                                           
+                                    </group>                              
+                                    </group>
+                                    </group>
+                                    <group string="Susunan Keluarga Istri/Suami">
+                                    <field name='susunan_kel1_ids' view_mode="tree,form" widget="one2many_list" nolabel="1">
+                                        <tree editable="bottom">
+                                                <field name="susunan"/>
+                                                <field name="name"/>
+                                                <field name="no_id"/>
+                                                <field name="kelamin"/> 
+                                                <field name="kota_id"/>
+                                                <field name="tgl_lahir"/>
+                                                <field name="type_id"/>
+                                                <field name="pekerjaan"/>
+                                        </tree>
+                                    </field>
+                                    </group>
+                                    
+                                    <group string="Susunan Keluarga Ayah/Ibu">
+                                    <field view_mode="tree,form" name='susunan_kel2_ids' widget="one2many_list" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name='susunan'/>
+                                            <field name="name"/>
+                                            <field name="kelamin"/>
+                                            <field name="kota_id"/>
+                                            <field name='tgl_lahir'/>
+                                            <field name='type_id'/>
+                                            <field name='pekerjaan'/>
+                                        </tree>
+                                    </field>
+                                    </group>
+                                    
+                                <group string="Riwayat Pendidikan">    
+                                <field view_mode="tree,form" name='rwt_pend_ids' widget="one2many_list" nolabel="1">
+                                <tree>
+                                    <field name="name"/>
+                                    <field name="jurusan"/>
+                                    <field name="tempat"/>
+                                    <field name="tahun_msk"/>
+                                    <field name="tahun_klr"/>
+                                    <field name="ijazah"/>
+                                </tree>
+                                <form>
+                                    <group>
+                                        <group>
+                                            <field name="name"/>                                                                  
+                                            <field name="tahun_msk"/>            
+                                            <field name="ijazah"/>
+                                        </group>                                        
+                                        <group>
+                                            <field name="jurusan"/>
+                                            <field name="tahun_klr"/>
+                                            <field name="tempat"/>
+                                        </group>
+                                    </group>
+                                </form>                                       
+                                </field>
+                                 </group>   
+                                    
+                                    <group string="Bahasa">
+                                    <field view_mode="tree,form" name='bahasa_ids' nolabel="1" >
+                                        <tree>
+                                            <field name='name'/>
+                                            <field name='tulis'/>
+                                            <field name='lisan'/>
+                                        </tree>
+                                        <form>
+                                            <group>
+                                                <group>
+                                                    <field name="name"/>
+                                                </group>  
+                                                <group>  
+                                                    <field name="tulis"/>
+                                                    <field name="lisan"/>
+                                                </group>
+                                            </group>
+                                        </form>
+                                    </field>
+                                    </group>
+                                    
+                                    <group string="Riwayat Pekerjaan">
+                                    <field view_mode="tree,form" name='rwt_krj_ids' nolabel="1">
+                                        <tree>
+                                            <!--field name="no"/-->
+                                            <field name="name"/>
+                                            <field name="tempat"/>
+                                            <field name="tahun_msk"/>
+                                            <field name="tahun_klr"/>
+                                            <field name="jabatan"/>
+                                            <field name="gaji"/>
+                                            <field name="alasan"/>
+                                        </tree>
+                                        <form>
+                                            <group>
+                                                <group>
+                                                    <!--field name="no"/-->
+                                                    <field name="name"/>
+                                                    <field name="tempat"/>
+                                                </group>
+                                                <group>    
+                                                    <field name="tahun_msk"/>
+                                                    <field name="tahun_klr"/>
+                                                    <field name="jabatan"/>
+                                                    <field name="gaji"/>
+                                                    <field name="alasan"/>
+                                                </group>
+                                            </group>     
+										</form>
+                                    </field>
+                                    </group>
+                                    
+                                    <group string="Referensi Internal">
+                                    <field view_mode="tree,form" name='koneksi1_ids' nolabel="1">
+                                         <tree>
+                                            <field name='employee_id'/>
+                                            <field name='job_id'/>
+                                            <field name="alamat"/>                                    
+                                            <field name="telepon"/>
+                                        </tree>
+                                        <form>
+                                            <group>
+                                                <group>
+                                                    <field name='employee_id'/>
+                                                    <field name='job_id'/>
+                                                </group>
+                                                <group>
+                                                    <field name="alamat"/>                                    
+                                                    <field name="telepon"/>
+                                                </group>
+                                            </group>
+                                        </form>
+                                    </field>    
+                                    </group>
+                                                               
+                                    <group string = "Referensi Eksternal">
+                                    <field view_mode="tree,form" name='koneksi2_ids' nolabel="1">
+                                         <tree>
+                                            <field name='name'/>
+                                            <field name='jabatan'/>
+                                            <field name="alamat"/>                                    
+                                            <field name="telepon"/>
+                                        </tree>
+                                        <form>
+                                            <group>
+                                                <group>
+                                                    <field name='name'/>
+                                                    <field name='jabatan'/>
+                                                </group>
+                                                <group>
+                                                    <field name="alamat"/>                                    
+                                                    <field name="telepon"/>
+                                                </group>
+                                            </group>
+                                        </form>
+                                    </field>
+                                    </group>
+                                </page>
+                                                                    
+                        <!-- <page string="Hierarchy History List">       
+                            <field view_mode="tree" name='hierarcy_history' nolabel="1">
+                                <tree>
+                                    <field name='tgl'/>
+                                    <field name='status_karyawan'/> 
+                                    <field name='status_kerja'/> 
+                                    <field name='golongan'/> 
+                                    <field name='jabatan'/> 
+                                    <field name='dept_track'/> 
+                                    <field name='lokasi'/>
+                                </tree>
+                            </field>           
+                        </page>      -->      
+                    </page>
+                   <field name="active" position="after">
+                        <field name="tgl_resign" attrs="{'invisible':[('active','=',True)]}"/>
+                        <field name="ket_resign" attrs="{'invisible':[('active','=',True)]}"/>
+                    </field>
+             </field>                                                   
+        </record>
+        
+         <record id="view_employee_tree" model="ir.ui.view">
+            <field name="name">hr.employee.tree</field>
+            <field name="model">hr.employee</field>
+            <field name="type">tree</field>
+            <field name="inherit_id" ref="hr.view_employee_tree"/>  
+            <field name="arch" type="xml"> 
+                <tree string="Employees" position="replace">
+                <tree string="Employees" colors="red:kontrak == 0">
+                    <field name="name_related"/>
+                    <field name="employee_name"/>
+                    <field name="address_id2"/>
+                    <field name="department_id"/>
+                    <field name="job_id"/>
+                    <field name="kontrak" invisible="1"/>
+                </tree>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="view_employee_filter2" model="ir.ui.view">
+            <field name="name">Employees</field>
+            <field name="model">hr.employee</field>
+            <field name="type">search</field>
+            <field name="inherit_id" ref="hr.view_employee_filter"/>
+            <field name="arch" type="xml">
+                <search string="Employees">
+                    <group expand="0" string="Group By...">
+                        <filter string="Golongan" icon="terp-personal" domain="[]" context="{'group_by':'gol_id'}"/>
+                        <filter string="Pendidikan" icon="terp-personal" domain="[]" context="{'group_by':'type_id'}"/>
+                        <filter string="Jurusan" icon="terp-personal+" domain="[]" context="{'group_by':'jurusan_id'}"/>
+                        <filter string="NIK" icon="terp-gtk-select-all" domain="[]" context="{'group_by':'name'}"/>
+                        <filter string="Alamat Kantor" icon="terp-go-home" domain="[]" context="{'group_by':'address_id2'}"/>
+                    </group>
+                </search>
+             </field>
+         </record>
+
+        <record model="ir.ui.view" id="hr.hr_kanban_view_employees">
+            <field name="name">HR - Employess Kanban</field>
+            <field name="model">hr.employee</field>
+            <field name="priority">10</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="last_login"/>
+                    <field name="message_is_follower"/>
+                    <field name="message_follower_ids"/>
+                    <field name="message_ids"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_employee_vignette">
+                                <div class="oe_employee_image">
+                                    <a type="open"><img t-att-src="kanban_image('hr.employee', 'image_medium', record.id.value)" class="oe_employee_picture"/></a>
+                                </div>
+                                <div class="oe_employee_details">
+                                    <h4>
+                                        <a type="open"><field name="name"/><t t-if="record.login.raw_value"> (<field name="login"/>)</t></a>
+                                    </h4>
+                                    <ul>
+                                        <li id="last_login">
+                                            <span t-if="record.last_login.raw_value &amp;&amp; record.last_login.raw_value.is().today()" class="oe_kanban_button" style="font-size: 100%%">
+                                                  <t t-esc="record.last_login.raw_value.toString('HH:mm')"/>
+                                            </span>
+                                        </li>
+                                        <li t-if="record.employee_name"><field name="employee_name"/></li>
+                                        <li t-if="record.work_location.raw_value"><field name="work_location"/></li>
+                                        <li t-if="record.work_email.raw_value"><a t-attf-href="mailto:#{record.work_email.value}"><field name="work_email"/></a></li>
+                                    </ul>
+                                    <div class="oe_kanban_footer_left">
+                                        <span title='Messages'><span class='oe_e'>9</span><t t-esc="record.message_ids.raw_value.length"/></span>
+                                        <span title='Followers'><span class='oe_e'>+</span><t t-esc="record.message_follower_ids.raw_value.length"/></span>
+                                    </div>
+                                    <div class="oe_followers" groups="base.group_user">
+                                        <button t-if="record.message_is_follower.raw_value" name="action_unfollow" type="object" class="oe_follower oe_following">
+                                            <span class="oe_unfollow">Unfollow</span>
+                                            <span class="oe_following">Following</span>
+                                        </button>
+                                        <button t-if="! record.message_is_follower.raw_value" name="action_follow" type="object" class="oe_follower oe_notfollow">Follow</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                $('.oe_employee_picture').load(function() { if($(this).width() > $(this).height()) { $(this).addClass('oe_employee_picture_wide') } });
+                            </script>
+                        </t>
+                    </templates>
+                </kanban>
+
+            </field>
+        </record>
+
+         <record id="hr.open_view_employee_list_my" model="ir.actions.act_window">
+            <field name="name">Employees</field>
+            <field name="res_model">hr.employee</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,kanban</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+            <field name="view_id" eval="False"/>
+            <field name="search_view_id" ref="hr.view_employee_filter"/>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new employee.
+              </p><p>
+                With just a quick glance on the Odoo employee screen, you
+                can easily find all the information you need for each person;
+                contact data, job position, availability, etc.
+              </p>
+            </field>
+        </record>
+
+    </data>
+</openerp>

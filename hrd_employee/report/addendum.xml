@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<t t-name="hrd_employee.report_addendum">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<!-- <t t-call="report.external_layout"> -->
+						<div class="page">
+							<div class="row" style="font-size:12px">
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td align="right"><span t-field="o.employee_id.name"/></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td align="center"><strong>ADDENDUM KE II (Dua) SURAT PERJANJIAN KERJA</strong></td>
+									</tr>
+									<tr>
+										<td align="center"><span style="text-decoration: underline;"><strong>Antara PT. Tunas Artha Gardatama dengan <span t-field="o.employee_id.employee_name"/></strong></span></td>
+									</tr>
+									<tr>
+										<td align="center"><span>No : <span t-field="o.name"/></span></td>
+									</tr>
+								</table>
+                                                                <p/>
+								Pada Hari ini, <span t-field="o.hari"/>, <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/>, Yang bertanda tangan di bawah Ini :
+                                                                <p/>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td style="width:7%" align="center">1.</td>  
+										<td width="93%" style="text-align: justify;"><strong>PT. Tunas Artha Gardatama</strong>, suatu perseroan terbatas yang didirikan berdasarkan hukum Negara Republik Indonesia, berkedudukan di Jakarta, berkantor di Gedung RDW Center Jl. Lenteng Agung Raya No. 7 Jagakarsa Jakarta Selatan 12610, (selanjutnya disebut sebagai "<strong>Perusahaan</strong>") dalam hal ini diwakili oleh <strong><span t-field="o.nama_pihak.employee_name"/></strong> dalam kedudukannya selaku <span t-field="o.nama_pihak.job_id.name"/>; dan</td>
+									</tr>
+									<tr>
+										<td style="width:7%" align="center">2. </td>
+										<td width="93%" style="text-align: justify;"><strong><span t-field="o.employee_id.employee_name"/></strong>, Tanggal Lahir <strong><span t-field="o.employee_id.place_of_birth"/>, <span t-field="o.employee_id.birthday" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong> warga negara Republik Indonesia, bertempat tinggal di, <span t-field="o.employee_id.alamat2"/> <span t-field="o.employee_id.kec_id2"/> <span t-field="o.employee_id.place_of_birth"/> <span t-field="o.employee_id.kab_id2"/> pemegang Kartu Tanda Penduduk. No <span t-field="o.employee_id.ktp"/> (selanjutnya disebut sebagai "<strong>Karyawan</strong>") dalam hal ini <strong><span t-field="o.employee_id.employee_name"/></strong> dalam kedudukannya selaku <strong><span t-field="o.employee_id.job_id.name"/></strong></td>
+									</tr>
+								</table>
+								<p/>
+								<p>"Perusahaan" dan "Karyawan" secara bersama-sama selanjutnya disebut "Para Pihak". Bahwa Para Pihak terlebih dulu menerangkan sebagai berikut :</p>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td style="width:7%" align="center">-</td>
+										<td width="93%" style="text-align: justify;">Bahwa Para Pihak telah menandatangani Surat Perjanjian Kerja No :  <strong><span t-field="o.kontrak_sebelum.name"/></strong></td>
+									</tr>
+									<tr>
+										<td style="width:7%" align="center">-</td>	
+										<td width="93%" style="text-align: justify;">Karyawan wajib menyimpan semua keterangan yang menyangkut rahasia perusahaan yang di dapat oleh karena jabatanya maupun di dalam pergaulanya di lingkungan perusahaan (PT. TAG dan dimana karyawan di tempatkan)</td>
+									</tr>
+									<tr>
+										<td style="width:7%" align="center">-</td>
+										<td width="93%" style="text-align: justify;">Bahwa Para Pihak telah sepakat untuk membuat Addendum II (Dua) <span lang="zxx">Surat Perjanjian Kerja (Selanjutnya di sebut Addendum </span><span lang="zxx">II (Dua)</span><span lang="zxx">) dengan syarat-syarat dan ketentuan-ketentuan sebagai berikut </span></td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td style="width:7%" align="center">A.</td>
+										<td width="93%" style="text-align: justify;">Mengubah Pasal 2 (dua) ayat 1 (satu) Perjanjian menjadi sebagai berikut :</td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td width="width:100%" style="text-align: center;"><strong>PASAL 2</strong></td>
+									</tr>
+									<tr>
+										<td width="width:100%" style="text-align: center;"><strong>MASA KESEPAKATAN</strong></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td style="width:7%"/>
+										<td style="width:4%">1.</td>
+										<td width="93%" style="text-align: justify;">Perjanjian ini diperpanjang dan berlaku untuk jangka waktu 1 (satu) tahun, terhitung sejak tanggal</td>
+									</tr>
+									<tr>
+										<td style="width:7%"/>
+										<td style="width:4%"/>
+										<td width="93%" style="text-align: justify;"><strong><span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong> sampai dengan tanggal <strong><span t-field="o.date_end" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong>.</td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td style="width:7%" align="center">B.</td>
+										<td width="93%" style="text-align: justify;">Syarat-syarat dan ketentuan-ketentuan lain dalam Perjanjian sepanjang tidak diubah dengan Addendum Ke II (Dua) ini, tetap berlaku dan mengikat Para Pihak.</td>
+									</tr>
+									<tr>
+										<td style="width:7%" align="center">C.</td>
+										<td width="93%" style="text-align: justify;">Addendum Ke II (Dua) ini merupakan satu kesatuan dan bagian yang tidak terpisahkan dari Perjanjian.
+</td>
+									</tr>
+									<tr>
+										<td style="width:7%" align="center">D.</td>
+										<td width="93%" style="text-align: justify;">Adanya pengurangan Karyawan atas permintaan dari Klien dan adanya penutupan Cabang oleh Klien dimana Karyawan ditempatkan, maka Perjanjian Kerja ini akan berakhir dengan sendirinya, tanpa adanya tuntutan berupa apapun ke pihak perusahaan (PT.TAG) atau Perusahaan tempat dimana Karyawan ditempatkan.</td>
+									</tr>
+									<tr>
+										<td style="width:7%" align="center">E.</td>
+										<td width="93%" style="text-align: justify;">Karyawan, tidak dibenarkan mengikuti Demo atau masuk dalam suatu Organisasi atau Serikat Pekerja dalam bentuk apapun. Apabila dikemudian hari diketahui Anggota turut serta dalam hal tersebut diatas, maka Anggota bersedia mengundurkan diri dari perusahaan (PT.TAG), tanpa adanya tuntutan berupa apapun ke pihak perusahaan (PT.TAG) atau Perusahaan tempat dimana Karyawan ditempatkan.</td>
+									</tr>
+								</table>
+								<p/>
+								<p style="text-align: justify;">Demikian maka Addendum Ke II (Dua) ini ditandatangani pada hari  <span t-field="o.hari"/> dan tanggal  <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/> yang disebutkan pada bagian awal Addendum II (Dua) ini, dibuat dalam rangkap II (dua) asli masing-masing bermaterai cukup dan mempunyai kekuatan hukum yang sama dan mengikat terhadap Para Pihak.</p>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td style="width:40%"><storng>"Pihak Perusahaan"</storng></td>
+										<td style="width:30%"/>
+										<td style="width:30%"><storng>"Pihak Karyawan</storng></td>
+									</tr>
+								</table>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+<p><span style="color: #ffffff;">a</span></p>
+								<table width="100%" style="font-family: Arial;font-size:13px">
+									<tr>
+										<td style="width:40%"><span style="text-decoration: underline;"><strong><span t-field="o.nama_pihak.employee_name"/></strong></span></td>
+										<td style="width:30%"/>
+										<td style="width:30%"><strong><span t-field="o.employee_id.employee_name"/></strong></td>
+									</tr>
+									<tr>
+										<td style="width:40%"><strong><span t-field="o.nama_pihak.job_id.name"/></strong></td>
+										<td style="width:30%"/>
+										<td style="width:30%"/>
+									</tr>
+								</table>
+							</div>
+						</div>
+				</t>
+			</t>
+		</t>
+
+		

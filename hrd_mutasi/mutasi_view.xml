@@ -1,0 +1,153 @@
+<openerp>
+	<data>
+
+		<record id="hr_mutasi_view_tree" model="ir.ui.view">
+            <field name="name">mutasi.tree</field>
+            <field name="model">hr.mutasi</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Mutasi Karyawan">
+                    <field name="no"/>
+                    <field name="name"/>
+                    <field name="employee_name"/>
+                    <field name="job_id"/>
+                    <field name="lokasi_id"/>
+                    <field name="job_id2"/>
+                    <field name="lokasi_id2"/>  
+                </tree>
+            </field>
+        </record>
+
+        <record id="hr_penugasan_view_tree" model="ir.ui.view">
+            <field name="name">mutasi.tree</field>
+            <field name="model">hr.mutasi</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Penugasan Karyawan">
+                    <field name="no"/>
+                    <field name="name"/>
+                    <field name="employee_name"/>
+                    <field name="penugasan"/>
+                    <field name="lokasi_id4"/>
+                    <field name="lokasi_id3"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="hr_mutasi_view_form" model="ir.ui.view">
+            <field name="name">mutasi.form</field>
+            <field name="model">hr.mutasi</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            	<form string="Mutasi Karyawan">
+                    <header>                            
+                    <button string="Send for Approval" type="workflow" 
+                        states="draft" name="signal_verify"
+                        class="oe_highlight" attrs="{'invisible': [('state','!=','draft')]}" /> 
+
+                    <button string="Approve Korwil" type="workflow"  
+                        states="verify" name="signal_approve"
+                        class="oe_highlight" attrs="{'invisible': [('state','!=','verify')]}" groups="hrd_mutasi.group_approve_korwil"/> 
+
+                    <button string="Reject" type="workflow" 
+                         state="verify" name="signal_reject1" class="oe_highlight" attrs="{'invisible': [('state','!=','verify')]}" groups="hrd_mutasi.group_approve_korwil" />     
+                    
+                    <button string="Approve Pic" type="workflow"  
+                        state="approve" name="signal_approve2"
+                        class="oe_highlight" attrs="{'invisible': [('state','!=','approve')]}" groups="hrd_mutasi.group_approve_pic"/>
+
+                    <button string="Reject" type="workflow" 
+                         state="approve" name="signal_reject2" class="oe_highlight" attrs="{'invisible': [('state','!=','approve')]}" groups="hrd_mutasi.group_approve_pic"/>
+
+                    <button string="Approve Deputi" type="workflow"  
+                        state="approve2" name="signal_approve3"
+                        class="oe_highlight" attrs="{'invisible': [('state','!=','approve2')]}" groups="hrd_mutasi.group_approve_deputi"/>
+
+                    <button string="Reject" type="workflow" 
+                         state="approve2" name="signal_reject3" class="oe_highlight" attrs="{'invisible': [('state','!=','approve2')]}" groups="hrd_mutasi.group_approve_deputi"/>
+
+                    <button string="Approve Manager" type="workflow"  
+                        state="approve3" name="signal_approve4"
+                        class="oe_highlight" attrs="{'invisible': [('state','!=','approve3')]}" groups="hrd_mutasi.group_approve_manager"/>
+
+                    <button string="Reject" type="workflow" 
+                         state="approve3" name="signal_reject4" class="oe_highlight" attrs="{'invisible': [('state','!=','approve3')]}" groups="hrd_mutasi.group_approve_manager"/>
+
+                    <button string="Approve Ass. Vp" type="workflow"  
+                        state="approve4" name="signal_approve5"
+                        class="oe_highlight" attrs="{'invisible': [('state','!=','approve4')]}" groups="hrd_mutasi.group_approve_vp"/>
+
+                    <button string="Reject" type="workflow" 
+                         state="approve4" name="signal_reject5" class="oe_highlight" attrs="{'invisible': [('state','!=','approve4')]}" groups="hrd_mutasi.group_approve_vp"/>
+
+                    <button string="Approve HRD" type="workflow"  
+                        state="approve5" name="signal_done"
+                        class="oe_highlight" attrs="{'invisible': [('state','!=','approve5')]}" groups="hrd_mutasi.group_approve_hr"/>
+
+                    <button string="Reject" type="workflow" 
+                         state="approve5" name="signal_reject6" class="oe_highlight" attrs="{'invisible': [('state','!=','approve5')]}" groups="hrd_mutasi.group_approve_hr"/>
+
+                    <button string="Print Report Mutasi" name="print_mutasi" type="object" class="oe_highlight" 
+                        attrs="{'invisible': [('pilih','!=','mutasi')]}" />
+                    
+                    <button string="Print Report Penugasan" type="object" name="print_penugasan" 
+                        attrs="{'invisible': [('pilih','!=','penugasan')]}" />
+
+                    <field name="state" widget="statusbar" statusbar_visible="draft,verify,approve" class="oe_inline"/>
+                </header>
+            		<sheet>
+            			<group>
+	            			<field name="pilih" invisible="1"/>
+                            <field name="no" attrs="{'readonly':[('state','!=','draft')]}"/>
+	            			<field name="name" on_change="onchange_nik(name)" attrs="{'readonly':[('state','!=','draft')]}"/>
+	            			<field name="employee_name" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="start_date" attrs="{'readonly':[('state','!=','draft')]}"/>
+	            			<label for="job_id" string="Dari Divisi" attrs="{'invisible':[('pilih','=','penugasan')]}"/>
+	            			<div attrs="{'invisible':[('pilih','=','penugasan')],'readonly':[('state','!=','draft')]}">
+            					<field name="job_id" class="oe_inline" attrs="{'readonly':[('state','!=','draft')]}"/><label string="-" class="oe_inline" />
+            					<field name="lokasi_id" nolabel="1" class="oe_inline" attrs="{'readonly':[('state','!=','draft')]}" domain="[('category_id','=','LOKASI')]"/>
+            				</div>
+            				<label for="job_id2" string="Ke Divisi" attrs="{'invisible':[('pilih','=','penugasan')],'readonly':[('state','!=','draft')]}"/>
+            				<div attrs="{'invisible':[('pilih','=','penugasan')],'readonly':[('state','!=','draft')]}">
+            					<field name="job_id2" class="oe_inline" attrs="{'required':[('pilih','=','mutasi')],'readonly':[('state','!=','draft')]}"/><label string="-" class="oe_inline"/>
+	            				<field name="lokasi_id2" nolabel="1" class="oe_inline" attrs="{'required':[('pilih','=','mutasi')],'readonly':[('state','!=','draft')]}" domain="[('category_id','=','LOKASI')]"/>
+            				</div>
+                            <field name="payslip_id" attrs="{'invisible':[('pilih','=','penugasan')],'readonly':[('state','!=','draft')]}"/>
+                            <field name="payslip_id2" attrs="{'invisible':[('pilih','=','penugasan')],'readonly':[('state','!=','draft')]}"/>
+                            <field name="tgng_jwb" class="oe_inline" placeholder="Tugas Dan Tanggung Jawab..." attrs="{'invisible':[('pilih','=','penugasan')],'readonly':[('state','!=','draft')]}"/>
+                            <field name="lokasi_id4" attrs="{'invisible':[('pilih','!=','penugasan')],'readonly':[('state','!=','draft')]}" domain="[('category_id','=','LOKASI')]"/>
+            				<field name="lokasi_id3" attrs="{'invisible':[('pilih','!=','penugasan')],'required':[('pilih','=','penugasan')],'readonly':[('state','!=','draft')]}" domain="[('category_id','=','LOKASI')]"/>
+                            <field name="penugasan" placeholder="Tugas Dan Tanggung Jawab..." attrs="{'invisible':[('pilih','!=','penugasan')],'required':[('pilih','=','penugasan')],'readonly':[('state','!=','draft')]}"/>
+	            		</group>
+            		</sheet>
+            	</form>
+            </field>
+        </record>  
+
+		<record id="action_hr_mutasi" model="ir.actions.act_window">
+	        <field name="name">Mutasi Karyawan</field>
+	        <field name="res_model">hr.mutasi</field>
+	        <field name="view_type">form</field> 
+	        <field name="context">{'default_pilih': 'mutasi'}</field>
+        	<field name="domain">[('pilih','=','mutasi')]</field>
+        	<field name="view_id" ref="hr_mutasi_view_tree"/>        
+	        <field name="view_mode">tree,form</field>
+    	</record>
+
+    	<record id="action_hr_penugasan" model="ir.actions.act_window">
+	        <field name="name">Mutasi Karyawan</field>
+	        <field name="res_model">hr.mutasi</field>
+	        <field name="view_type">form</field> 
+	        <field name="context">{'default_pilih': 'penugasan'}</field>
+        	<field name="domain">[('pilih','=','penugasan')]</field>
+        	<field name="view_id" ref="hr_penugasan_view_tree"/>        
+	        <field name="view_mode">tree,form</field>
+    	</record>
+
+		<menuitem name="Mutasi Dan Penugasan" parent="hr.menu_hr_root" id="menu_mutasi_penugasan" sequence="3"/>
+		<menuitem action="action_hr_mutasi" id="hr_menu_mutasi" parent="menu_mutasi_penugasan" name="Mutasi Guard" groups="base.group_hr_manager,base.group_hr_user"/>
+		<menuitem action="action_hr_penugasan" id="hr_menu_penugasan" parent="menu_mutasi_penugasan" name="Penugasan Karyawan" groups="base.group_hr_manager,base.group_hr_user"/>
+
+	</data>
+</openerp>

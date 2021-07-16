@@ -1,0 +1,32 @@
+<openerp>
+	<data>
+
+		<record id="view_change_nik" model="ir.ui.view">
+            <field name="name">Update NIK Baru</field>
+            <field name="model">update.nik</field>
+            <field name="arch" type="xml">
+                <form string="Update Nik">
+                    <group>
+                        <field name="nik_br"/>
+                    </group>
+                    <footer>
+                        <button name="change_nik" string="_Apply" type="object" class="oe_highlight"/>
+                        or
+                        <button string="_Cancel" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_view_change_nik" model="ir.actions.act_window">
+            <field name="name">Update NIK Baru</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">update.nik</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_change_nik"/>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</openerp>

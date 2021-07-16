@@ -1,0 +1,188 @@
+<openerp>
+	<data>
+		<template id="print_rekap_absen">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<!-- <t t-call="report.external_layout"> -->
+						<div class="page">
+							<div class="row">
+								<table  style="font-size:9px">
+									<tr>
+										<td with="100">Dar</td>
+										<td with="100">: <span t-field="o.date_from"/></td>	
+										<td with="100">sampai</td>
+										<td with="100">: <span t-field="o.date_to"/></td>
+									</tr>
+									<tr>
+										<td width="200">Divisi</td>
+										<td width="550">: <span t-field="o.department_id"/></td>	
+										<td width="200">Posis</td>
+										<td width="550">: <span t-field="o.job_id"/></td>
+									</tr>
+									<tr>
+										<td width="200">Nama Karyawan</td>
+										<td width="550">: <span t-field="o.name"/></td>
+										<td width="200">Lokasi Kerja</td>
+										<td width="550">: <span t-field="o.lokasi_id"/></td>
+									</tr>
+								</table>
+								<p/>
+                                                                <hr size="1" color="black"></hr>
+								<table  style="font-size:9px">
+									<tr>
+										<td width="100">tanggal</td>
+										<td width="100">shift</td>
+										<td width="200">Jam Masuk</td>
+										<td width="200">Jam Pulang</td>
+										<td width="100">Terlambat</td>
+										<td width="100">Pulang Cepat</td>
+										<td width="100">SPL</td>
+										<td width="100">Lembur</td>
+										<td width="100">Point Lembur</td>
+										<td width="250">Keterangan</td>
+									</tr>
+								</table>
+                                                                <hr size="1" color="black"></hr>
+							        <table  style="font-size:9px">
+								        <t t-foreach="o.detail_ids" t-as="d">   
+                                                                               <tr>
+											<td width="100"><span t-esc="d.date"/></td>
+											<td width="100"><span t-esc="d.shift_id"/></td>
+											<td width="200"><span t-esc="formatLang(d.jam_masuk,date_time=True)"/></td>
+											<td width="200"><span t-esc="formatLang(d.jam_pulang,date_time=True)"/></td>
+											<td width="100"><span t-esc="'%02d:%02d' % (int(str(d.terlambat).split('.')[0]), int(float(str('%.2f' % d.terlambat).split('.')[1])/100*60))"/></td>
+											<td width="100"><span t-esc="'%02d:%02d' % (int(str(d.pc).split('.')[0]), int(float(str('%.2f' % d.pc).split('.')[1])/100*60))"/></td>
+											<td width="100"><span t-esc="'%02d:%02d' % (int(str(d.spl).split('.')[0]), int(float(str('%.2f' % d.spl).split('.')[1])/100*60))"/></td>
+											<td width="100"><span t-esc="'%02d:%02d' % (int(str(d.lembur).split('.')[0]), int(float(str('%.2f' % d.lembur).split('.')[1])/100*60))"/></td>
+											<td width="100"><span t-esc="'%02d:%02d' % (int(str(d.PL).split('.')[0]), int(float(str('%.2f' % d.PL).split('.')[1])/100*60))"/></td>
+											<td width="250"><span t-esc="d.ket"/></td>
+										</tr>
+                                                                              </t>
+									</table>
+								<hr size="1" color="black"/>
+								<table  style="font-size:9px">
+									<tr>
+										<td with="200">Terlambat</td>
+										<td with="550">: <span t-field="o.terlambat"/></td>	
+										<td with="200">Cuti</td>
+										<td with="550">: <span t-field="o.cuti"/></td>
+									</tr>
+									<tr>
+										<td width="200">Pulang Cepat</td>
+										<td width="550">: <span t-field="o.pc"/></td>	
+										<td width="200">Sakit</td>
+										<td width="550">: <span t-field="o.sakit"/></td>
+									</tr>
+									<tr>
+										<td width="200">Alpa</td>
+										<td width="550">: <span t-field="o.alpa"/></td>
+										<td width="200">Total Point lembur</td>
+										<td width="550">: <span t-field="o.lembur" t-field-options='{"widget": "float_time"}'/></td>
+									</tr>
+									<tr>
+										<td width="200">tk</td>
+										<td width="550">: <span t-field="o.tk"/></td>
+										<td width="200">Create date</td>
+										<td width="550">: <span t-field="o.create_date"/></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+				</t>
+			</t>
+		</template>
+
+		<template id="print_rekap_absen_perdivisi">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<!-- <t t-call="report.external_layout"> -->
+						<div class="page">
+							<div class="row">
+								<table  style="font-size:9px">
+									<tr>
+										<td with="100">Dar</td>
+										<td with="100">: <span t-field="o.date_from"/></td>	
+										<td with="100">sampai</td>
+										<td with="100">: <span t-field="o.date_to"/></td>
+									</tr>
+									<tr>
+										<td width="200">Divisi</td>
+										<td width="550">: <span t-field="o.department_id"/></td>	
+										<td width="200">Posis</td>
+										<td width="550">: <span t-field="o.job_id"/></td>
+									</tr>
+									<tr>
+										<td width="200">Nama Karyawan</td>
+										<td width="550">: <span t-field="o.name"/></td>
+										<td width="200">Lokasi Kerja</td>
+										<td width="550">: <span t-field="o.lokasi_id"/></td>
+									</tr>
+								</table>
+								<p/>
+                                                                <hr size="1" color="black"></hr>
+								<table  style="font-size:9px">
+									<tr>
+										<td width="100">tanggal</td>
+										<td width="100">shift</td>
+										<td width="200">Jam Masuk</td>
+										<td width="200">Jam Pulang</td>
+										<td width="100">Terlambat</td>
+										<td width="100">Pulang Cepat</td>
+										<td width="100">SPL</td>
+										<td width="100">Lembur</td>
+										<td width="100">Point Lembur</td>
+										<td width="250">Keterangan</td>
+									</tr>
+								</table>
+                                                                <hr size="1" color="black"></hr>
+							        <table  style="font-size:9px">
+								        <t t-foreach="o.detail_ids" t-as="d">   
+                                                                               <tr>
+											<td width="100"><span t-esc="d.date"/></td>
+											<td width="100"><span t-esc="d.shift_id"/></td>
+											<td width="200"><span t-esc="formatLang(d.jam_masuk,date_time=True)"/></td>
+											<td width="200"><span t-esc="formatLang(d.jam_pulang,date_time=True)"/></td>
+											<td width="100"><span t-esc="'%02d:%02d' % (int(str(d.terlambat).split('.')[0]), int(float(str('%.2f' % d.terlambat).split('.')[1])/100*60))"/></td>
+											<td width="100"><span t-esc="'%02d:%02d' % (int(str(d.pc).split('.')[0]), int(float(str('%.2f' % d.pc).split('.')[1])/100*60))"/></td>
+											<td width="100"><span t-esc="'%02d:%02d' % (int(str(d.spl).split('.')[0]), int(float(str('%.2f' % d.spl).split('.')[1])/100*60))"/></td>
+											<td width="100"><span t-esc="'%02d:%02d' % (int(str(d.lembur).split('.')[0]), int(float(str('%.2f' % d.lembur).split('.')[1])/100*60))"/></td>
+											<td width="100"><span t-esc="'%02d:%02d' % (int(str(d.PL).split('.')[0]), int(float(str('%.2f' % d.PL).split('.')[1])/100*60))"/></td>
+											<td width="250"><span t-esc="d.ket"/></td>
+										</tr>
+                                                                              </t>
+									</table>
+								<hr size="1" color="black"/>
+								<table  style="font-size:9px">
+									<tr>
+										<td with="200">Terlambat</td>
+										<td with="550">: <span t-field="o.terlambat"/></td>	
+										<td with="200">Cuti</td>
+										<td with="550">: <span t-field="o.cuti"/></td>
+									</tr>
+									<tr>
+										<td width="200">Pulang Cepat</td>
+										<td width="550">: <span t-field="o.pc"/></td>	
+										<td width="200">Sakit</td>
+										<td width="550">: <span t-field="o.sakit"/></td>
+									</tr>
+									<tr>
+										<td width="200">Alpa</td>
+										<td width="550">: <span t-field="o.alpa"/></td>
+										<td width="200">Total Point lembur</td>
+										<td width="550">: <span t-field="o.lembur" t-field-options='{"widget": "float_time"}'/></td>
+									</tr>
+									<tr>
+										<td width="200">tk</td>
+										<td width="550">: <span t-field="o.tk"/></td>
+										<td width="200">Create Date</td>
+										<td width="550">: <span t-field="o.create_date"/></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+				</t>
+			</t>
+		</template>
+
+	</data>
+</openerp>

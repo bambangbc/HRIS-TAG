@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<t t-name="hrd_employee.report_training">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<!-- <t t-call="report.external_layout"> -->
+						<div class="page">
+							<div class="row" style="font-size:14px">
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td align="right"><span t-field="o.employee_id.name"/></td>
+									</tr>
+								</table>
+								<br>Nomor : <span t-field="o.name"/></br>
+								<p>Perihal	: <span style="text-decoration: underline;"><strong>HubunganKerja</strong></span></p>
+								KepadaYth :
+								<br><strong>Sdr. <span t-field="o.employee_id.employee_name"/></strong></br>
+								<p><span t-field="o.employee_id.alamat2"/> <span t-field="o.employee_id.kec_id2"/> <span t-field="o.employee_id.kab_id2"/></p>
+								<p>Dengan Hormat,</p>
+								<p style="text-align: justify;">Menunjuk Surat Lamaran Saudara dan dari hasil interview yang telah kami laksanakan, Saudara dinyatakan telah memenuhi kualifikasi dan syarat-syarat kerja yang telah ditetapkan oleh perusahaan.</p> 
+								<p style="text-align: justify;">Untuk itu kami beritahukan bahwa Saudara dinyatakan dapat diterima sebagai karyawan pada Perusahaan PT. TUNAS ARTHA GARDATAMA  dengan ketentuan dan syarat sebagai berikut :</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="4%">1.</td>
+										<td width="96%" style="text-align: justify;">Saudara ditempatkan pada Bagian <strong><span t-field="o.bagian"/></strong> dengan Jabatan <strong><span t-field="o.employee_id.job_id.name"/></strong> dan dalam pekerjaan sehari – hari Saudara akan bertanggung jawab langsung kepada atasan Saudara yang  telah ditunjuk oleh Perusahaan. </td>
+									</tr>
+									<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="4%">2.</td>
+										<td width="96%" style="text-align: justify;">Dalam menjalankan pekerjaan sehari – hari Saudara wajib berpegang teguh kepada <strong>SOP (Standard Operating Procedure)</strong> yang telah ditetapkan oleh perusahaan, teliti dan    hati - hati, tidak dibenarkan melakukan kecerobohan yang akan dapat berakibat kerugian bagi pihak perusahaan.
+										<br>Mengenai detail pekerjaan dapat Saudara baca di dalam Uraian Pekerjaan Saudara masing - masing.</br> </td>
+									</tr>
+									<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="4%">3.</td>
+										<td width="96%" style="text-align: justify;">Hari Kerja, Jam Kerja ,Waktu Kerja 
+										<br>Hari kerja Saudara adalah 5 (Lima) Hari Kerja dalam seminggu atau 8 (Delapan) jam effective per hari, 40 (Empat Puluh) jam seminggu, dengan jadwal kerja sesuai dengan kebutuhan masing-masing bagian atau waktu/periode yang dianggap perlu oleh perusahaan.</br>
+										<p/>
+										Hari Kerja Karyawan Operasional adalah 365 (Tiga Ratus Enam Puluh Lima) hari, dengan pengertian bahwa di dalam penerapan pengaturan jadwal diatur secara shift dan di dalam pengaturan sudah diperhitungkan Cuti, Off dan Libur Resmi. Dengan demikian jumlah Off menjadi bertambah sejumlah hari libur nasional yang ada didalam tahun kalender yang berjalan.</td>
+									</tr>
+									<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="4%">4.</td>
+										<td width="96%" style="text-align: justify;">Tanggal Masuk Kerja Saudara terhitung sejak Saudara dinyatakan masuk Program Pelatihan Kerja (PPK) selama kurun waktu 3 (Tiga) bulan yaitu sejak tanggal <strong><span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong> sampai dengan <strong><span t-field="o.date_end" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong> dan bila Saudara dinyatakan belum mampu menjalankan tugas pekerjaan dengan baik dan benar, maka saudara dinyatakan gugur,dan kepada Saudara akan dibayarkan hak atas upah sampai dengan hari kerja terakhir (proporsional) pada bulan berjalan. </td>
+									</tr>
+                                                                        <tr>
+										<td width="4%" style="color: #ffffff;">..</td>
+										<td width="96%" style="color: #ffffff;">..</td>
+									</tr>
+                                                                        <tr>
+										<td width="4%" style="color: #ffffff;">..</td>
+										<td width="96%" style="color: #ffffff;">..</td>
+									</tr>
+									<tr>
+										<td width="4%">5.</td>
+										<td width="96%" style="text-align: justify;">Apabila Saudara berhasil dengan baik dalam menjalani Program Pelatihan Kerja (PPK)  maka Saudara akan diangkat sebagai Karyawan dengan Status <strong>“KONTRAK “</strong>selama periode 12 (Dua Belas) bulan, dimana tanggal Masa Kontrak berlaku surut hingga saat Saudara mulai mengikuti Program Pelatihan Kerja (PPK)</td>
+									</tr>
+                                </table>
+                                <table width="100%" style="font-size:10px">
+                                    <tr>
+										<td width="4%"/>
+										<td width="80%" align="right">paraf</td>
+										<td width="10%" align="right"><img src="/hrd_employee/static/src/img/PARAF.png" class="img img-responsive" style="width:25px;height:50px;"/></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="6%">6.</td>
+										<td width="96%" style="text-align: justify;">Program Pelatihan Kerja (PPK) akan berakhir, apabila Saudara dinyatakan: </td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Gugur/tidaklulus/tidakcakap dalam menjalankan tugas pekerjaan yang diberikan oleh perusahaan dan atau Atasan Saudara.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Melakukan kesalahan prosedur kerja yang telah ditetapkan dalam SOP.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Lalai terhadap tugas dan tanggung jawab pekerjaan.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Tidak masuk kerja tanpa ada kabar/berita/alasan yang jelas dan absen datang terlambat masuk kerja selama 5 (lima) hari baik secara berturut-turut maupun tidak berturut-turut karena hal tersebut sangat mengganggu kegiatan operasional perusahaan.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Melakukan pelanggaran Tata Tertib Kerja Perusahaan.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Melakukan kesalahan besar maupun kecil yang berakibat kerugian bagi perusahaan.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Melaksanakan pekerjaan secara serampangan yang dapat mengakibatkan kerugian bagi Perusahaan</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Tidak jujur dalam pengisian laporan pengisian formulir lembur, karcis tol, parkir, dsb.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="84%" style="text-align: justify;">Mengundurkan Diri, harus diajukan 1 bulan di muka, apabila tidak sesuai ketentuan maka segala bentuk penyelesaian administrasi akan dilaksanakan dalam waktu 1 (satu) bulan kemudian.</td> 
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">7.</td>
+										<td width="96%" style="text-align: justify;"><p>Program Pelatihan Kerja (PPK) akan berakhir jika Perjanjian Kerja sama Induk yang mendasari adanya Perjanjian Kerja – Program Pelatihan Kerja (PPK) ini berakhir/ diputuskan oleh Pihak Klien Perusahaan dengan pemberitahuan terlebih dahulu oleh Perusahaan kepada pihak Karyawan minimal 30 (tiga puluh) hari kalender dengan kewajiban pembayaran sampai dengan hari kerja terakhir (proporsional) dalam bulan berjalan.</p>
+										Semua penyelesaian persyaratan administrasi kerja harus diselesaikan dan diambil oleh karyawan itu sendiri <strong>tidak dapat diwakilkan/ digantikan oleh orang lain.</strong></td>
+									</tr>
+									<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="6%">8.</td>
+										<td width="96%" style="text-align: justify;">Apabila Saudara selama Program Pelatihan Kerja (PPK), mengikuti Demo atau masuk dalam suatu Organisasi atau Serikat Pekerja dalam bentuk apapun. Apabila dikemudian hari diketahui Saudara turut serta dalam hal tersebut di atas, maka Saudara bersedia mengundurkan diri dari Perusahaan (PT. TAG) tanpa adanya tuntutan berupa apapun ke Pihak Perusahaan (PT. TAG) atau Perusahaan tempat dimana Saudara ditempatkan.</td>
+									</tr>
+									<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="6%">9.</td>
+										<td width="96%" style="text-align: justify;">Atas pekerjaan Saudara, Perusahaan memberikan imbalan berupa uang atas pekerjaan yang telah dilakukan, yang besarnya ditetapkan tersendiri, yang akan dibayarkan bersamaan dengan karyawan lainnya pada tanggal ditentukan oleh perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="4%" style="color: #ffffff;">1.</td>
+										<td width="96%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="6%">10.</td>
+										<td width="96%" style="text-align: justify;">Apabila Saudara selama Program Pelatihan Kerja (PPK) mengundurkan diri atau tidak masuk kerja tanpa ada kabar/berita/alasan yang jelas selama <strong>5 (lima)</strong> hari baik secara berturut-turut maupun tidak berturut-turut Saudara dikenakan Pinalty ke Perusahaan sebesar Rp. 2.000.000,- (Dua Juta Rupiah). </td>
+									</tr>
+									<tr>
+										<td width="6%">11.</td>
+										<td width="96%" style="text-align: justify;">Untuk fasilitas pengobatan diberikan sesuai plafon masing-masing Karyawan sesuai tingkatannya. </td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;"><strong>.</strong></td>
+										<td width="84%" style="text-align: justify;">Fasilitas Rawat Jalan, setiap Karyawan mendapat penggantian sebesar 80% dari Rp 40.000,- (empat puluh ribu rupiah) dengan pengertian sehari maksimal 1 (satu) kali kunjungan dokter.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;"><strong>.</strong></td>
+										<td width="84%" style="text-align: justify;">Fasilitas Rawat Inap, besar penggantian disesuaikan dengan plafon yang berlaku bagi karyawan yang bersangkutan, namun apabila sampai terjadi excess klaim (kelebihan biaya rawat inap) maka atas kelebihan tagihan biaya rawat inap akan menjadi tanggung jawab Karyawan itu sendiri, bukan Perusahaan.</td> 
+									</tr>
+								</table>
+								<table width="100%" style="font-size:10px">
+									<tr>
+										<td width="6%"/>
+										<td width="84%" align="right">paraf</td>
+										<td width="10%" align="right"><img src="/hrd_employee/static/src/img/PARAF.png" class="img img-responsive" style="width:20px;height:40px;"/></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="color: #ffffff;">1.</td>
+										<td width="84%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;"><strong>.</strong></td>
+										<td width="84%" style="text-align: justify;">Khusus divisi Guard  mengikuti fasilitas kesehatan yang diberikan oleh project/ klien masing-masing</td> 
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">12.</td>
+										<td width="96%" style="text-align: justify;">Pakaian Kerja. 
+										<br>Setiap karyawan wajib memakai pakaian kerja sesuai ketentuan Perusahaan, sebagai berikut :</br></td>
+									</tr>
+								</table>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="30%" style="text-align: left;">Staff Operasional</td>
+										<td width="2%">:</td>
+										<td width="54%" style="text_align: justify">Seragam Operasional (Kemeja/Kaos Hitam Bordir PT.TAG), celana panjang bahan Hitam (Formal), dan memakai sepatu kerja hitam, bukan sepatu kets.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="30%" style="text-align: left;">Kasir</td>
+										<td width="2%">:</td>
+										<td width="54%" style="text_align: justify">Wearpack PT. TAG dan sandal jepit (bukan sendal formal).</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="30%" style="text-align: left;">Satpam</td>
+										<td width="2%">:</td>
+										<td width="54%" style="text_align: justify">PDH (Putih Biru) dan PDL (Hitam hitam) dan sepatu kerja.</td> 
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="10%" style="text-align: center;">-</td>
+										<td width="30%" style="text-align: left;">Staff/Back office</td>
+										<td width="2%">:</td>
+										<td width="54%" style="text_align: justify">Pakaian kerja sesuai dengan Keputusan Direksi yang berlaku, dan sepatu kerja bukan sandal atau selop.</td> 
+									</tr>
+								</table>
+								<p/>
+								<p style="text-align: justify">Saudara wajib menggunakan Kartu Identitas Karyawan yang telah diberikan kepada Saudara sesuai ketentuan perusahaan, yang harus dijaga jangan sampai rusak / hilang.</p> 
+                                <p style="text-align: justify">Penerimaan karyawan ini didasarkan atas praduga bahwa informasi yang diberikan oleh Pihak Karyawan adalah benar adanya.</p>
+                                <p style="text-align: justify">Jika dikemudian hari ternyata terdapat pemalsuan, manipulasi atau ketidak sesuaian baik disengaja atau tidak, maka Pihak Perusahaan berhak memutuskan hubungan kerja dengan Pihak Karyawan tanpa kompensasi dalam bentuk apapun, berupa apapun dan berapapun.</p> 
+                                <p style="text-align: justify">Demikian pemberitahuan ini, dengan Saudara menandatangani Surat ini maka Saudara dianggap telah menyetujui, mengerti, memahami dengan baik dan mengetahui semua ketentuan dan syarat yang telah ditetapkan oleh perusahaan dan mematuhi segala instruksi yang diberikan oleh Atasan dan atau Pimpinan Perusahaan dalam melaksanakan tugas pekerjaan dengan penuh kesadaran dan tanggung jawab yang tinggi tanpa adanya suatu paksaan dari pihak mana pun dan akan mematuhi segala tata tertib dan peraturan perusahaan.</p>
+                                <table width="100%" style="font-size:13px">
+									<tr>
+										<td style="width:40%">Jakarta, <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></td>
+										<td style="width:30%"/>
+										<td style="width:30%"/>
+									</tr>
+									<tr>
+										<td style="width:40%">PT. Tunas Artha Gardatama</td>
+										<td style="width:30%"/>
+										<td style="width:30%">Yang bersangkutan,</td>
+									</tr>
+								</table>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+                                                                <p><span style="color: #ffffff;">a</span></p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td style="width:40%"><strong><span style="text-decoration: underline;"><span t-field="o.nama_pihak.employee_name"/></span></strong></td>
+										<td style="width:30%"/>
+										<td style="width:0%"><strong><span t-field="o.employee_id.employee_name"/></strong></td>
+									</tr>
+									<tr>
+										<td style="width:40%"><strong><span t-field="o.nama_pihak.job_id.name"/></strong></td>
+										<td style="width:20%"/>
+										<td style="width:40%"/>
+									</tr>
+								</table>  
+							</div>
+						</div>
+				</t>
+			</t>
+		</t>
+
+		

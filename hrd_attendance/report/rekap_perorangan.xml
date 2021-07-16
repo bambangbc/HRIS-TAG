@@ -1,0 +1,11 @@
+<openerp>
+    <data>
+		<report id="rekap_perorangan_report" 
+			 string="Print Rekap Absen" 
+			 model="laporan.rekap.absen.perorangan" 
+			 name="rekap_perorangan" 
+			 rml="addons8/TAG/hrd_attendance/report/rekap_perorangan.rml" 
+			 header="False"/>
+    </data>
+</openerp>
+

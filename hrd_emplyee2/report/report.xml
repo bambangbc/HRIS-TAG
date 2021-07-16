@@ -1,0 +1,19 @@
+<?xml version="1.0"?> 
+<openerp> 
+    <data> 
+        
+        <report id="hr_contract_evaluasi" 
+        string="Print Evauasi Karyawan" 
+        model="hr.contract" 
+        report_type="qweb-pdf"
+        name="hrd_emplyee2.report_evaluasi" 
+        />                             
+    	
+    	<report id="hr_kartu_kerja" 
+        string="Print Kartu Kerja Kasir" 
+        model="hr.employee" 
+        report_type="qweb-pdf"
+        name="hrd_emplyee2.report_kartu_kerja" 
+        />          
+    </data> 
+</openerp>

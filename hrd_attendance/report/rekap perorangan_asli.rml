@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(842.0,595.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="57.0" width="728" height="481"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,0" stop="3,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="4,0" stop="4,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="4,-1" stop="4,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="5,0" stop="5,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="5,-1" stop="5,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="6,0" stop="6,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="6,-1" stop="6,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="7,0" stop="7,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="7,-1" stop="7,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="8,0" stop="8,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="8,-1" stop="8,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="4,-1" stop="4,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="5,-1" stop="5,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="6,-1" stop="6,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="7,-1" stop="7,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="8,-1" stop="8,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica" alignment="CENTER"/>
+    <paraStyle name="P2" fontName="Helvetica" alignment="CENTER" textColor="#ffffff"/>
+    <paraStyle name="P3" fontName="Helvetica" alignment="LEFT" textColor="#ffffff"/>
+    <paraStyle name="P4" fontName="Helvetica" alignment="LEFT"/>
+    <paraStyle name="P5" fontName="Helvetica" fontSize="8.0" leading="10" alignment="CENTER"/>
+    <paraStyle name="P6" fontName="Helvetica" alignment="CENTER" backColor="#ffffff" textColor="#ffffff"/>
+    <paraStyle name="P7" fontName="Helvetica" fontSize="8.0" leading="10" alignment="CENTER"/>
+    <paraStyle name="P8" fontName="Helvetica" textColor="#333333"/>
+    <paraStyle name="P9" fontName="Helvetica" alignment="LEFT" textColor="#333333"/>
+    <paraStyle name="P10" fontName="Helvetica" alignment="CENTER" textColor="#333333"/>
+    <paraStyle name="P11" fontName="Helvetica"/>
+    <paraStyle name="Standard" fontName="Helvetica"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Helvetica"/>
+    <paraStyle name="Table Contents" fontName="Helvetica"/>
+    <paraStyle name="Table Heading" fontName="Helvetica" alignment="CENTER"/>
+    <images/>
+  </stylesheet>
+  <story>
+    <para style="P11">[[ repeatIn(objects,'perorangan') ]]</para>
+    <para style="P1">KEGIATAN ABSENSI DAN LEMBUR </para>
+    <para style="P6">a</para>
+    <para style="P6">a</para>
+    <blockTable colWidths="130.0,291.0,10.0,128.0,170.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P9">Divisi, Cabang</para>
+        </td>
+        <td>
+          <para style="P9">: [[ perorangan.department_id ]],[[perorangan.lokasi_id]]</para>
+        </td>
+        <td>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">Dari : [[formatLang(perorangan.date_from,date=True)]]</para>
+        </td>
+        <td>
+          <para style="P9">Sampai: [[formatLang(perorangan.date_from,date=True)]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P9">NIK</para>
+        </td>
+        <td>
+          <para style="P9">: [[perorangan.name.name]]</para>
+        </td>
+        <td>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Posisi </para>
+        </td>
+        <td>
+          <para style="P9">: [[perorangan.job_id]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P9">Nama</para>
+        </td>
+        <td>
+          <para style="P9">: [[perorangan.name.employee_name]]</para>
+        </td>
+        <td>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P2">.</para>
+    <para style="P2">.</para>
+    <blockTable colWidths="41.0,99.0,73.0,85.0,90.0,82.0,90.0,83.0,87.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P7">No</para>
+        </td>
+        <td>
+          <para style="P7">Tanggal</para>
+        </td>
+        <td>
+          <para style="P7">Shift</para>
+        </td>
+        <td>
+          <para style="P7">Jam Masuk</para>
+        </td>
+        <td>
+          <para style="P7">Jam Pulang</para>
+        </td>
+        <td>
+          <para style="P7">Terlambat</para>
+        </td>
+        <td>
+          <para style="P7">Pulang Cepat</para>
+        </td>
+        <td>
+          <para style="P7">Lembur</para>
+        </td>
+        <td>
+          <para style="P7">Point Lembur</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">[[ repeatIn(perorangan.detail_ids,'detail_ids') ]][[ formatLang(detail_ids.date,date=True)]]</para>
+        </td>
+        <td>
+          <para style="P5">[[detail_ids.shift_id]]</para>
+        </td>
+        <td>
+          <para style="P5">[[detail_ids.jam_masuk]]</para>
+        </td>
+        <td>
+          <para style="P5">[[detail_ids.jam_pulang]]</para>
+        </td>
+        <td>
+          <para style="P5">[[formatLang(detail_ids.terlambat,time=True)]]</para>
+        </td>
+        <td>
+          <para style="P5">[[detail_ids.pc]]</para>
+        </td>
+        <td>
+          <para style="P5">[[detail_ids.lembur]]</para>
+        </td>
+        <td>
+          <para style="P5">[[detail_ids.PL]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P2">.</para>
+    <para style="P2">.</para>
+    <blockTable colWidths="85.0,239.0,103.0,300.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P4">Terlambat</para>
+        </td>
+        <td>
+          <para style="P4">: [[(perorangan.terlambat==0)and '0' or perorangan.terlambat ]]</para>
+        </td>
+        <td>
+          <para style="P4">Cuti</para>
+        </td>
+        <td>
+          <para style="P4">: [[(perorangan.cuti==0)and '0' or perorangan.cuti]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P4">Pulang Cepat</para>
+        </td>
+        <td>
+          <para style="P4">: [[(perorangan.pc==0)and '0' or perorangan.pc]]</para>
+        </td>
+        <td>
+          <para style="P4">Sakit</para>
+        </td>
+        <td>
+          <para style="P4">: [[(perorangan.sakit==0)and '0' or perorangan.sakit]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P4">Alpa</para>
+        </td>
+        <td>
+          <para style="P4">: [[(perorangan.alpa==0)and '0' or perorangan.alpa]]</para>
+        </td>
+        <td>
+          <para style="P4">Total Point lembur</para>
+        </td>
+        <td>
+          <para style="P4">: [[(perorangan.lembur==0)and '0' or perorangan.lembur]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P3">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>

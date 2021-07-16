@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data noupdate="1">
+
+    <!--for employee-->
+    <record model="ir.rule" id="employee_rule">
+        <field name="name">Karyawan Rule</field>
+        <field name="model_id" ref="model_hr_employee"/>
+        <field name="groups" eval="[(4, ref('base.group_user'))]"/> <!--Untuk HR Employee-->
+        <field name="domain_force">[('user_id','=',user.id)]</field>
+    </record>
+
+    <record model="ir.rule" id="department_officer_rule">
+        <field name="name">Department Officer Rule in Employee</field>
+        <field name="model_id" ref="model_hr_employee"/>
+        <field name="groups" eval="[(4, ref('base.group_hr_user'))]"/><!--Untuk HR Officer-->
+        <field name="domain_force">[('department_id','child_of',[user.employee_id.department_id.id])]</field>
+    </record>
+
+    <record model="ir.rule" id="department_manager_rule">
+        <field name="name">Department Manager Rule In Employee</field>
+        <field name="model_id" ref="model_hr_employee"/>
+        <field name="groups" eval="[(4, ref('base.group_hr_manager'))]"/>
+        <field name="domain_force">[(1,'=',1)]</field> <!--  There is a special "domain filter" that means "ALLOW ALL" -->
+    </record>
+
+    <record model="ir.rule" id="contract_rule_on_employee_tag">
+        <field name="name">Contract Rule On Employee TAG</field>
+        <field name="model_id" ref="model_hr_contract"/>
+        <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+        <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+    </record>
+
+    <record model="ir.rule" id="contract_rule_on_officer_tag">
+        <field name="name">Contract Rule On Officer TAG</field>
+        <field name="model_id" ref="model_hr_contract"/>
+        <field name="groups" eval="[(4, ref('base.group_hr_user'))]"/>
+        <field name="domain_force">[('department_id.manager_id.user_id.id','=',user.id)]</field>
+    </record>
+
+
+    <record model="ir.rule" id="contract_manager_rule">
+        <field name="name">Contract Rule On Manager TAG</field>
+        <field name="model_id" ref="model_hr_contract"/>
+        <field name="groups" eval="[(4, ref('base.group_hr_manager'))]"/>
+        <field name="domain_force">[(1,'=',1)]</field> <!--  There is a special "domain filter" that means "ALLOW ALL" -->
+    </record>
+
+    <!-- <record id="property_rule_holidays_officer" model="ir.rule">
+        <field name="name">Holidays Officer</field>
+        <field name="model_id" ref="model_hr_holidays"/>
+        <field name="domain_force">[('department_id','child_of',[user.employee_id.department_id.id])]</field>
+        <field name="groups" eval="[(4,ref('base.group_hr_user'))]"/>
+    </record>
+
+    <record id="resource_leaves_officer" model="ir.rule">
+        <field name="name">Leaves Officer</field>
+        <field name="model_id" ref="model_resource_calendar_leaves"/>
+        <field name="domain_force">[('department_id','child_of',[user.employee_id.department_id.id])]</field>
+        <field name="groups" eval="[(4,ref('base.group_hr_user'))]"/>
+    </record> -->
+
+</data>
+</openerp>

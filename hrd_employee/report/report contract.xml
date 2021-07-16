@@ -1,0 +1,33 @@
+<?xml version="1.0"?> 
+<openerp> 
+    <data> 
+        <report id="hr_contract_training" 
+        string="Print Contract Training" 
+        model="hr.contract" 
+        name="hr_contract_training_report" 
+        rml="addons/hrd_employee/report/kontrak_training.rml" 
+        header="False"/>                    
+ 
+        <report id="hr_contract" 
+        string="Print Contract Harian" 
+        model="hr.contract" 
+        name="hr_contract_report" 
+        rml="addons/hrd_employee/report/kontrak_harian.rml" 
+        header="False"/>                    
+     
+        <report id="hr_contract_adendum" 
+        string="Print Contract addendum" 
+        model="hr.contract" 
+        name="hr_contract_addendum_report" 
+        rml="addons/hrd_employee/report/kontrak_addendum.rml" 
+        header="False"/>                    
+     
+        <report id="hr_contract_pkwt1" 
+        string="Print Contract pkwt" 
+        model="hr.contract" 
+        name="hr_contract_pkwt_report" 
+        rml="addons/hrd_employee/report/kontrak_pkwt.rml" 
+        header="False"/>                    
+    
+    </data> 
+</openerp>

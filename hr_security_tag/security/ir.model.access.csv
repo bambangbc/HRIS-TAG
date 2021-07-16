@@ -1,0 +1,12 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+__export__.ir_model_access_483,hr_employee.bahasa_user,hrd_employee.model_hr_employee_bahasa,base.group_user,1,1,0,0
+__export__.ir_model_access_484,hr_employee.kon2_user,hrd_employee.model_hr_employee_kon2,base.group_user,1,1,0,0
+__export__.ir_model_access_485,hr_employee.rwt_krj_user,hrd_employee.model_hr_employee_rwt_krj,base.group_user,1,1,0,0
+__export__.ir_model_access_486,hr.payslip_user,hr_payroll.model_hr_payslip,base.group_user,1,0,0,0
+__export__.ir_model_access_487,hr_employee.suskel2_user,hrd_employee.model_hr_employee_suskel2,base.group_user,1,0,0,0
+__export__.ir_model_access_488,hr_employee.kon1_user,hrd_employee.model_hr_employee_kon1,base.group_user,1,0,0,0
+__export__.ir_model_access_489,hr_employee.rwt_pend_user,hrd_employee.model_hr_employee_rwt_pend,base.group_user,1,1,0,0
+__export__.ir_model_access_490,hr_employee.rwt_pend_user,hrd_employee.model_hr_employee_rwt_pend,base.group_user,1,1,0,0
+__export__.ir_model_access_491,hr_employee.suskel1_user,hrd_employee.model_hr_employee_suskel1,base.group_user,1,1,0,0
+hr_contract.access_hr_contract_user,hr.contract.manager,hr_contract.model_hr_contract,base.group_user,1,0,0,0
+hr.shift_karyawan_tag_user,hr.shift_karyawan,hrd_shift.model_hr_shift_karyawan,base.group_user,1,0,0,0

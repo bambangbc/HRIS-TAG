@@ -1,0 +1,75 @@
+<openerp>
+	<data>
+		<template id="report_evaluasi">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<div class="page">
+						<div class="row" style="font-size:12px">
+							<table width="100%" style="font-family: Arial;font-size:13px">
+								<tr>
+									<td align="center"><strong>EVALUASI KARYAWAN KONTRAK</strong></td>
+								</tr>
+							</table>
+							<table width="100%" style="font-family: Arial;font-size:12px">
+								<tr>
+									<td width="18%">NAMA</td>
+									<td width="1%">:</td>
+									<td width="19%"><span t-field="o.nama"/></td>
+									<td width="2"></td>
+									<td width="34%">ATASAN LANGSUNG</td>
+									<td width="1%">:</td>
+									<td width="25%"><span t-field="o.coach_id"/></td>
+								</tr>
+								<tr>
+									<td width="18%">NIK</td>
+									<td width="1%">:</td>
+									<td width="19%"><span t-field="o.employee_id.name"/></td>
+									<td width="2"></td>
+									<td width="34%">USIA</td>
+									<td width="1%">:</td>
+									<td width="25%"><span t-field="o.employee_id.usia"/></td>
+								</tr>
+								<tr>
+									<td width="18%">DIVISI</td>
+									<td width="1%">:</td>
+									<td width="19%"><span t-field="o.job_id.name"/></td>
+									<td width="2"></td>
+									<td width="34%">TGL PENILAIAN</td>
+									<td width="1%">:</td>
+									<td width="25%">_____ / _____ / _____</td>
+								</tr>
+								<tr>
+									<td width="18%">DEPARTMENT</td>
+									<td width="1%">:</td>
+									<td width="19%"><span t-field="o.bagian"/></td>
+									<td width="2"></td>
+									<td width="34%">PERIODE KONTRAK</td>
+									<td width="1%">:</td>
+									<td width="25%"><span t-field="o.type_id.name"/></td>
+								</tr>
+								<tr>
+									<td width="18%">TGL MASUK</td>
+									<td width="1%">:</td>
+									<td width="19%"><span t-field="o.nama"/></td>
+									<td width="2"></td>
+									<td width="34%">TGL PENILAIAN</td>
+									<td width="1%">:</td>
+									<td width="25%">JAJANG</td>
+								</tr>
+								<tr>
+									<td width="18%">DIVISI</td>
+									<td width="1%">:</td>
+									<td width="19%"><span t-field="o.nama"/></td>
+									<td width="2"></td>
+									<td width="34%">TGL PENILAIAN</td>
+									<td width="1%">:</td>
+									<td width="25%">JAJANG</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</t>
+			</t>
+		</template>
+	</data>
+</openerp>

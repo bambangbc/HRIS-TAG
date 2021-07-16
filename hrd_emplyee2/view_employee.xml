@@ -1,0 +1,58 @@
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="view_employee_tree2">
+            <field name="name">hr.employee.tree2</field>
+            <field name="model">hr.employee</field>
+            <field name="type">tree</field>
+            <field name="inherit_id" ref="hrd_employee.view_employee_tree"/>
+            <field name="arch" type="xml">
+            	<tree string="Employees" position="replace">
+                <tree string="Employees" colors="red:kontrak == 0">
+                    <field name="name_related"/>
+                    <field name="employee_name"/>
+                    <field name="address_id2"/>
+                    <field name="department_id"/>
+                    <field name="job_id"/>
+                    <field name="habis_contract"/>
+                    <!--button string="cek" name="cron_habis_cont" type="object"/-->
+                    <field name="kontrak" invisible="1"/>
+                </tree>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_payroll" model="ir.ui.view">
+            <field name="name">hr.employee.jms</field>
+            <field name="model">hr.employee</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <page string="HR Settings" position="after">
+                    <page string="Payroll" group="base.group_user">
+                        <group string="Payroll">
+                            <field name="jamsostek"/>
+                            <field name="insentif"/>
+                            <field name="jpk"/>
+                        </group>
+                    </page>
+                </page>
+            </field>
+        </record>
+
+        <record id="view_employee_filter3" model="ir.ui.view">
+            <field name="name">Employees</field>
+            <field name="model">hr.employee</field>
+            <field name="type">search</field>
+            <field name="inherit_id" ref="hrd_employee.view_employee_filter2"/>
+            <field name="arch" type="xml">
+                <search string="Employees">
+                	<group expand="0" string="Group By...">
+                		<filter string="Habis Kontrak" icon="terp-personal" domain="[]" context="{'group_by' :'habis_contract'}"/>
+                	</group>
+                </search>
+            </field>
+        </record>
+
+    </data>
+</openerp>

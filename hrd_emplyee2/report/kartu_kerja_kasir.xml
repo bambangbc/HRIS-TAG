@@ -1,0 +1,512 @@
+<openerp>
+	<data>
+		<template id="report_kartu_kerja">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<div class="page">
+						<div class="row" style="font-size:12px">
+							<table width="100%" style="font-family: Arial;font-size:13px">
+								<tr>
+									<td align="center"><strong>KARTU KERJA KASIR</strong></td>
+								</tr>
+							</table>
+                                                        <table width="100%" style="font-family: Arial;font-size:13px">
+								<tr>
+									<td width="10%">Tanggal</td>
+									<td width="2%">:</td>
+									<td width="18%"><span t-usertime="%d %B %Y" /></td>
+									<td width="40%" style="color: #ffffff;">a</td>
+									<td width="10%">Nama</td>
+									<td width="2%">:</td>
+									<td width="18%"><span t-field="o.employee_name"/></td>
+								</tr>
+								<tr>
+									<td width="10%">Hari</td>
+									<td width="2%">:</td>
+									<td width="18%"><span t-usertime="%A" /></td>
+									<td width="40%" style="color: #ffffff;">a</td>
+									<td width="10%">NIK</td>
+									<td width="2%">:</td>
+									<td width="18%"><span t-field="o.name"/></td>
+								</tr>
+							</table>
+                            <table width="100%" style="border:1px solid black;border-collapse:collapse;">
+								<tr>
+									<td width="50px" rowspan="4" align="center" style="border:1px solid black;">No</td>
+									<td width="50px" rowspan="4" align="center" style="border:1px solid black;">Meja</td>
+									<td width="50px" colspan="8" align="center" style="border:1px solid black;">Cash Management</td>
+									<td width="50px" colspan="4" align="center" style="border:1px solid black;">ATM</td>
+			                        <td width="50px" rowspan="3" align="center" style="border:1px solid black;">Etc</td>
+									<td width="50px" rowspan="4" align="center" style="border:1px solid black;">Keterangan</td>
+									<td width="50px" rowspan="4" align="center" style="border:1px solid black;">Paraf</td>
+								</tr>
+								<tr>
+									<td width="50px" colspan="2" align="Center" style="border:1px solid black;">Jam</td>
+									<td width="50px" colspan="2" align="Center" style="border:1px solid black;">Ld</td>
+									<td width="50px" rowspan="2" align="Center" style="border:1px solid black;">OB</td>
+									<td width="50px" colspan="2" align="Center" style="border:1px solid black;">Prc</td>
+									<td width="50px" rowspan="3" align="Center" style="border:1px solid black;">Pc</td>
+									<td width="50px" rowspan="2" align="center" style="border:1px solid black;">Ld</td>
+									<td width="50px" rowspan="2" align="center" style="border:1px solid black;">PT</td>
+									<td width="50px" colspan="2" align="center" style="border:1px solid black;">Prc</td>
+								</tr>
+								<tr>
+									<td width="50px" align="center" style="border:1px solid black;">Awal</td>
+									<td width="50px" align="center" style="border:1px solid black;">Akhir</td>
+									<td width="50px" align="center" style="border:1px solid black;">Br</td>
+									<td width="50px" align="center" style="border:1px solid black;">Pk</td>
+									<td width="50px" align="center" style="border:1px solid black;">Msn</td>
+									<td width="50px" align="center" style="border:1px solid black;">Mnl</td>
+									<td width="50px" align="center" style="border:1px solid black;">Pre</td>
+									<td width="50px" align="center" style="border:1px solid black;">Rek</td>
+								</tr>
+								<tr>
+									<td width="50px" colspan="7" align="center" style="border:1px solid black;">Dalam Satuab Pcs</td>
+									<td width="50px" colspan="5" align="center" style="border:1px solid black;">Dlm Satuab Catridge</td>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">1</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">2</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">3</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">4</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">5</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">6</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">7</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">8</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">9</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+							</table>
+<table width="100%" style="font-size:12px">
+                            <tr>
+                            	<td><b>CM =&gt;</b></td>
+                                <td><b>Ld</b>:Loading  <b>OB</b>:Open Bag <b>Prc</b>:Procces <b>Pc</b>:Packing <b>Br</b>:Brood <b>Pk</b>:Pack <b>Msn</b>:Mesin Besar <b>Mnl</b>:Manual/Mesin Kecil</td>
+                            </tr>
+                            <tr>
+                            	<td><b>ATM =&gt;</b></td>
+                                <td><b>Ld</b>:Loading <b>PT</b>:Pembuatan Team <b>Prc</b>:Procces <b>Pre</b>:Preapare Crtd <b>Rek</b>:Rekon Crtd <b>Etc</b>:Lain-lain</td>
+                            </tr>
+                            </table>
+                            <table width="75%" style="border:1px solid black;border-collapse:collapse;">
+                            	<tr>
+                                	<td width="25%" style="border:1px solid black;">Ttd Kasir :<p style="color: #ffffff;">.</p></td>
+                                    <td width="25%" style="border:1px solid black;">Ttd Kordinator :<p style="color: #ffffff;">.</p></td>
+                                    <td width="25%" style="border:1px solid black;">Ttd Admin Entry :<p style="color: #ffffff;">.</p></td>
+                                </tr>
+                            </table>
+<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+<table width="100%" style="font-family: Arial;font-size:13px">
+								<tr>
+									<td align="center"><strong>KARTU KERJA KASIR</strong></td>
+								</tr>
+							</table>
+                                                        <table width="100%" style="font-family: Arial;font-size:13px">
+								<tr>
+									<td width="10%">Tanggal</td>
+									<td width="2%">:</td>
+									<td width="18%"><span t-usertime="%d %B %Y" /></td>
+									<td width="40%" style="color: #ffffff;">a</td>
+									<td width="10%">Nama</td>
+									<td width="2%">:</td>
+									<td width="18%"><span t-field="o.employee_name"/></td>
+								</tr>
+								<tr>
+									<td width="10%">Hari</td>
+									<td width="2%">:</td>
+									<td width="18%"><span t-usertime="%A" /></td>
+									<td width="40%" style="color: #ffffff;">a</td>
+									<td width="10%">NIK</td>
+									<td width="2%">:</td>
+									<td width="18%"><span t-field="o.name"/></td>
+								</tr>
+							</table>
+                            <table width="100%" style="border:1px solid black;border-collapse:collapse;">
+								<tr>
+									<td width="50px" rowspan="4" align="center" style="border:1px solid black;">No</td>
+									<td width="50px" rowspan="4" align="center" style="border:1px solid black;">Meja</td>
+									<td width="50px" colspan="8" align="center" style="border:1px solid black;">Cash Management</td>
+									<td width="50px" colspan="4" align="center" style="border:1px solid black;">ATM</td>
+			                        <td width="50px" rowspan="3" align="center" style="border:1px solid black;">Etc</td>
+									<td width="50px" rowspan="4" align="center" style="border:1px solid black;">Keterangan</td>
+									<td width="50px" rowspan="4" align="center" style="border:1px solid black;">Paraf</td>
+								</tr>
+								<tr>
+									<td width="50px" colspan="2" align="Center" style="border:1px solid black;">Jam</td>
+									<td width="50px" colspan="2" align="Center" style="border:1px solid black;">Ld</td>
+									<td width="50px" rowspan="2" align="Center" style="border:1px solid black;">OB</td>
+									<td width="50px" colspan="2" align="Center" style="border:1px solid black;">Prc</td>
+									<td width="50px" rowspan="3" align="Center" style="border:1px solid black;">Pc</td>
+									<td width="50px" rowspan="2" align="center" style="border:1px solid black;">Ld</td>
+									<td width="50px" rowspan="2" align="center" style="border:1px solid black;">PT</td>
+									<td width="50px" colspan="2" align="center" style="border:1px solid black;">Prc</td>
+								</tr>
+								<tr>
+									<td width="50px" align="center" style="border:1px solid black;">Awal</td>
+									<td width="50px" align="center" style="border:1px solid black;">Akhir</td>
+									<td width="50px" align="center" style="border:1px solid black;">Br</td>
+									<td width="50px" align="center" style="border:1px solid black;">Pk</td>
+									<td width="50px" align="center" style="border:1px solid black;">Msn</td>
+									<td width="50px" align="center" style="border:1px solid black;">Mnl</td>
+									<td width="50px" align="center" style="border:1px solid black;">Pre</td>
+									<td width="50px" align="center" style="border:1px solid black;">Rek</td>
+								</tr>
+								<tr>
+									<td width="50px" colspan="7" align="center" style="border:1px solid black;">Dalam Satuab Pcs</td>
+									<td width="50px" colspan="5" align="center" style="border:1px solid black;">Dlm Satuab Catridge</td>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">1</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">2</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">3</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">4</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">5</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">6</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">7</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">8</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+								<tr>
+									<td width="50px" style="border:1px solid black;">9</td>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+									<td width="50px" style="border:1px solid black;"/>
+								</tr>
+							</table>
+                                                        <table width="100%" style="font-size:12px">
+                            <tr>
+                            	<td><b>CM =&gt;</b></td>
+                                <td><b>Ld</b>:Loading  <b>OB</b>:Open Bag <b>Prc</b>:Procces <b>Pc</b>:Packing <b>Br</b>:Brood <b>Pk</b>:Pack <b>Msn</b>:Mesin Besar <b>Mnl</b>:Manual/Mesin Kecil</td>
+                            </tr>
+                            <tr>
+                            	<td><b>ATM =&gt;</b></td>
+                                <td><b>Ld</b>:Loading <b>PT</b>:Pembuatan Team <b>Prc</b>:Procces <b>Pre</b>:Preapare Crtd <b>Rek</b>:Rekon Crtd <b>Etc</b>:Lain-lain</td>
+                            </tr>
+                            </table>
+                            <table width="75%" style="border:1px solid black;border-collapse:collapse;">
+                            	<tr>
+                                	<td width="25%" style="border:1px solid black;">Ttd Kasir :<p style="color: #ffffff;">.</p></td>
+                                    <td width="25%" style="border:1px solid black;">Ttd Kordinator :<p style="color: #ffffff;">.</p></td>
+                                    <td width="25%" style="border:1px solid black;">Ttd Admin Entry :<p style="color: #ffffff;">.</p></td>
+                                </tr>
+                            </table>
+						</div>
+					</div>
+				</t>
+			</t>
+		</template>
+	</data>
+</openerp>

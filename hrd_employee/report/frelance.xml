@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<t t-name="hrd_employee.report_frelance">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<!-- <t t-call="report.external_layout"> -->
+						<div class="page">
+							<div class="row" style="font-size:13px">
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td align="right"><span t-field="o.employee_id.name"/></td>
+									</tr>
+								</table>
+								<p align="center"><strong>SURAT KESEPAKATAN KERJA HARIAN</strong></p> 
+								<p>Pada Hari <span t-field="o.hari"/>, tanggal <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd&quot;}"/> Bulan <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;MMMM&quot;}"/> Tahun <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;y&quot;}"/>:</p> 
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">I.</td>
+										<td width="96%" style="text-align: justify;"><strong><span t-field="o.nama_pihak.employee_name"/></strong>, Yang dalam jabatanya selaku <strong><span t-field="o.nama_pihak.job_id.name"/> PT. TUNAS ARTHA GARDATAMA,</strong> yang berkedudukan di Gedung RDW CENTER Jl. Lenteng Agung Raya No. 7 Jagakarsa Jakarta Selatan 12610, selanjutnya nama tersebut diatas oleh karna jabatanya itu bertindak untuk dan atas nama perseroan, yang selanjutnya disebut <strong>"Perusahaan".</strong></td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">II.</td>
+										<td width="32%">Nama</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.employee_name"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">No. KTP</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.ktp"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Alamat Sekarang</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.alamat1"/> <span t-field="o.employee_id.kec_id"/> <span t-field="o.employee_id.kab_id"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Telpon/HP</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.mobile_phone"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Tempat/Tanggal Lahir</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.place_of_birth"/>, <span t-field="o.employee_id.birthday" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Jenis Kelamin</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.kelamin"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Agama</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.agama"/></td>
+									</tr>
+									<tr>
+										<td width="6%"/>
+										<td width="32%">Status</td>
+										<td width="2%">:</td>
+										<td width="60%" style="text-align: justify;"><span t-field="o.employee_id.marital"/></td>
+									</tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="100%" style="text-align: justify;">Dalam Kesepakatan Kerja ini bertindak untuk dan atas nama dirinya sendiri, yang selanjutnya disebut <strong>"Karyawan Harian"</strong>.</td>
+									</tr>
+									<tr>
+										<td width="100%" style="text-align: justify;">Bahwa pada tanggal tersebut diatas antara pihak perusahaan dan pihak karyawan secara bersama-sama disebut "Para Pihak" dengan ini menerangkan terlebih dahulu :</td>
+									</tr>
+									<tr>
+								        <td width="100%" style="text-align: justify;">bahwa para pihak telah sepakat untuk mengadakan suatu ikatan Hubungan Kerja dalam bentuk Kesepakatan Kerja harian dengan ketentuan dan syarat-syarat sebagai berikut :</td>
+								    </tr>
+								</table>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="6%">1.</td>
+										<td width="96%" style="text-align: justify;">Perusahaan memperkerjakan karyawan pada bagian <span t-field="o.bagian"/> dengan jabatan/ posisi sebagai <strong><span t-field="o.employee_id.job_id.name"/></strong></td>
+									</tr>
+									<tr>
+										<td width="6%">2.</td>
+										<td width="96%" style="text-align: justify;">Sebagai bentuk imbalan atas pekerjaan tersebut perusahaan memberikan imbalan atas jasa/pekerjaan kepada karyawan berupa Upah "Gross"/bulanan, yang akan dibayarkan bersamaan dengan karyawan lainya pada tanggal yang telah ditentukan oleh perusahaan</td>
+									</tr>
+									<tr>
+										<td width="6%">3.</td>
+										<td width="96%" style="text-align: justify;">Karyawan menerima dan sanggup melaksanakan kewajiba-kewajiban dan tugas-tugas yang di bebankan kepadanya oleh perusahaan.</td>
+									</tr>
+									<tr>
+										<td width="6%">4.</td>
+										<td width="96%" style="text-align: justify;">Karyawan bersedia dan wajib untuk mentaati dan melaksanakan semua ketentuan, tata tertib dan peraturan perusahaan yang berlaku.</td>
+									</tr>
+									<tr>
+										<td width="6%">5.</td>
+										<td width="96%" style="text-align: justify;">Karyawan bersedia dan sanggup diputuskan hubungan kerja kapan saja secara sepihak tanpa alasan apapun.</td>
+									</tr>
+								</table>
+								<p/>
+								<p style="text-align: justify;">Demikian Kesepakatan Kerja Harian ini dibuat dalam rangkap 2 (dua), bermaterai cukup dan ditandatangani atas kemauan kedua belah pihak dalam keadaan sehat jasmani dan rohani dan tanpa ada paksaan dari pihak manapun, dan masing-masing mempunyai kekuatan hukum yang sama.</p>
+								<p/>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td style="width:40%">Jakarta, <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></td>
+										<td style="width:30%"/>
+										<td style="width:30%"/>
+									</tr>
+									<tr>
+										<td style="width:40%">PT. Tunas Artha Gardatama</td>
+										<td style="width:30%"/>
+										<td style="width:30%">Yang bersangkutan,</td>
+									</tr>
+								</table>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td style="width:40%"><strong><span style="text-decoration: underline;"><span t-field="o.nama_pihak.employee_name"/></span></strong></td>
+										<td style="width:30%"/>
+										<td style="width:30%"><strong><span t-field="o.employee_id.employee_name"/></strong></td>
+									</tr>
+									<tr>
+										<td style="width:40%"><strong><span t-field="o.nama_pihak.job_id.name"/></strong></td>
+										<td style="width:20%"/>
+										<td style="width:40%"/>
+									</tr>
+								</table>
+								<p style="color: #ffffff;">.</p>
+								<p style="color: #ffffff;">.</p>
+								<p style="color: #ffffff;">.</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td style="text-align: center;" width="100%"><strong>PERJANJIAN KERJA HARIAN</strong></td>
+									</tr>
+									<tr>
+										<td style="text-align: center;" width="100%">No. :<span t-field="o.name"/></td>
+									</tr>
+								</table>
+								<p style="color: #ffffff;">.</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td width="30%"><strong><span t-field="o.nama_pihak.employee_name"/></strong></td>
+										<td width="2%">:</td>
+										<td style="text-align: justify;" width="68%">Jabatan <strong><span t-field="o.nama_pihak.job_id.name"/></strong>, oleh karena pekerjaannya bertindak untuk dan atas nama <strong>PT. Tunas Artha Gardatama</strong> yang berkedudukan di Jl. Lenteng Agung Raya No. 7 Jagakarsa Jakarta Selatan yang untuk selanjutnya disebut sebagai <strong>PIHAK PERTAMA</strong>.</td>
+									</tr>
+									<tr>
+										<td width="30%" style="color: #ffffff;">1.</td>
+										<td width="2%" style="color: #ffffff;">1</td>
+										<td width="68%" style="color: #ffffff;">1</td>
+									</tr>
+									<tr>
+										<td width="30%"><strong><span t-field="o.employee_id.employee_name"/></strong></td>
+										<td width="2%">:</td>
+										<td style="text-align: justify;" width="68%">Swasta, beralamat di <span t-field="o.employee_id.alamat2"/> <span t-field="o.employee_id.kec_id2"/> <span t-field="o.employee_id.kab_id2"/>, Nomor KTP : <span t-field="o.employee_id.ktp"/> yang untuk selanjutnya disebut sebagai <strong>PIHAK KEDUA</strong>.</td>
+									</tr>
+								</table>
+								<p/>
+								<p style="text-align: justify;">Antara Pihak Pertama dan Pihak Kedua dalam Perjanjian ini selanjutnya disebut sebagai <strong>PARA PIHAK</strong>.</p>
+								<p style="text-align: justify;">Sesuai dengan kesepakatan antara <strong>PARA PIHAK</strong> , terhitung sejak tanggal <strong><span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong> sampai dengan <strong><span t-field="o.date_end" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></strong> Saudara bergabung dengan Perusahaan <strong>PT. Tunas Artha Gardatama</strong> dengan status Hubungan Kerja sebagai <strong>“Tenaga Harian”</strong> dengan kondisi sebagai berikut :</p> 
+								<p style="color: #ffffff;">.</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td align="center" width="100%">Pasal I : </td>
+									</tr>
+									<tr>
+										<td align="center" width="100%">Kewajiban dan Hak Pihak Kedua</td>
+									</tr>
+								</table>
+								<p style="color: #ffffff;">.</p>
+								<p align="justify"><strong>Pihak Kedua</strong> sanggup untuk melaksanakan pekerjaannya sesuai dengan ketetapan dari <strong>Pihak Pertama</strong> dan akan melaksanakan dan menyelesaikan tugas pekerjaannya dengan penuh rasa tanggung jawab serta sanggup mengikuti instruksi atasannya dan mematuhi date line yang telah ditentukan.</p> 
+								<p align="justify"><strong>Pihak Kedua</strong> sanggup untuk mengikuti segala peraturan dan tata tertib kerja Perusahaan di tempat Pihak Pertama baik yang tertulis maupun yang tidak tertulis.</p> 
+								<p align="justify">Sebagai bentuk imbalan atas pekerjaan tersebut Perusahaan memberikan imbalan atas jasa/pekerjaan kepada Karyawan berupa Upah “Gross”/bulan, yang akan dibayarkan bersamaan dengan Karyawan lainnya pada tanggal yang telah ditentukan oleh Perusahaan</p> 
+								<p align="justify"><strong>Apabila Pihak Kedua bekerja kurang dari jam kerja perusahaan maka kepadanya diterapkan pemotongan atas imbalan yang diperoleh.</strong></p>
+								<p style="color: #ffffff;">.</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td align="center" width="100%">Pasal 2 : </td>
+									</tr>
+									<tr>
+										<td align="center" width="100%">Kewajiban dan Hak Pihak Pertama</td>
+									</tr>
+								</table>
+								<p style="color: #ffffff;">.</p>
+								<p align="justify"><strong>Pihak Pertama</strong> akan melaksanakan kewajibannya yaitu membayar imbalan jasa atas pekerjaan yang telah dilakukan oleh <strong>Pihak Kedua</strong> yang akan  dibayarkan berdasarkan absensi kehadiran dan akan dihitung secara tersendiri.</p>
+								<p align="justify"><strong>Pihak Pertama</strong> mempekerjakan Pihak Kedua dengan batasan waktu sampai diperoleh pengganti untuk menggantikan posisi <strong>Pihak Kedua</strong></p>
+								<table width="100%" style="font-size:10px">
+									<tr>
+										<td width="6%"/>
+										<td width="84%" align="right">paraf</td>
+										<td width="10%" align="right"><img src="/hrd_employee/static/src/img/PARAF.png" class="img img-responsive" style="width:20px;height:40px;"/></td>
+									</tr>
+								</table>
+								<p style="color: #ffffff;">.</p>
+								<p align="justify"><strong>Pihak Pertama</strong> berhak melakukan teguran keras kepada <strong>Pihak Kedua</strong> apabila ternyata <strong>Pihak Kedua</strong> tidak melaksanakan kewajibannya sesuai kesepakatan dan kesanggupannya sendiri ke Perusahaan dan berhak memutuskan hubungan kerja sewaktu-waktu tanpa pemberitahuan terlebih dahulu dan tanpa resiko apa pun kecuali imbalan sampai dengan hari terakhir <strong>Pihak Kedua</strong> bekerja.</p>
+								<p align="justify">Demikian Surat Perjanjian ini dibuat  di atas meterai cukup sebagai bentuk ikatan sederhana namun mengikat kedua belah pihak dan apabila ada permasalahan yang timbul dikemudian hari maka akan diselesaikan melalui proses musyawarah namun bila tidak tercapai mufakat maka keduanya sepakat untuk menempuh jalur hukum yang berlaku.</p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td style="width:40%">Jakarta, <span t-field="o.date_start" t-field-options="{&quot;format&quot;: &quot;dd MMMM y&quot;}"/></td>
+										<td style="width:30%"/>
+										<td style="width:30%"/>
+									</tr>
+									<tr>
+										<td style="width:40%">Pihak Pertama</td>
+										<td style="width:30%"/>
+										<td style="width:30%">Pihak Kedua</td>
+									</tr>
+								</table>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+								<p><span style="color: #ffffff;">a</span></p>
+                                                                <p><span style="color: #ffffff;">a</span></p>
+								<table width="100%" style="font-size:13px">
+									<tr>
+										<td style="width:40%"><strong><span style="text-decoration: underline;"><span t-field="o.nama_pihak.employee_name"/></span></strong></td>
+										<td style="width:30%"/>
+										<td style="width:30%"><strong><span t-field="o.employee_id.employee_name"/></strong></td>
+									</tr>
+									<tr>
+										<td style="width:40%"><strong><span t-field="o.nama_pihak.job_id.name"/></strong></td>
+										<td style="width:20%"/>
+										<td style="width:40%"/>
+									</tr>
+								</table>
+							</div>
+						</div>
+				</t>
+			</t>
+		</t>
+
+		

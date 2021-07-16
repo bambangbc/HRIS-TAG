@@ -1,0 +1,39 @@
+<openerp>
+	<data>
+		<report 
+            id="rekap Absen"
+            model="laporan.rekap.absen.perorangan"
+            string="Rekap Absen Perorangan"
+            report_type="qweb-pdf"
+            name="hrd_attendance.print_rekap_absen"
+            file="hrd_attendance.print_rekap_absen"
+        />
+
+        <report 
+            id="rekap_Absen_perdivisi"
+            model="laporan.rekap.absen.perdivisi"
+            string="Rekap Absen Perdivisi"
+            report_type="qweb-pdf"
+            name="hrd_attendance.print_rekap_absen_perdivisi"
+            file="hrd_attendance.print_rekap_absen_perdivisi"
+        />
+
+	    <record id="paperformat_landscape" model="report.paperformat">
+		    <field name="name">A4 Landscape</field>
+		    <field name="default" eval="True"/>
+		    <field name="format">custom</field>
+		    <field name="page_height">80</field>
+		    <field name="page_width">170</field>
+		    <field name="orientation">Landscape</field>
+		    <field name="margin_top">15</field>
+		    <field name="margin_bottom">10</field>
+		    <field name="margin_left">10</field>
+		    <field name="margin_right">7</field>
+		    <field name="header_line" eval="False"/>
+		    <field name="header_spacing">3</field>
+		    <field name="dpi">80</field>
+		</record>
+
+    </data>
+</openerp>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0"?> 
+<openerp> 
+    <data> 
+        
+        <report id="hr_contract_training" 
+        string="Print Contract PPK" 
+        model="hr.contract" 
+        report_type="qweb-pdf"
+        name="hrd_employee.report_training" 
+        />                    
+
+        <report id="hr_contract_frelance" 
+        string="Print Contract Frelance" 
+        model="hr.contract" 
+        name="hrd_employee.report_frelance" 
+        report_type="qweb-pdf"/>                    
+
+        <report id="hr_contract_adendum" 
+        string="Print Contract addendum" 
+        model="hr.contract" 
+        report_type="qweb-pdf"
+        name="hrd_employee.report_addendum"
+        file="hrd_employee.report_addendum" 
+        />
+
+        <report 
+            id="hr_contract_pkwt" 
+            string="Print Contract pkwt" 
+            model="hr.contract" 
+            report_type="qweb-pdf"
+            name="hrd_employee.report_pkwt"
+            file="hrd_employee.report_pkwt"
+        />                           
+    
+    </data> 
+</openerp>

@@ -1,0 +1,41 @@
+<openerp>
+    <data>		
+
+        <record model="ir.ui.view" id="view_wizard_recruitment">
+            <field name="name">Print Report Rekap Absensi</field>
+            <field name="model">report_rekap_absen</field>
+            <field name="arch" type="xml">
+                <form string="Report" version="7.0">
+                    <group>
+                        <field name="name"/>      
+                        <field name='employee_id' attrs="{'invisible': [('name','not in',['laporan_rekap_perorang'])],'required': [('name','in',['laporan_rekap_perorang'])]}"/>
+                        <field name='department_id' attrs="{'invisible': [('name','not in',['laporan_rekap_absen'])],'required': [('name','in',['laporan_rekap_absen'])]}"/>
+                        <field name='lokasi_id' attrs="{'invisible': [('name','not in',['laporan_rekap_absen'])],'required': [('name','in',['laporan_rekap_absen'])]}"/>   
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                    </group>
+                    <footer>
+                        <button string='Proces' type='object' name='fill_table'/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window name="Print Report Rekap Absen"            
+            res_model="report_rekap_absen"
+            view_mode="form"
+            target="new"
+            context="{}"
+            id="action_rekap_absen"/>
+
+        <menuitem
+            action="action_rekap_absen"
+            id="menu_rekap_absen"
+            parent="hr_attendance.menu_hr_attendance"
+            name="Rekap Absen"
+            sequence="30"
+        />
+    </data>
+</openerp>

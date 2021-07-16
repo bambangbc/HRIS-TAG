@@ -1,0 +1,567 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="57.0" width="481" height="728"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table4">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table5">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table6">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table15">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table16">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table7">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table8">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table9">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table10">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table11">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table17">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table12">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table18">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table13">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table14">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica" fontSize="12.0" leading="15"/>
+    <paraStyle name="P2" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P3" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="P4" fontName="Helvetica" fontSize="20.0" leading="25" alignment="RIGHT"/>
+    <paraStyle name="P5" fontName="Helvetica" fontSize="10.0" leading="13" alignment="RIGHT"/>
+    <paraStyle name="P6" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P7" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P8" fontName="Helvetica" fontSize="10.0" leading="13"/>
+    <paraStyle name="P9" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P10" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P11" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P12" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P13" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY" textColor="#ffffff"/>
+    <paraStyle name="P14" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY" textColor="#ffffff"/>
+    <paraStyle name="P15" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY" textColor="#ffffff"/>
+    <paraStyle name="P16" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY" textColor="#ffffff"/>
+    <paraStyle name="Standard" fontName="Helvetica"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Helvetica"/>
+    <paraStyle name="Header" fontName="Helvetica"/>
+    <paraStyle name="Footer" fontName="Helvetica"/>
+    <paraStyle name="Text body indent" rightIndent="0.0" leftIndent="9.0" fontName="Helvetica" fontSize="12.0" leading="15"/>
+    <paraStyle name="Body Text Indent 3" rightIndent="0.0" leftIndent="18.0" fontName="Helvetica" fontSize="12.0" leading="15" alignment="JUSTIFY"/>
+    <paraStyle name="Body Text Indent 2" rightIndent="0.0" leftIndent="9.0" fontName="Helvetica" fontSize="12.0" leading="15" alignment="JUSTIFY"/>
+    <paraStyle name="List Paragraph" rightIndent="0.0" leftIndent="36.0" fontName="Helvetica"/>
+    <paraStyle name="Table Contents" fontName="Helvetica"/>
+    <paraStyle name="MP1" fontName="Helvetica" fontSize="12.0" leading="15"/>
+    <images/>
+  </stylesheet>
+  <story>
+    <para style="P5">[[ repeatIn(objects,'contract') ]]</para>
+    <para style="P8">
+      <font color="white"> </font>
+    </para>
+    <para style="P8">
+      <font color="white"> </font>
+    </para>
+    <para style="P8">
+      <font color="white"> </font>
+    </para>
+    <para style="P6">
+      <font face="Helvetica">Nomor : </font>
+      <font face="Helvetica">[[ contract.name ]]</font>
+    </para>
+    <para style="P6">
+      <font face="Helvetica">Perihal: </font>
+      <font face="Helvetica">HubunganKerja</font>
+    </para>
+    <para style="P13">...a</para>
+    <para style="P9">KepadaYth :</para>
+    <para style="P6">
+      <font face="Helvetica">Sdr. </font>
+      <font face="Helvetica">[[ contract.employee_id.employee_name ]]</font>
+    </para>
+    <para style="P7">[[ contract.employee_id.alamat2 ]]</para>
+    <para style="P16">...</para>
+    <para style="P10">Dengan hormat, </para>
+    <para style="P14">...</para>
+    <para style="P10">Menunjuk Surat Lamaran Saudara dan dari hasil interview yang telah kami laksanakan, Saudara dinyatakan telah memenuhi kualifikasi dan syarat-syarat kerja yang telah ditetapkan oleh perusahaan. </para>
+    <para style="P15">...</para>
+    <para style="P10">Untuk itu kami beritahukan bahwa Saudara dinyatakan dapat diterima sebagai karyawan pada Perusahaan PT. TUNAS ARTHA GARDATAMA dengan ketentuan dan syarat sebagai berikut : </para>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="16.0,466.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P2">1</para>
+        </td>
+        <td>
+          <para style="P12">
+            <font face="Helvetica">Saudara ditempatkan pada Bagian </font>
+            <font face="Helvetica">[[ contract.employee_id.department_id.name ]]</font>
+            <font face="Helvetica">dengan Jabatan </font>
+            <font face="Helvetica">[[ contract.employee_id.job_id.name ]]</font>
+            <font face="Helvetica"> dan dalam pekerjaan sehari – hari Saudara akan bertanggung jawab langsung kepada atasan Saudara yang telah ditunjuk oleh Perusahaan. </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="16.0,466.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P2">2</para>
+        </td>
+        <td>
+          <para style="P10">Dalam menjalankan pekerjaan sehari – hari Saudara wajib berpegang teguh kepada SOP (Standard Operating Procedure) yang telah ditetapkan oleh perusahaan, teliti dan hati - hati, tidak dibenarkan melakukan kecerobohan yang akan dapat berakibat kerugian bagi pihak perusahaan. Mengenai detail pekerjaan dapat Saudara baca di dalam Uraian Pekerjaan Saudara masing - masing. </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="16.0,466.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P2">3</para>
+        </td>
+        <td>
+          <para style="P10">Hari Kerja, Jam Kerja ,Waktu Kerja Hari kerja Saudara adalah 5 (lima) Hari Kerja dalam seminggu atau 8 (delapan) jam effective per hari, 40 (Empat Puluh) jam seminggu, dengan jadwal kerja sesuai dengan kebutuhan masing-masing bagian atau waktu/periode yang dianggap perlu oleh perusahaan.</para>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+          <para style="P10">Hari Kerja Karyawan Operasional adalah 365 (Tiga Ratus Enam Puluh Lima) hari, dengan pengertian bahwa di dalam penerapan pengaturan jadwal diatur secara shift dan di dalam pengaturan sudah diperhitungkan Cuti, Off dan Libur Resmi. Dengan demikian jumlah Off menjadi bertambah sejumlah hari libur nasional yang ada didalam tahun kalender yang berjalan. </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P10"/>
+    <blockTable colWidths="16.0,466.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P2">4</para>
+        </td>
+        <td>
+          <para style="P12">
+            <font face="Helvetica">Tanggal Masuk Kerja Saudara terhitung sejak Saudara dinyatakan masuk Program Pelatihan Kerja (PPK) selama kurun waktu 3 (Tiga) bulan yaitu sejak tanggal [[formatLang(contract.date_start, date=True)]] sampai dengan [[formatLang(contract.date_end, date=True)]] dan bila Saudara dinyatakan belum mampu menjalankan tugas pekerjaan dengan baik dan benar, maka saudara dinyatakan gugur,dan kepada Saudara akan dibayarkan hak atas upah sampai dengan hari kerja terakhir (proporsional) pada bulan berjalan. </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="16.0,466.0" style="Table5">
+      <tr>
+        <td>
+          <para style="P2">5</para>
+        </td>
+        <td>
+          <para style="P12">
+            <font face="Helvetica">Apabila Saudara berhasil dengan baik dalam menjalani Program Pelatihan Kerja (PPK) maka Saudara akan diangkat sebagai Karyawan dengan Status “KONTRAK “selama periode 12 (Dua Belas) bulan, dimana tanggal Masa Kontrak berlaku surut hingga saat Saudara </font>
+            <font face="Helvetica">mulai mengikuti Program Pelatihan Kerja (PPK).</font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="15.0,467.0" style="Table6">
+      <tr>
+        <td>
+          <para style="P2">6</para>
+        </td>
+        <td>
+          <para style="P10">Program Pelatihan Kerja (PPK) akan berakhir, apabila Saudara dinyatakan: </para>
+          <blockTable colWidths="12.0,20.0,429.0" style="Table15">
+            <tr>
+              <td>
+                <para style="P2">
+                  <font color="white"> </font>
+                </para>
+              </td>
+              <td>
+                <para style="P2">-</para>
+              </td>
+              <td>
+                <para style="P2">G<font face="Helvetica">ugur/tidaklulus/tidakcakap dalam menjalankan tugas pekerjaan yang diberikan oleh perusahaan dan atau Atasan Saudara.</font></para>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <para style="P2">
+                  <font color="white"> </font>
+                </para>
+              </td>
+              <td>
+                <para style="P2">-</para>
+              </td>
+              <td>
+                <para style="P2">M<font face="Helvetica">elakukan kesalahan prosedur kerja yang telah ditetapkan dalam SOP.</font></para>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <para style="P2">
+                  <font color="white"> </font>
+                </para>
+              </td>
+              <td>
+                <para style="P2">-</para>
+              </td>
+              <td>
+                <para style="P2">L<font face="Helvetica">alai terhadap tugas dan tanggung jawab pekerjaan. </font></para>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <para style="P2">
+                  <font color="white"> </font>
+                </para>
+              </td>
+              <td>
+                <para style="P2">-</para>
+              </td>
+              <td>
+                <para style="P2">T<font face="Helvetica">idak masuk kerja tanpa ada kabar/berita/alasan yang jelas dan absen datang terlambat masuk kerja selama 5 (lima ) hari baik secara berturut-turut maupun tidak berturut-turut karena hal tersebut sangat mengganggu kegiatan operasional perusahaan. </font></para>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <para style="P2">
+                  <font color="white"> </font>
+                </para>
+              </td>
+              <td>
+                <para style="P2">-</para>
+              </td>
+              <td>
+                <para style="P2">M<font face="Helvetica">elakukan pelanggaran Tata Tertib Kerja Perusahaan. </font></para>
+              </td>
+            </tr>
+          </blockTable>
+          <blockTable colWidths="12.0,20.0,429.0" style="Table16">
+            <tr>
+              <td>
+                <para style="P2">
+                  <font color="white"> </font>
+                </para>
+              </td>
+              <td>
+                <para style="P2">-</para>
+              </td>
+              <td>
+                <para style="P10">Melakukan kesalahan besar maupun kecil yang berakibat kerugian bagi perusahaan.</para>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <para style="P2">
+                  <font color="white"> </font>
+                </para>
+              </td>
+              <td>
+                <para style="P2">-</para>
+              </td>
+              <td>
+                <para style="P2">Melaksanakan pekerjaan secara serampangan yang dapat mengakibatkan kerugian</para>
+                <para style="P2">bagi Perusahaan</para>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <para style="P2">
+                  <font color="white"> </font>
+                </para>
+              </td>
+              <td>
+                <para style="P2">-</para>
+              </td>
+              <td>
+                <para style="P10">Tidak jujur dalam pengisian laporan pengisian formulir lembur, karcis tol, parkir, dsb. </para>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <para style="P2">
+                  <font color="white"> </font>
+                </para>
+              </td>
+              <td>
+                <para style="P2">-</para>
+              </td>
+              <td>
+                <para style="P10">Tengundurkan Diri, harus diajukan 1 bulan di muka, apabila tidak sesuai ketentuan maka segala bentuk penyelesaian administrasi akan dilaksanakan dalam waktu 1 (satu) bulan kemudian. </para>
+              </td>
+            </tr>
+          </blockTable>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="15.0,467.0" style="Table7">
+      <tr>
+        <td>
+          <para style="P2">7</para>
+        </td>
+        <td>
+          <para style="P10">Program Pelatihan Kerja (PPK) akan berakhir jika Perjanjian Kerja sama Induk yang mendasari adanya Perjanjian Kerja – Program Pelatihan Kerja (PPK) ini berakhir/ diputuskan oleh Pihak Klien Perusahaan dengan pemberitahuan terlebih dahulu oleh Perusahaan kepada pihak Karyawan minimal 30 (tiga puluh) hari kalender dengan kewajiban pembayaran sampai dengan hari kerja terakhir (proporsional) dalam bulan berjalan. Semua penyelesaian persyaratan administrasi kerja harus diselesaikan dan diambil oleh karyawan itu sendiri tidak dapat diwakilkan/ digantikan oleh orang lain. </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="15.0,467.0" style="Table8">
+      <tr>
+        <td>
+          <para style="P2">8</para>
+        </td>
+        <td>
+          <para style="P10">Apabila Saudara selama Program Pelatihan Kerja (PPK), mengikuti Demo atau masuk dalam suatu Organisasi atau Serikat Pekerja dalam bentuk apapun. Apabila dikemudian hari diketahui Saudara turut serta dalam hal tersebut di atas, maka Saudara bersedia mengundurkan diri dari Perusahaan (PT TAG) tanpa adanya tuntutan berupa apapun ke Pihak Perusahaan (PT TAG) atau Perusahaan tempat dimana Saudara ditempatkan. </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P10"/>
+    <blockTable colWidths="15.0,467.0" style="Table9">
+      <tr>
+        <td>
+          <para style="P2">9</para>
+        </td>
+        <td>
+          <para style="P10">Atas pekerjaan Saudara, Perusahaan memberikan imbalan berupa uang atas pekerjaan yang telah dilakukan, yang besarnya ditetapkan tersendiri, yang akan dibayarkan bersamaan dengan karyawan lainnya pada tanggal ditentukan oleh perusahaan. </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="16.0,466.0" style="Table10">
+      <tr>
+        <td>
+          <para style="P10">10</para>
+        </td>
+        <td>
+          <para style="P10">Apabila Saudara selama Program Pelatihan Kerja (PPK) mengundurkan diri atau tidak masuk kerja tanpa ada kabar/berita/alasan yang jelas selama 5 (lima) hari baik secara berturut-turut maupun tidak berturut-turut Saudara dikenakan Pinalty ke Perusahaan sebesar Rp. 2.000.000,- (Dua Juta Rupiah). </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="16.0,466.0" style="Table11">
+      <tr>
+        <td>
+          <para style="P2">11</para>
+        </td>
+        <td>
+          <para style="P10">Untuk fasilitas pengobatan diberikan sesuai plafon masing-masing Karyawan sesuai tingkatannya. </para>
+          <blockTable colWidths="31.0,429.0" style="Table17">
+            <tr>
+              <td>
+                <para style="P4">.</para>
+              </td>
+              <td>
+                <para style="P2">F<font face="Helvetica">asilitas Rawat Jalan, setiap Karyawan mendapat penggantian sebesar 80% dari Rp 40.000,- (empatpuluhribu rupiah) dengan pengertian sehari maksimal 1 (satu) kali kunjungan dokter. </font></para>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <para style="P4">.</para>
+              </td>
+              <td>
+                <para style="P2">F<font face="Helvetica">asilitas Rawat Inap, besar penggantian disesuaikan dengan plafon yang berlaku bagi karyawan yang bersangkutan, namun apabila sampai terjadi excess klaim (kelebihan biaya rawat inap) maka atas kelebihan tagihan biaya rawat inap akan menjadi tanggung jawab Karyawan itu sendiri, bukan Perusahaan. </font></para>
+              </td>
+            </tr>
+          </blockTable>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="16.0,466.0" style="Table12">
+      <tr>
+        <td>
+          <para style="P10">12</para>
+        </td>
+        <td>
+          <para style="P10">Pakaian Kerja. </para>
+          <para style="P10">Setiap karyawan wajib memakai pakaian kerja sesuai ketentuan Perusahaan, sebagai berikut :</para>
+          <blockTable colWidths="18.0,102.0,10.0,329.0" style="Table18">
+            <tr>
+              <td>
+                <para style="P3">-</para>
+              </td>
+              <td>
+                <para style="P10">Staff Operasional</para>
+              </td>
+              <td>
+                <para style="P2">:</para>
+              </td>
+              <td>
+                <para style="P10">Seragam Operasional ( Kemeja/Kaos Hitam Bordir PT.TAG), celana Panjang bahan Hitam ( Formal ), dan memakai sepatu kerja hitam, bukan sepatu kets. </para>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <para style="P3">-</para>
+              </td>
+              <td>
+                <para style="P10">Kasir</para>
+              </td>
+              <td>
+                <para style="P2">:</para>
+              </td>
+              <td>
+                <para style="P10">Wearpack PT. TAG dan sandal jepit (bukan sendal formal). </para>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <para style="P3">-</para>
+              </td>
+              <td>
+                <para style="P10">Satpam</para>
+              </td>
+              <td>
+                <para style="P2">:</para>
+              </td>
+              <td>
+                <para style="P10">PDH (PutihBiru) dan PDL (Hitamhitam) dan sepatu kerja.</para>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <para style="P3">-</para>
+              </td>
+              <td>
+                <para style="P10">Staff/Back Office</para>
+              </td>
+              <td>
+                <para style="P2">:</para>
+              </td>
+              <td>
+                <para style="P10">Pakaian kerja sesuai dengan Keputusan Direksi yang berlaku, dan sepatu kerja bukan sandal atau selop. </para>
+              </td>
+            </tr>
+          </blockTable>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+          <para style="P10">Saudara wajib menggunakan Kartu Identitas Karyawan yang telah diberikan kepada Saudara sesuai ketentuan perusahaan, yang harus dijaga jangan sampai rusak / hilang.</para>
+          <para style="P15">...</para>
+          <para style="P10">Penerimaan karyawan ini didasarkan atas praduga bahwa informasi yang diberikan oleh Pihak Karyawan adalah benar adanya. </para>
+          <para style="P15">….</para>
+          <para style="P10">Jika dikemudian hari ternyata terdapat pemalsuan, manipulasi atau ketidak sesuaian baik disengaja atau tidak, maka Pihak Perusahaan berhak memutuskan hubungan kerja dengan Pihak Karyawan tanpa kompensasi dalam bentuk apapun, berupa apapun dan berapapun. </para>
+          <para style="P15">...</para>
+          <para style="P10">Demikian pemberitahuan ini, dengan Saudara menandatangani Surat ini maka Saudara dianggap telah menyetujui, mengerti, memahami dengan baik dan mengetahui semua ketentuan dan syarat yang telah ditetapkan oleh perusahaan dan mematuhi segala instruksi yang diberikan oleh Atasan dan atau Pimpinan Perusahaan dalam melaksanakan tugas pekerjaan dengan penuh kesadaran dan tanggung jawab yang tinggi tanpa adanya suatu paksaan dari pihak mana pun dan akan mematuhi segala tata tertib dan peraturan perusahaan. </para>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P15">...</para>
+    <para style="P12">
+      <font face="Helvetica">Jakarta, </font>
+      <font face="Helvetica">[[ contract.date_start ]]</font>
+    </para>
+    <blockTable colWidths="285.0,197.0" style="Table13">
+      <tr>
+        <td>
+          <para style="P10">PT. Tunas Artha Gardatama</para>
+        </td>
+        <td>
+          <para style="P10">Yang bersangkutan,</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P15">..</para>
+    <para style="P15">..</para>
+    <para style="P15">..</para>
+    <blockTable colWidths="286.0,196.0" style="Table14">
+      <tr>
+        <td>
+          <para style="P10">[[contract.nama_pihak.employee_name]]</para>
+        </td>
+        <td>
+          <para style="P10">[[ contract.employee_id.employee_name ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P11">[[contract.nama_pihak.job_id.name]]</para>
+  </story>
+</document>

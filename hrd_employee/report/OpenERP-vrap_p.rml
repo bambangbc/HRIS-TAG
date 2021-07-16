@@ -1,0 +1,464 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="57.0" width="481" height="728"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table7">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table4">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table5">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table6">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P2" fontName="Helvetica" fontSize="10.0" leading="13" alignment="CENTER"/>
+    <paraStyle name="P3" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="P4" fontName="Helvetica" fontSize="11.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P5" fontName="Helvetica" fontSize="11.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P6" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P7" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="CENTER"/>
+    <paraStyle name="P8" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P9" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P10" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P11" fontName="Helvetica" fontSize="5.0" leading="7" alignment="JUSTIFY"/>
+    <paraStyle name="P12" fontName="Helvetica" fontSize="5.0" leading="7" alignment="JUSTIFY"/>
+    <paraStyle name="P13" fontName="Helvetica-Bold" fontSize="5.0" leading="7" alignment="JUSTIFY"/>
+    <paraStyle name="P14" fontName="Helvetica" fontSize="11.0" leading="14" alignment="CENTER"/>
+    <paraStyle name="P15" fontName="Helvetica" fontSize="11.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P16" fontName="Helvetica" fontSize="11.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P17" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="JUSTIFY" textColor="#ffffff"/>
+    <paraStyle name="P18" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY" textColor="#ffffff"/>
+    <paraStyle name="P19" fontName="Helvetica" alignment="CENTER"/>
+    <paraStyle name="P20" fontName="Helvetica-Bold" fontSize="12.0" leading="15"/>
+    <paraStyle name="P21" fontName="Helvetica-Bold" fontSize="12.0" leading="15" alignment="RIGHT"/>
+    <paraStyle name="P22" fontName="Helvetica" alignment="CENTER"/>
+    <paraStyle name="P23" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P24" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P25" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P26" fontName="Helvetica-BoldOblique" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P27" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P28" fontName="Helvetica-Bold" fontSize="11.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P29" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="JUSTIFY" textColor="#000000"/>
+    <paraStyle name="P30" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P31" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P32" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P33" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P34" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P35" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="11.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P36" rightIndent="0.0" leftIndent="36.0" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="Standard" fontName="Helvetica"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Helvetica"/>
+    <paraStyle name="No Spacing" fontName="Helvetica" fontSize="11.0" leading="14"/>
+    <paraStyle name="Table Contents" fontName="Helvetica"/>
+    <images/>
+  </stylesheet>
+  <story>
+    <para style="Standard">[[ repeatIn(objects,'contract') ]]</para>
+    <para style="P20">
+      <font color="white"> </font>
+    </para>
+    <para style="P21">[[ contract.employee_id.name ]]</para>
+    <para style="P19">
+      <font face="Helvetica-Bold" size="12.0"/>
+    </para>
+    <para style="P19">
+      <font face="Helvetica-Bold" size="12.0">ADDENDUM KE </font>
+      <font face="Helvetica-Bold" size="12.0">[[ contract.name ]]</font>
+      <font face="Helvetica-Bold" size="12.0"> SURAT PERJANJIAN KERJA</font>
+    </para>
+    <para style="P14">
+      <font face="Helvetica-Bold" size="10.0">Antara PT. Tunas Artha Gardatama dengan [[contract.employee_id.employee_name]]</font>
+    </para>
+    <para style="P14">
+      <font face="Helvetica" size="10.0">No : </font>
+      <font face="Helvetica-Bold" size="12.0">[[ contract.name ]]</font>
+      <font face="Helvetica-Bold" size="12.0"/>
+    </para>
+    <para style="P11">
+      <font color="white"> </font>
+    </para>
+    <para style="P15">
+      <font face="Helvetica" size="10.0">Pada Hari ini, </font>
+      <font face="Helvetica" size="10.0">[[ contract.date_start ]]</font>
+      <font face="Helvetica" size="10.0">, yang bertanda tangan di bawah ini :</font>
+    </para>
+    <para style="P9">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="13.0,22.0,447.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">1</para>
+        </td>
+        <td>
+          <para style="P30">
+            <font face="Helvetica">PT. Tunas Artha Gardatama</font>
+            <font face="Helvetica">, suatu perseroan terbatas yang didirikan berdasarkan Hukum Negara Republik Indonesia, berkedudukan di Jakarta, berkantor di RDW CENTER, Jl. Lenteng Agung Raya No.7, Jagakarsa, Jakarta Selatan 12610, (selanjutnya disebut sebagai </font>
+            <font face="Helvetica">Perusahaan</font>
+            <font face="Helvetica">) dalam hal ini diwakili oleh </font>
+            <font face="Helvetica">Rosita Dwi Wachyani, B. Com. MM</font>
+            <font face="Helvetica"/>
+            <font face="Helvetica">dalam kedudukannya selaku </font>
+            <font face="Helvetica">Vice President Director</font>
+            <font face="Helvetica">, dan</font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">2</para>
+        </td>
+        <td>
+          <para style="P10">
+            <font face="Helvetica">[[ contract.employee_id.employee_name ]]</font>
+            <font face="Helvetica">, Tanggal Lahir </font>
+            <font face="Helvetica">[[ contract.employee_id.place_of_birth ]]</font>
+            <font face="Helvetica">, </font>
+            <font face="Helvetica">[[ contract.employee_id.birth ]]</font>
+            <font face="Helvetica"> warga negara Republik Indonesia, bertempat tinggal di, alamat pemegang Kartu Tanda Penduduk No. 1 (selanjutnya disebut sebagai job).</font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+    <para style="P12">
+      <font color="white"> </font>
+    </para>
+    <para style="P15">
+      <font face="Helvetica-Bold" size="10.0">Perusahaan</font>
+      <font face="Helvetica" size="10.0"> dan </font>
+      <font face="Helvetica-Bold" size="10.0">[[ contract.employee_id.job_id.name ]]</font>
+      <font face="Helvetica" size="10.0"> secara bersama-sama selanjutnya disebut </font>
+      <font face="Helvetica-Bold" size="10.0">Para Pihak.</font>
+    </para>
+    <para style="P8">
+      <font color="white"> </font>
+    </para>
+    <para style="P12">
+      <font color="white"> </font>
+    </para>
+    <para style="P6">Bahwa Para Pihak terlebih dulu menerangkan sebagai berikut :</para>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="13.0,469.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P36" leftIndent="15" bulletIndent="0">
+            <bullet size="10.0">
+              <seq id="WW8Num11"/>
+            </bullet>
+            <font face="Helvetica">Bahwa Para Pihak telah menandatangani Surat Perjanjian Kerja No : </font>
+            <font face="Helvetica">[[ contract.kontrak_sebelum ]]</font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P27" leftIndent="15" bulletIndent="0">
+            <bullet size="10.0">
+              <seq id="WW8Num11"/>
+            </bullet>
+            <font face="Helvetica">Bahwa Para Pihak telah sepakat untuk membuat Addendum </font>
+            <font face="Helvetica" size="12.0">[[ contract.name ]]</font>
+            <font face="Helvetica" size="12.0"/>
+            <font face="Helvetica">Surat Perjanjian Kerja (Selanjutnya di sebut Addendum </font>
+            <font face="Helvetica" size="12.0">[[ contract.name ]]</font>
+            <font face="Helvetica">) dengan syarat-syarat dan ketentuan-ketentuan sebagai berikut :</font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P18">a</para>
+    <para style="P12">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="13.0,22.0,446.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P4">A.</para>
+        </td>
+        <td>
+          <para style="P32">Mengubah Pasal 2 (dua) ayat 1 (satu) Perjanjian menjadi sebagai berikut :</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P12">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">PASAL 2</para>
+    <para style="P7">MASA KESEPAKATAN</para>
+    <blockTable colWidths="37.0,21.0,424.0" style="Table7">
+      <tr>
+        <td>
+          <para style="P2">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P3">1.</para>
+        </td>
+        <td>
+          <para style="P31">
+            <font face="Helvetica">Perjanjian ini diperpanjang dan berlaku untuk jangka waktu 1 (satu) tahun, terhitung sejak tanggal </font>
+            <font face="Helvetica">[[ contract.date_start ]]</font>
+            <font face="Helvetica"> sampai dengan tanggal </font>
+            <font face="Helvetica">[[ contract.date_end ]]</font>
+            <font face="Helvetica">.</font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P33">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="13.0,22.0,446.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">B</para>
+        </td>
+        <td>
+          <para style="P35">
+            <font face="Helvetica" size="10.0">Syarat-syarat dan ketentuan-ketentuan lain dalam Perjanjian sepanjang tidak diubah dengan Addendum Ke </font>
+            <font face="Helvetica" size="10.0">[[ contract.name ]]</font>
+            <font face="Helvetica" size="10.0"> ini, tetap berlaku dan mengikat Para Pihak.</font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">C</para>
+        </td>
+        <td>
+          <para style="P35">
+            <font face="Helvetica" size="10.0">Addendum Ke </font>
+            <font face="Helvetica" size="10.0">[[ contract.name ]]</font>
+            <font face="Helvetica" size="10.0"> ini merupakan satu kesatuan dan bagian yang tidak terpisahkan dari Perjanjian.</font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">D</para>
+        </td>
+        <td>
+          <para style="P35">
+            <font face="Helvetica">Adanya pengurangan </font>
+            <font face="Helvetica" size="10.0">Asisten Manager</font>
+            <font face="Helvetica"> atas permintaan dari Klien dan adanya penutupan Cabang oleh Klien dimana </font>
+            <font face="Helvetica" size="10.0">Asisten Manager</font>
+            <font face="Helvetica"> ditempatkan, maka Perjanjian Kerja ini akan berakhir dengan sendirinya</font>
+            <font face="Helvetica">, tanpa adanya tuntutan berupa apapun ke pihak perusahaan (PT.TAG) atau Perusahaan tempat dimana </font>
+            <font face="Helvetica" size="10.0">Asisten Manager</font>
+            <font face="Helvetica"/>
+            <font face="Helvetica">ditempatkan.</font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">E</para>
+        </td>
+        <td>
+          <para style="P35">
+            <font face="Helvetica" size="10.0">Asisten Manager</font>
+            <font face="Helvetica" size="10.0">, tidak dibenarkan mengikuti</font>
+            <font face="Helvetica"/>
+            <font face="Helvetica" size="10.0">Demo atau masuk dalam suatu Organisasi atau Serikat Pekerja dalam bentuk apapun. Apabila dikemudian hari diketahui Anggota turut serta dalam hal tersebut diatas, maka Anggota bersedia mengundurkan diri dari perusahaan (PT.TAG), tanpa adanya tuntutan berupa apapun ke pihak perusahaan (PT.TAG) atau Perusahaan tempat dimana </font>
+            <font face="Helvetica" size="10.0">Asisten Manager</font>
+            <font face="Helvetica" size="10.0"> ditempatkan.</font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P34">
+      <font color="white"> </font>
+    </para>
+    <para style="P12">
+      <font color="white"> </font>
+    </para>
+    <para style="P15">
+      <font face="Helvetica" size="10.0">Demikian maka Addendum Ke </font>
+      <font face="Helvetica" size="10.0">[[ kontrak.name ]]</font>
+      <font face="Helvetica" size="10.0"> ini ditandatangani pada hari </font>
+      <font face="Helvetica" size="10.0">[[ contract.hari ]]</font>
+      <font face="Helvetica" size="10.0"> dan tanggal </font>
+      <font face="Helvetica" size="10.0">[[ contract.date_start ]]</font>
+      <font face="Helvetica" size="10.0"> yang disebutkan pada bagian awal Addendum </font>
+      <font face="Helvetica" size="10.0">[[ kontrak.name ]]</font>
+      <font face="Helvetica" size="10.0"> ini, dibuat dalam rangkap II (dua) asli masing-masing bermaterai cukup dan mempunyai kekuatan hukum yang sama dan mengikat terhadap Para Pihak.</font>
+    </para>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="268.0,214.0" style="Table5">
+      <tr>
+        <td>
+          <para style="P28">Perusahaan<font color="white"> .........</font></para>
+        </td>
+        <td>
+          <para style="P28">[[ contract.employee_id.job_id.name ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P12">
+      <font color="white"> </font>
+    </para>
+    <para style="P8">
+      <font color="white"> .........</font>
+      <font color="white"> .........</font>
+      <font color="white"> .........</font>
+      <font color="white"> .........</font>
+      <font color="white"> .........</font>
+      <font color="white"> .........</font>
+    </para>
+    <para style="P13">
+      <font color="white"> </font>
+    </para>
+    <para style="P8">
+      <font color="white"> </font>
+    </para>
+    <para style="P16">
+      <font face="Helvetica-Bold" size="10.0"/>
+      <font face="Helvetica-Bold" size="10.0"/>
+    </para>
+    <para style="P17">
+      <font color="white"> </font>
+    </para>
+    <para style="P17">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="268.0,214.0" style="Table6">
+      <tr>
+        <td>
+          <para style="P29">Rosita Dwi Wachyani, B. Com. MM</para>
+        </td>
+        <td>
+          <para style="P25">[[ contract.employee_id.employee_name ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P26">Vice President Director</para>
+    <para>
+      <seqReset id="WW8Num6"/>
+    </para>
+    <para>
+      <seqReset id="WW8Num11"/>
+    </para>
+    <para>
+      <seqReset id="WW8Num11"/>
+    </para>
+    <para>
+      <seqReset id="WW8Num12"/>
+    </para>
+    <para>
+      <seqReset id="WW8Num8"/>
+    </para>
+    <para>
+      <seqReset id="WW8Num8"/>
+    </para>
+    <para>
+      <seqReset id="WW8Num12"/>
+    </para>
+    <para>
+      <seqReset id="WW8Num12"/>
+    </para>
+    <para>
+      <seqReset id="WW8Num12"/>
+    </para>
+    <para>
+      <seqReset id="WW8Num12"/>
+    </para>
+    <para>
+      <seqReset id="WW8Num8"/>
+    </para>
+  </story>
+</document>
